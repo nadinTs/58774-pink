@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<header>
+
+    <div>
+        <div>
+            <a href="#">PINK</a>
+        </div>
+        <div>
+            <a href="#"></a>
+        </div>
+        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1><!--в шаблоне ошибка в слове "безбашеное"-->
+
+        <!-- Выпадающее меню начало -->
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Возможности</a>
+                    </li>
+                    <li>
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#">Стоимость</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Выпадающее меню конец -->
+
+    </div>
+
+</header>
+
+
+<div>
+
+    <div>
+        <p>Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</p>
+    </div>
+
+    <div>
+        <form action="#" method="post">
+
+            <div>
+                <label for="user_name_field">Имя:</label>
+                <input type="text" name="user_name" id="user_name_field" value="Введите ваше имя" required>
+            </div>
+            <div>
+                <label for="user_surname_field">Фамилия:</label>
+                <input type="text" name="user_surname" id="user_surname_field" value="Укажите фамилию" required>
+            </div>
+            <div>
+                <label for="user_patronymic_field">Отчество:</label>
+                <input type="text" name="user_patronymic" id="user_patronymic_field" value="Ну и отчество тоже">
+            </div>
+
+            <div>
+                <!-- Сделать обязательным для заполнения -->
+                <h4>С каким приложением вы путешествовали?</h4>
+
+                <div>
+                    <input type="checkbox" name="os" id="iOS">
+                    <label for="iOS">Pink для iOS</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="os" id="android">
+                    <label for="android">Pink на Android</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="os" id="windows">
+                    <label for="windows">Windows Phone</label>
+                </div>
+            </div>
+
+            <!-- всплывающее предупреждение  -->
+            <div>
+                <h4>Что&ndash;то пошло не так!</h4>
+
+                <p>Проверте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            </div>
+
+
+            <div>
+                <h4>Когда вы путешествовали?</h4>
+
+                <div>
+                    <input type="date" name="date_departure" id="date_departure_field">
+                    <label for="date_departure_field">Дата выезда</label>
+                </div>
+                <div>
+                    <div>
+                        <button type="button">-</button>
+                        <input name="count_days" value="10 дней" id="count_days_field">
+                        <button type="button">+</button>
+                    </div>
+                    <label for="count_days_field">родолжительность</label>
+                </div>
+                <div>
+                    <input type="date" name="date_coming" id="date_coming_field">
+                    <label for="date_coming_field">Дата возвращения</label>
+                </div>
+
+                <div>
+                    <label for="count_companions_field">Количество попутчиков</label>
+
+                    <div>
+                        <button type="button">-</button>
+                        <input name="count_companions" value="2 чел" id="count_companions_field">
+                        <button type="button">+</button>
+                    </div>
+
+                    <div>
+                        <ol>
+                            <li>
+                                <span>&#8470; Имя:</span>
+                                <input type="text" name="companion_name" value="Введите ваше имя">
+                                <span>Прозвище</span>
+                                <input type="text" name="companion_nickname" value="Ну как же без этого!">
+                            </li>
+                            <li>
+                                <span>&#8470; Имя:</span>
+                                <input type="text" name="companion_name" value="Введите ваше имя">
+                                <span>Прозвище</span>
+                                <input type="text" name="companion_nickname" value="Ну как же без этого!">
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div>
+                    <h4>Ваши безбашенные достижения в путешествии</h4>
+
+                    <div>
+                        <input type="checkbox" id="shark_field" checked>
+                        <label for="shark_field">Сделал селфи с акулой</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="burned_field" checked>
+                        <label for="burned_field">Обгорел на пляже</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="chack_field">
+                        <label for="chack_field">Видел Чака Норриса</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="souvenir_field">
+                        <label for="souvenir_field">Накупил сувениров</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="tower_field" checked>
+                        <label for="tower_field">Удержал башню</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="hotel_field">
+                        <label for="hotel_field">Разгромил отель</label>
+                    </div>
+
+                </div>
+                <div>
+                    <h4>Ваши фотографии из поездки</h4>
+
+                    <div>
+                        <input type="button" name="images" value="Загрузить фото">
+                    </div>
+                    <figure>
+                        <img src="#" width="10" height="10">
+                        <img src="#" width="10" height="10">
+                        <img src="#" width="10" height="10">
+                        <img src="#" width="10" height="10">
+                        <img src="#" width="10" height="10">
+                        <img src="#" width="10" height="10">
+                        <img src="#" width="10" height="10">
+                        <img src="#" width="10" height="10">
+                    </figure>
+                </div>
+
+
+            </div>
+
+
+        </form>
+    </div>
+
+</div>
+
+
+<footer>
+
+    <div>
+        <p>&ndash; обязательные поля</p>
+    </div>
+    <div>
+        <a href="#">PINK</a>
+    </div>
+    <div>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+    <div>
+        <a href="#">Разработано</a>
+    </div>
+
+</footer>
+
+</body>
+</html>
