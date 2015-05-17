@@ -8,135 +8,129 @@
 
 <body class="page">
 
-<header class="header">
+<header class="main-header">
 
-    <div class="header__align">
-        <div class="logo">
-            <a class="logo__link" href="#"><img src="#" alt="PINK"></a>
-        </div>
-        <div class="menuButton">
-            <a class="menuButton__link" href="#">Open menu</a>
-            <a class="menuButton__link" href="#">Close menu</a>
-        </div>
-        <h1 class="header__slogan slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        <!--в шаблоне ошибка в слове "безбашеное"-->
-
-        <!-- Выпадающее меню начало -->
-        <div class="ddmenu">
-            <nav>
-                <ul>
-                    <li class="ddmenu__item">
-                        <a class="ddmenu__link link" href="#">Информация</a>
-                    </li>
-                    <li class="ddmenu__item">
-                        <a class="ddmenu__link link" href="#">Возможности</a>
-                    </li>
-                    <li class="ddmenu__item">
-                        <a class="ddmenu__link link" href="#">Отзывы</a>
-                    </li>
-                    <li class="ddmenu__item">
-                        <a class="ddmenu__link link" href="#">Стоимость</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <!-- Выпадающее меню конец -->
-
+    <div class="logo">
+        <a class="logo__link" href="#"><img src="#" alt="PINK"></a>
     </div>
+    <div class="menu-button">
+        <a class="menu-button__link" href="#">Open menu</a>
+        <a class="menu-button__link" href="#">Close menu</a>
+    </div>
+    <h1 class="main-header__slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <!--в шаблоне ошибка в слове "безбашеное"-->
+
+    <!-- Выпадающее меню начало -->
+    <nav class="ddmenu">
+        <ul>
+            <li class="ddmenu-item">
+                <a class="ddmenu-item__link" href="#">Информация</a>
+            </li>
+            <li class="ddmenu-item">
+                <a class="ddmenu-item__link" href="#">Возможности</a>
+            </li>
+            <li class="ddmenu-item">
+                <a class="ddmenu-item__link" href="#">Отзывы</a>
+            </li>
+            <li class="ddmenu-item">
+                <a class="ddmenu-item__link" href="#">Стоимость</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Выпадающее меню конец -->
 
 </header>
 
 
-<div>
+<main>
 
     <div class="slogan-text">
         Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
     </div>
 
-    <section class="section">
+    <section class="submit">
         <form class="form" action="#" method="post">
             <div class="full-name">
-                <div>
-                    <label class="label" for="user_name_field">Имя:*</label>
-                    <input class="full-name__input" type="text" name="user_name" id="user_name_field"
+                <div class="user-name">
+                    <label class="user-name__label" for="user_name_field">Имя:*</label>
+                    <input class="user-name__input" type="text" name="user_name" id="user_name_field"
                            value="Введите ваше имя" required>
                 </div>
-                <div>
-                    <label class="label" for="user_surname_field">Фамилия:*</label>
-                    <input class="full-name__input"  type="text" name="user_surname" id="user_surname_field" value="Укажите фамилию" required>
+                <div class="user-name">
+                    <label class="user-name__label" for="user_surname_field">Фамилия:*</label>
+                    <input class="user-name__input" type="text" name="user_surname" id="user_surname_field"
+                           value="Укажите фамилию" required>
                 </div>
-                <div>
-                    <label class="label" for="user_patronymic_field">Отчество:</label>
-                    <input class="full-name__input"  type="text" name="user_patronymic" id="user_patronymic_field" value="Ну и отчество тоже">
+                <div class="user-name">
+                    <label class="user-name__label" for="user_patronymic_field">Отчество:</label>
+                    <input class="user-name__input" type="text" name="user_patronymic" id="user_patronymic_field"
+                           value="Ну и отчество тоже">
                 </div>
             </div>
 
             <div class="app">
                 <!-- Сделать обязательным для заполнения -->
-                <h4 class="app__header">С каким приложением вы путешествовали?*</h4>
+                <h4 class="app__title">С каким приложением вы путешествовали?*</h4>
 
-                <div>
-                    <input class="app__input" type="radio" name="os" id="iOS">
-                    <label class="label" for="iOS">Pink для iOS</label>
+                <div class="app-item">
+                    <input class="app-item__input" type="radio" name="os" id="iOS">
+                    <label class="app-item__label" for="iOS">Pink для iOS</label>
                 </div>
-                <div>
-                    <input class="app__input" type="radio" name="os" id="android">
-                    <label class="label" for="android">Pink на Android</label>
+                <div class="app-item">
+                    <input class="app-item__input" type="radio" name="os" id="android">
+                    <label class="app-item__label" for="android">Pink на Android</label>
                 </div>
-                <div>
-                    <input class="app__input" type="radio" name="os" id="windows">
-                    <label class="label" for="windows">Windows Phone</label>
+                <div class="app-item">
+                    <input class="app-item__input" type="radio" name="os" id="windows">
+                    <label class="app-item__label" for="windows">Windows Phone</label>
                 </div>
             </div>
             <article class="date">
-                <h4 class="date__header">Когда вы путешествовали?*</h4>
+                <h4 class="date__title">Когда вы путешествовали?*</h4>
 
-                <div>
-                    <input class="date__input" type="date" name="date_departure" id="date_departure_field">
-                    <label class="label" for="date_departure_field">Дата выезда</label>
+                <div class="date-item">
+                    <input class="date-item__input" type="date" name="date_departure" id="date_departure_field">
+                    <label class="date-item__label" for="date_departure_field">Дата выезда</label>
                 </div>
-                <div>
-                    <div class="toggle">
-                        <button class="toggle__minus" type="button">-</button>
-                        <input class="date__input" type="text" name="count_days" value="10 дней" id="count_days_field">
-                        <button class="toggle__minus" type="button">+</button>
-                    </div>
-                    <label class="label" for="count_days_field">Продолжительность</label>
+                <div class="toggle">
+                    <button class="toggle__minus" type="button">-</button>
+                    <input class="toggle__input" type="text" name="count_days" value="10 дней" id="count_days_field">
+                    <button class="toggle__minus" type="button">+</button>
+                    <label class="toggle__label" for="count_days_field">Продолжительность</label>
                 </div>
-                <div>
-                    <input class="date__input" type="date" name="date_coming" id="date_coming_field">
-                    <label class="label" for="date_coming_field">Дата возвращения</label>
+                <div class="date-item">
+                    <input class="date-item__input" type="date" name="date_coming" id="date_coming_field">
+                    <label class="date-item__label" for="date_coming_field">Дата возвращения</label>
                 </div>
             </article>
 
             <article class="companions">
-                <label class="label" for="count_companions_field">Количество попутчиков*</label>
+                <label class="companions__label" for="count_companions_field">Количество попутчиков*</label>
 
                 <div class="toggle">
                     <button class="toggle__minus" type="button">-</button>
-                    <input class="label" type="text" name="count_companions" value="2 чел" id="count_companions_field">
+                    <input class="toggle__label" type="text" name="count_companions" value="2 чел" id="count_companions_field">
                     <button class="toggle__minus" type="button">+</button>
                 </div>
-
                 <div class="column">
-                    <div class="column__left"><!-- левая колонка -->
-                        <span>&#8470;</span>
-                        <span>1</span>
+                    <div class="column-left"><!-- левая колонка -->
+                        <span class="column-left__sign">&#8470;</span>
+                        <span class="column-left__number">1</span>
                     </div>
-                    <div class="column__right"><!-- правая колонка -->
-                        <label class="label" for="companion_name_field">
+                    <div class="column-right"><!-- правая колонка -->
+                        <label class="column-right__label" for="companion_name_field">
                             Имя
                         </label>
 
-                        <div>
+                        <div class="column-right__name">
                             <input type="text" name="companion_name" id="companion_name_field"
                                    value="Введите ваше имя">
                         </div>
-                        <label class="label" for="companion_nickname_field">
+                        <label class="column-right__label" for="companion_nickname_field">
                             Прозвище:
                         </label>
 
-                        <div>
+                        <div class="column-right__nickname">
                             <input type="text" name="companion_nickname" id="companion_nickname_field"
                                    value="Ну как же без этого!">
                         </div>
@@ -146,83 +140,86 @@
             </article>
 
             <article class="progress">
-                <h4 class="progress__header">Ваши безбашенные достижения в путешествии</h4>
+                <h4 class="progress__title">Ваши безбашенные достижения в путешествии</h4>
 
-                <div>
-                    <input class="progress__checkbox" type="checkbox" id="shark_field" checked>
-                    <label class="progress__label" for="shark_field">Сделал селфи с акулой</label>
+                <div class="checkbox">
+                    <input class="checkbox__item" type="checkbox" id="shark_field" checked>
+                    <label class="checkbox__label" for="shark_field">Сделал селфи с акулой</label>
                 </div>
-                <div>
-                    <input class="progress__checkbox" type="checkbox" id="burned_field" checked>
-                    <label class="progress__label" for="burned_field">Обгорел на пляже</label>
+                <div class="checkbox">
+                    <input class="checkbox__item" type="checkbox" id="burned_field" checked>
+                    <label class="checkbox__label" for="burned_field">Обгорел на пляже</label>
                 </div>
-                <div>
-                    <input class="progress__checkbox" type="checkbox" id="chack_field">
-                    <label class="progress__label" for="chack_field">Видел Чака Норриса</label>
+                <div  class="checkbox">
+                    <input class="checkbox__item" type="checkbox" id="chack_field">
+                    <label class="checkbox__label" for="chack_field">Видел Чака Норриса</label>
                 </div>
-                <div>
-                    <input class="progress__checkbox" type="checkbox" id="souvenir_field">
-                    <label class="progress__label" for="souvenir_field">Накупил сувениров</label>
+                <div  class="checkbox">
+                    <input class="checkbox__item" type="checkbox" id="souvenir_field">
+                    <label class="checkbox__label" for="souvenir_field">Накупил сувениров</label>
                 </div>
-                <div>
-                    <input class="progress__checkbox" type="checkbox" id="tower_field" checked>
-                    <label class="progress__label" for="tower_field">Удержал башню</label>
+                <div  class="checkbox">
+                    <input class="checkbox__item" type="checkbox" id="tower_field" checked>
+                    <label class="checkbox__label" for="tower_field">Удержал башню</label>
                 </div>
-                <div>
-                    <input class="progress__checkbox" type="checkbox" id="hotel_field">
-                    <label class="progress__label" for="hotel_field">Разгромил отель</label>
+                <div  class="checkbox">
+                    <input class="checkbox__item" type="checkbox" id="hotel_field">
+                    <label class="checkbox__label" for="hotel_field">Разгромил отель</label>
                 </div>
 
             </article>
-            <article class="foto">
-                <h4 class="foto__header">Ваши фотографии из поездки*</h4>
+            <article class="gallery">
+                <h4 class="gallery__title">Ваши фотографии из поездки*</h4>
 
-                <div>
-                    <input class="foto__gile" type="file" name="images" value="Загрузить фото">
+                <div class="gallery__input">
+                    <input type="file" name="images" value="Загрузить фото">
                 </div>
-                <figure class="figure">
-                    <div class="figure_img">
-                        <img src="#" width="10" height="10">
-                    </div>
-                    <div class="figure_img">
-                        <img src="#" width="10" height="10">
-                    </div>
-                    <div class="figure_img">
-                        <img src="#" width="10" height="10">
-                    </div>
-                    <div class="figure_img">
-                        <img src="#" width="10" height="10">
-                    </div>
-                    <div class="figure_img">
-                        <img src="#" width="10" height="10">
-                    </div>
-                    <div class="figure_img">
-                        <img src="#" width="10" height="10">
-                    </div>
-                    <div class="figure_img">
-                        <img src="#" width="10" height="10">
-                    </div>
 
+                <figure class="foto">
+                    <div class="foto__img">
+                        <img src="#" width="10" height="10">
+                    </div>
+                    <div class="foto__img">
+                        <img src="#" width="10" height="10">
+                    </div>
+                    <div class="foto__img">
+                        <img src="#" width="10" height="10">
+                    </div>
+                    <div class="foto__img">
+                        <img src="#" width="10" height="10">
+                    </div>
+                    <div class="foto__img">
+                        <img src="#" width="10" height="10">
+                    </div>
+                    <div class="foto__img">
+                        <img src="#" width="10" height="10">
+                    </div>
+                    <div class="foto__img">
+                        <img src="#" width="10" height="10">
+                    </div>
                 </figure>
+
             </article>
 
-            <div>
-                <input class="foto__submit" type="submit" name="images" value="Отправить форму">
+            <div  class="gallery__submit">
+                <input type="submit" name="images" value="Отправить форму">
             </div>
-            <div>
-                <p class="foto__text">* &ndash; обязательные поля</p>
+            <div class="gallery__text">
+                * &ndash; обязательные поля
             </div>
             <!-- всплывающее предупреждение  -->
             <div class="warning">
-                <h4 class="warning__header">Что&ndash;то пошло не так!</h4>
+                <h4 class="warning__title">Что&ndash;то пошло не так!</h4>
 
-                <p class="warning__text">Проверте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                <div class="warning__text">
+                    Проверте поля, выделенные красным, скорее всего вы забыли их заполнить
+                </div>
             </div>
 
         </form>
     </section>
 
-</div>
+</main>
 
 
 <footer class="footer">
