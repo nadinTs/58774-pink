@@ -2,38 +2,39 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>HTML Academy: pink</title>
 </head>
-<body>
 
 
-<header>
+<body class="page">
 
-    <div>
-        <div>
-            <a href="#"><img src="#" alt="PINK"></a>
+<header class="header">
+
+    <div class="header__align">
+        <div class="logo">
+            <a class="logo__link" href="#"><img src="#" alt="PINK"></a>
         </div>
-        <div>
-            <a href="#">Open menu</a>
-            <a href="#">Close menu</a>
+        <div class="menuButton">
+            <a class="menuButton__link" href="#">Open menu</a>
+            <a class="menuButton__link" href="#">Close menu</a>
         </div>
-        <h1>Блог путешественников, пользователей Пинк</h1>
+        <h1 class="header__slogan slogan">Блог путешественников, пользователей Пинк</h1>
 
         <!-- Выпадающее меню начало -->
-        <div>
+        <div class="ddmenu">
             <nav>
                 <ul>
-                    <li>
-                        <a href="#">Информация</a>
+                    <li class="ddmenu__item">
+                        <a class="ddmenu__link link" href="#">Информация</a>
                     </li>
-                    <li>
-                        <a href="#">Возможности</a>
+                    <li class="ddmenu__item">
+                        <a class="ddmenu__link link" href="#">Возможности</a>
                     </li>
-                    <li>
-                        <a href="#">Отзывы</a>
+                    <li class="ddmenu__item">
+                        <a class="ddmenu__link link" href="#">Отзывы</a>
                     </li>
-                    <li>
-                        <a href="#">Стоимость</a>
+                    <li class="ddmenu__item">
+                        <a class="ddmenu__link link" href="#">Стоимость</a>
                     </li>
                 </ul>
             </nav>
@@ -45,81 +46,92 @@
 </header>
 
 <div>
+    <section class="section">
 
-    <section>
-        <h1>Антон и Надя в Тайланде</h1>
-        <div>Опубликовано 6 месяцев назад</div>
+        <article class="article">
+            <h1 class="article__header--h1">Антон и Надя в Тайланде</h1>
+            <h4 class="article__date">Опубликовано 6 месяцев назад</h4>
+            <a class="article__text link">Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь
+                максимально избегать избитых
+                туристических мест и районов.</a>
+        </article>
 
-        <p>Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь максимально избегать избитых
-            туристических мест и районов.</p>
+        <article class="article">
+            <h3 class="article__header">Предыстория</h3>
+
+            <p class="article__text">В Азию нам хотельсь попасть уже давно, но все время что&ndash;то останавливало.
+                Также не давал покоя
+                вопрос
+                гигиены и чистоты вокруг. Были сомнения и на счет местной еды. Однако, увидев выгодные билеты на <a
+                        href="#">skyscanner.ru</a> мы все&ndash;таки решились!</p>
+        </article>
+
+        <article class="article">
+            <h3 class="article__header">Выбор отеля</h3>
+
+            <p class="article__text">В Тайланде огромный разброс по стоимости отелей и так же сильно отличаются они
+                сами. Так как
+                достопримечательности щедро разбросаны по всей стране, то чтобы посетитьих все, нужно в нескольких
+                разных
+                городах. В итоге мы остановилиьс на следующих:</p>
+            <ul>
+                <li class="article__item--circle">Point Yamu by Como(Пхукет)</li>
+                <li class="article__item--circle">Amari Vogue Hotel (Краби)</li>
+                <li class="article__item--circle">Photo Hotel (Пхукет)</li>
+            </ul>
+            <p class="article__text">В выборе отелей мы учитывали как расположение, так и отзывы на Tripadvisor.
+                Например, вот, что пишут люди
+                про
+                Point Yamu:</p>
+
+            <p class="article__text">Замечательное место, в которое хочется вернуться обязательно! Персонал отзывчивый и
+                внимательный,
+                еда &ndash;
+                потрясающая. Отель расположен в тихом и уединенном месте &ndash; в чем вся и прелесть. СПА отличный.
+                Потрясающие виды.</p>
+
+            <p class="article__text"><i>Олег, г. Москва</i></p>
+        </article>
+
+        <article class="article">
+            <h3 class="article__header">Местная еда</h3>
+
+            <p class="article__text">Существует мнение, что вся едав Тайланде экстремально острая. Это мнение сложилось
+                не напрасно! Но не
+                стоит
+                делать из этого проблему &ndash; просто попросите сделать ваше блюдо &laquo;not spicy&raquo;. Желающие
+                могут
+                попробовать жареных тараканчиков. Мы не рискнули.</p>
+        </article>
+
     </section>
-
-    <section>
-        <h3>Предыстория</h3>
-
-        <p>В Азию нам хотельсь попасть уже давно, но все время что&ndash;то останавливало. Также не давал покоя вопрос
-            гигиены и чистоты вокруг. Были сомнения и на счет местной еды. Однако, увидев выгодные билеты на <a
-                    href="#">skyscanner.ru</a> мы все&ndash;таки решились!</p>
-    </section>
-
-    <section>
-        <h3>Выбор отеля</h3>
-
-        <p>В Тайланде огромный разброс по стоимости отелей и так же сильно отличаются они сами. Так как
-            достопримечательности щедро разбросаны по всей стране, то чтобы посетитьих все, нужно в нескольких разных
-            городах. В итоге мы остановилиьс на следующих:</p>
-
-        <ul>
-            <li>Point Yamu by Como(Пхукет)</li>
-            <li>Amari Vogue Hotel (Краби)</li>
-            <li>Photo Hotel (Пхукет)</li>
-        </ul>
-
-        <p>В выборе отелей мы учитывали как расположение, так и отзывы на Tripadvisor. Например, вот, что пишут люди про
-            Point Yamu:</p>
-
-        <p>Замечательное место, в которое хочется вернуться обязательно! Персонал отзывчивый и внимательный, еда &ndash;
-            потрясающая. Отель расположен в тихом и уединенном месте &ndash; в чем вся и прелесть. СПА отличный.
-            Потрясающие виды.</p>
-
-        <p><i>Олег, г. Москва</i></p>
-    </section>
-
-    <section>
-        <h3>Местная еда</h3>
-
-        <p>Существует мнение, что вся едав Тайланде экстремально острая. Это мнение сложилось не напрасно! Но не стоит
-            делать из этого проблему &ndash; просто попросите сделать ваше блюдо &laquo;not spicy&raquo;. Желающие могут
-            попробовать жареных тараканчиков. Мы не рискнули.</p>
-    </section>
-
-    <div>
+    <div class="switch-word">
         <div>
-            <a href="#">Пред.</a>
-            <a href="#">След.</a>
+            <a class="switch-word__previous" href="#">Пред.</a>
+            <a class="switch-word__next" href="#">След.</a>
         </div>
         <div>
-            <a href="#">Назад к списку</a>
+            <a class="switch-word__back" href="#">Назад к списку</a>
         </div>
     </div>
 
 </div>
 
 
-<footer>
+<footer class="footer">
 
-    <div>
-        <div>
-            <a href="#"><img src="#" alt="PINK"></a>
+    <div class="footer__align">
+        <div class="glasses-logo">
+            <a class="glasses-logo__link" href="#"><img src="#" alt="PINK"></a>
         </div>
-        <div>
+        <div class="iconSN">
             <!-- иконки соцсетей -->
-            <a href="#"><img src="#" alt="Twitter"></a>
-            <a href="#"><img src="#" alt="Facebook"></a>
-            <a href="#"><img src="#" alt="YouTube"></a>
+            <a class="iconSN__link" href="#"><img src="#" alt="Twitter"></a>
+            <a class="iconSN__link" href="#"><img src="#" alt="Facebook"></a>
+            <a class="iconSN__link" href="#"><img src="#" alt="YouTube"></a>
         </div>
-        <div>
-            <a href="#">Разработано<img src="#" alt="HTML Academy"></a>
+        <div class="developer">
+            <a class="developer__link" href="#">Разработано<img src="#" alt="HTML Academy"></a>
         </div>
     </div>
 

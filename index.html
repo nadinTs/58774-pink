@@ -7,111 +7,110 @@
     <!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 
-<body>
+<body class="page">
 
-<header>
-    <div>
-        <a href="#"><img src="#" alt="PINK"></a>
-
-        <div>
-            <a href="#">Open menu</a>
-            <a href="#">Close menu</a>
-        </div>
-        <h1>Взгляните на жизнь иначе</h1>
-
-        <!-- Выпадающее меню начало  -->
-        <div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#">Информация</a>
-                    </li>
-                    <li>
-                        <a href="#">Возможности</a>
-                    </li>
-                    <li>
-                        <a href="#">Отзывы</a>
-                    </li>
-                    <li>
-                        <a href="#">Стоимость</a>
-                    </li>
-                </ul>
-            </nav>
-            <form action="#" method="post">
-                <input type="button" value="Скачать приложение">
-            </form>
-            <div>
-                <!-- Иконки iOS, Android, Windows OS -->
-                <ul>
-                    <li>
-                        <a href="#"><img src="#" alt="iOS"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="#" alt="Android"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img src="#" alt="Windows OS"></a>
-                    </li>
-                </ul>
-            </div>
-            <p>Доступно для iPhone, iPad, Android, Windows Phone, CS X, Windows 8</p>
-        </div>
+<header class="header">
+    <div class="logo">
+        <a class="logo__link" href="#"><img src="#" alt="PINK"></a>
     </div>
-    <!-- Выпадающее меню конец -->
+    <div class="menuButton">
+        <a class="menuButton__link" href="#">Open menu</a>
+        <a class="menuButton__link" href="#">Close menu</a>
+    </div>
+    <h1 class="header__slogan slogan">Взгляните на жизнь иначе</h1>
 
+    <!-- Выпадающее меню начало  -->
+    <div class="ddmenu">
+        <nav>
+            <ul>
+                <li class="ddmenu__item">
+                    <a class="ddmenu__link link" href="#">Информация</a>
+                </li>
+                <li class="ddmenu__item">
+                    <a class="ddmenu__link link" href="#">Возможности</a>
+                </li>
+                <li class="ddmenu__item">
+                    <a class="ddmenu__link link" href="#">Отзывы</a>
+                </li>
+                <li class="ddmenu__item">
+                    <a class="ddmenu__link link" href="#">Стоимость</a>
+                </li>
+            </ul>
+        </nav>
+        <form class="form" action="#" method="post">
+            <input class="button" type="button" value="Скачать приложение">
+        </form>
+        <div class="ddmenu__iconsOS">
+            <!-- Иконки iOS, Android, Windows OS -->
+            <ul>
+                <li class="iconsOS__item">
+                    <a class="link" href="#"><img src="#" alt="iOS"></a>
+                </li>
+                <li class="iconsOS__item">
+                    <a class="link" href="#"><img src="#" alt="Android"></a>
+                </li>
+                <li class="iconsOS__item">
+                    <a class="link" href="#"><img src="#" alt="Windows OS"></a>
+                </li>
+            </ul>
+        </div>
+        <p class="ddmenu__content">Доступно для iPhone, iPad, Android, Windows Phone, CS X, Windows 8</p>
+    </div>
+
+    <!-- Выпадающее меню конец -->
 </header>
 
 <div>
-    <section>
-        <div>
-            <h2>Устали от серости мегаполиса?</h2>
+    <section class="content">
+        <div class="content__slogan">
+            <h2 class="slogan">Устали от серости мегаполиса?</h2>
 
-            <h2>Нам есть, что вам предложить!</h2>
+            <h2 class="slogan">Нам есть, что вам предложить!</h2>
         </div>
-        <article>
-            <h2>Поднимает настроение</h2>
+        <article class="article">
+            <h2 class="article__header">Поднимает настроение</h2>
 
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <p class="article__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
         </article>
-        <article>
-            <h2>Меняет мир вокруг</h2>
+        <article class="article__text">
+            <h2 class="article__header">Меняет мир вокруг</h2>
 
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            <p class="article__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
         </article>
-        <article>
-            <h2>Заводите новых друзей</h2>
+        <article class="article">
+            <h2 class="aricle__header">Заводите новых друзей</h2>
 
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых </p>
+            <p class="article__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых </p>
         </article>
     </section>
 
     <div>
-        <section>
+        <section class="content">
             <div>
-                <article>
-                    <h2>Николай Петров1</h2>
+                <article class="article">
+                    <h2 class="article__header">Николай Петров1</h2>
 
-                    <p>&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+                    <p class="aricle__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
                         вещи! А
                         еще
                         я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
                 </article>
             </div>
             <div>
-                <article>
-                    <h2>Николай Петров2</h2>
+                <article class="article">
+                    <h2 class="article__heder">Николай Петров2</h2>
 
-                    <p>&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+                    <p class="article__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
                         вещи! А
                         еще
                         я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
                 </article>
             </div>
             <div>
-                <article>
-                    <h2>Николай Петров3</h2>
+                <article class="article">
+                    <h2 class="article__header">Николай Петров3</h2>
 
-                    <p>&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
+                    <p class="article__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые
                         вещи! А
                         еще
                         я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
@@ -119,100 +118,109 @@
             </div>
         </section>
 
-        <div>
+        <div class="switch">
             <!-- переключатель страниц (точки) -->
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a class="switch_link" href="#"></a>
+            <a class="switch_link" href="#"></a>
+            <a class="switch_link" href="#"></a>
         </div>
 
-        <div>
-            <div>
-                <h4>Стандарт</h4>
+        <div class="app">
+            <div class="app__head">
+                <h4 class="app__header">Стандарт</h4>
 
-                <p>3,99 USD</p>
+                <p class="app__price">3,99 USD</p>
             </div>
-            <ul>
-                <li>
-                    Розовый фильтр
-                </li>
-                <li>
-                    Смайлики
-                </li>
-                <li>
-                    Комментарии
-                </li>
-            </ul>
-            <div>
-                <h4>Стандарт</h4>
+            <div class="app__option">
+                <ul>
+                    <li class="app__item">
+                        Розовый фильтр
+                    </li>
+                    <li class="app__item">
+                        Смайлики
+                    </li>
+                    <li class="app__item">
+                        Комментарии
+                    </li>
+                </ul>
+            </div>
+            <div class="app__head">
+                <h4 class="app__header">Стандарт</h4>
 
-                <p>3,99 USD</p>
+                <p class="app__price">3,99 USD</p>
             </div>
-            <ul>
-                <li>
-                    Розовый фильтр
-                </li>
-                <li>
-                    Смайлики
-                </li>
-                <li>
-                    Комментарии
-                </li>
-            </ul>
-            <div>
-                <h4>Стандарт</h4>
+            <div class="app__option">
+                <ul>
+                    <li class="app__item">
+                        Розовый фильтр
+                    </li>
+                    <li class="app__item">
+                        Смайлики
+                    </li>
+                    <li class="app__item">
+                        Комментарии
+                    </li>
+                </ul>
+            </div>
+            <div class="app__head">
+                <h4 class="app__header">Стандарт</h4>
 
-                <p>3,99 USD</p>
+                <p class="app__price">3,99 USD</p>
             </div>
-            <ul>
-                <li>
-                    Розовый фильтр
-                </li>
-                <li>
-                    Смайлики
-                </li>
-                <li>
-                    Комментарии
-                </li>
-            </ul>
+            <div class="app__option">
+                <ul>
+                    <li class="app__item">
+                        Розовый фильтр
+                    </li>
+                    <li class="app__item">
+                        Смайлики
+                    </li>
+                    <li class="app__item">
+                        Комментарии
+                    </li>
+                </ul>
+
+            </div>
         </div>
 
 
-        <div>
+        <div class="switch">
             <!-- переключатель страниц (точки) -->
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+            <a class="switch_link" href="#"></a>
+            <a class="switch_link" href="#"></a>
+            <a class="switch_link" href="#"></a>
         </div>
 
     </div>
 
 </div>
 
-<footer>
+<footer class="footer">
 
-    <div>
+    <div class="footer__align">
 
-        <div>
+        <div class="slogan">
             Остались вопросы? Свяжитесь с нами
         </div>
 
-        <div>
+        <div class="footer__text">
             Звоните:
-            <span> +7(812)555&ndash;66&ndash;66</span>
+            <span class="footer__contact"> +7(812)555&ndash;66&ndash;66</span>
         </div>
 
-        <div>
+        <div class="footer__text">
             Пишите:
-            <span> mail@htmlacademy.ru.</span>
+            <span class="footer__contact">
+                mail@htmlacademy.ru.
+            </span>
         </div>
 
-        <div>
+        <div class="footer__text">
             Приезжайте в гости:
-        </div>
 
-        <div>
-            ул. Большая Конюшенная, 19/8
+            <span class="footer__contact">
+                ул. Большая Конюшенная, 19/8
+            </span>
         </div>
 
     </div>

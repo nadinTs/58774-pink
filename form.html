@@ -2,38 +2,40 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>>HTML Academy: pink</title>
 </head>
-<body>
 
 
-<header>
+<body class="page">
 
-    <div>
-        <div>
-            <a href="#"><img src="#" alt="PINK"></a>
+<header class="header">
+
+    <div class="header__align">
+        <div class="logo">
+            <a class="logo__link" href="#"><img src="#" alt="PINK"></a>
         </div>
-        <div>
-            <a href="#">Open menu</a>
-            <a href="#">Close menu</a>
+        <div class="menuButton">
+            <a class="menuButton__link" href="#">Open menu</a>
+            <a class="menuButton__link" href="#">Close menu</a>
         </div>
-        <h1>Конкурс на самое безбашенное путешествие с Пинк</h1><!--в шаблоне ошибка в слове "безбашеное"-->
+        <h1 class="header__slogan slogan">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <!--в шаблоне ошибка в слове "безбашеное"-->
 
         <!-- Выпадающее меню начало -->
-        <div>
+        <div class="ddmenu">
             <nav>
                 <ul>
-                    <li>
-                        <a href="#">Информация</a>
+                    <li class="ddmenu__item">
+                        <a class="ddmenu__link link" href="#">Информация</a>
                     </li>
-                    <li>
-                        <a href="#">Возможности</a>
+                    <li class="ddmenu__item">
+                        <a class="ddmenu__link link" href="#">Возможности</a>
                     </li>
-                    <li>
-                        <a href="#">Отзывы</a>
+                    <li class="ddmenu__item">
+                        <a class="ddmenu__link link" href="#">Отзывы</a>
                     </li>
-                    <li>
-                        <a href="#">Стоимость</a>
+                    <li class="ddmenu__item">
+                        <a class="ddmenu__link link" href="#">Стоимость</a>
                     </li>
                 </ul>
             </nav>
@@ -47,192 +49,194 @@
 
 <div>
 
-    <div>
+    <div class="slogan-text">
         Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!
     </div>
 
-    <div>
-        <form action="#" method="post">
+    <section class="section">
+        <form class="form" action="#" method="post">
+            <div class="full-name">
+                <div>
+                    <label class="label" for="user_name_field">Имя:*</label>
+                    <input class="full-name__input" type="text" name="user_name" id="user_name_field"
+                           value="Введите ваше имя" required>
+                </div>
+                <div>
+                    <label class="label" for="user_surname_field">Фамилия:*</label>
+                    <input class="full-name__input"  type="text" name="user_surname" id="user_surname_field" value="Укажите фамилию" required>
+                </div>
+                <div>
+                    <label class="label" for="user_patronymic_field">Отчество:</label>
+                    <input class="full-name__input"  type="text" name="user_patronymic" id="user_patronymic_field" value="Ну и отчество тоже">
+                </div>
+            </div>
 
-            <div>
-                <label for="user_name_field">Имя:*</label>
-                <input type="text" name="user_name" id="user_name_field" value="Введите ваше имя" required>
-            </div>
-            <div>
-                <label for="user_surname_field">Фамилия:*</label>
-                <input type="text" name="user_surname" id="user_surname_field" value="Укажите фамилию" required>
-            </div>
-            <div>
-                <label for="user_patronymic_field">Отчество:</label>
-                <input type="text" name="user_patronymic" id="user_patronymic_field" value="Ну и отчество тоже">
-            </div>
-
-            <div>
+            <div class="app">
                 <!-- Сделать обязательным для заполнения -->
-                <h4>С каким приложением вы путешествовали?*</h4>
+                <h4 class="app__header">С каким приложением вы путешествовали?*</h4>
 
                 <div>
-                    <input type="radio" name="os" id="iOS">
-                    <label for="iOS">Pink для iOS</label>
+                    <input class="app__input" type="radio" name="os" id="iOS">
+                    <label class="label" for="iOS">Pink для iOS</label>
                 </div>
                 <div>
-                    <input type="radio" name="os" id="android">
-                    <label for="android">Pink на Android</label>
+                    <input class="app__input" type="radio" name="os" id="android">
+                    <label class="label" for="android">Pink на Android</label>
                 </div>
                 <div>
-                    <input type="radio" name="os" id="windows">
-                    <label for="windows">Windows Phone</label>
-                </div>
-            </div>
-
-            <div>
-                <h4>Когда вы путешествовали?*</h4>
-
-                <div>
-                    <input type="date" name="date_departure" id="date_departure_field">
-                    <label for="date_departure_field">Дата выезда</label>
-                </div>
-                <div>
-                    <div>
-                        <button type="button">-</button>
-                        <input type="text" name="count_days" value="10 дней" id="count_days_field">
-                        <button type="button">+</button>
-                    </div>
-                    <label for="count_days_field">Продолжительность</label>
-                </div>
-                <div>
-                    <input type="date" name="date_coming" id="date_coming_field">
-                    <label for="date_coming_field">Дата возвращения</label>
-                </div>
-
-                <div>
-                    <label for="count_companions_field">Количество попутчиков*</label>
-
-                    <div>
-                        <button type="button">-</button>
-                        <input type="text" name="count_companions" value="2 чел" id="count_companions_field">
-                        <button type="button">+</button>
-                    </div>
-
-                    <div>
-                        <div><!-- левая колонка -->
-                            <span>&#8470;</span>
-                            <span>1</span>
-                        </div>
-                        <div><!-- правая колонка -->
-                            <label for="companion_name_field">
-                                Имя
-                            </label>
-
-                            <div>
-                                <input type="text" name="companion_name" id="companion_name_field"
-                                       value="Введите ваше имя">
-                            </div>
-                            <label for="companion_nickname_field">
-                                Прозвище:
-                            </label>
-
-                            <div>
-                                <input type="text" name="companion_nickname" id="companion_nickname_field"
-                                       value="Ну как же без этого!">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div>
-                    <h4>Ваши безбашенные достижения в путешествии</h4>
-
-                    <div>
-                        <input type="checkbox" id="shark_field" checked>
-                        <label for="shark_field">Сделал селфи с акулой</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="burned_field" checked>
-                        <label for="burned_field">Обгорел на пляже</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="chack_field">
-                        <label for="chack_field">Видел Чака Норриса</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="souvenir_field">
-                        <label for="souvenir_field">Накупил сувениров</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="tower_field" checked>
-                        <label for="tower_field">Удержал башню</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="hotel_field">
-                        <label for="hotel_field">Разгромил отель</label>
-                    </div>
-
-                </div>
-                <div>
-                    <h4>Ваши фотографии из поездки*</h4>
-
-                    <div>
-                        <input type="file" name="images" value="Загрузить фото">
-                    </div>
-                    <figure>
-                        <div>
-                            <img src="#" width="10" height="10">
-                        </div>
-                        <div>
-                            <img src="#" width="10" height="10">
-                        </div>
-                        <div>
-                            <img src="#" width="10" height="10">
-                        </div>
-                        <div>
-                            <img src="#" width="10" height="10">
-                        </div>
-                        <div>
-                            <img src="#" width="10" height="10">
-                        </div>
-                        <div>
-                            <img src="#" width="10" height="10">
-                        </div>
-                        <div>
-                            <img src="#" width="10" height="10">
-                        </div>
-
-                    </figure>
+                    <input class="app__input" type="radio" name="os" id="windows">
+                    <label class="label" for="windows">Windows Phone</label>
                 </div>
             </div>
+            <article class="date">
+                <h4 class="date__header">Когда вы путешествовали?*</h4>
+
+                <div>
+                    <input class="date__input" type="date" name="date_departure" id="date_departure_field">
+                    <label class="label" for="date_departure_field">Дата выезда</label>
+                </div>
+                <div>
+                    <div class="toggle">
+                        <button class="toggle__minus" type="button">-</button>
+                        <input class="date__input" type="text" name="count_days" value="10 дней" id="count_days_field">
+                        <button class="toggle__minus" type="button">+</button>
+                    </div>
+                    <label class="label" for="count_days_field">Продолжительность</label>
+                </div>
+                <div>
+                    <input class="date__input" type="date" name="date_coming" id="date_coming_field">
+                    <label class="label" for="date_coming_field">Дата возвращения</label>
+                </div>
+            </article>
+
+            <article class="companions">
+                <label class="label" for="count_companions_field">Количество попутчиков*</label>
+
+                <div class="toggle">
+                    <button class="toggle__minus" type="button">-</button>
+                    <input class="label" type="text" name="count_companions" value="2 чел" id="count_companions_field">
+                    <button class="toggle__minus" type="button">+</button>
+                </div>
+
+                <div class="column">
+                    <div class="column__left"><!-- левая колонка -->
+                        <span>&#8470;</span>
+                        <span>1</span>
+                    </div>
+                    <div class="column__right"><!-- правая колонка -->
+                        <label class="label" for="companion_name_field">
+                            Имя
+                        </label>
+
+                        <div>
+                            <input type="text" name="companion_name" id="companion_name_field"
+                                   value="Введите ваше имя">
+                        </div>
+                        <label class="label" for="companion_nickname_field">
+                            Прозвище:
+                        </label>
+
+                        <div>
+                            <input type="text" name="companion_nickname" id="companion_nickname_field"
+                                   value="Ну как же без этого!">
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+
+            <article class="progress">
+                <h4 class="progress__header">Ваши безбашенные достижения в путешествии</h4>
+
+                <div>
+                    <input class="progress__checkbox" type="checkbox" id="shark_field" checked>
+                    <label class="progress__label" for="shark_field">Сделал селфи с акулой</label>
+                </div>
+                <div>
+                    <input class="progress__checkbox" type="checkbox" id="burned_field" checked>
+                    <label class="progress__label" for="burned_field">Обгорел на пляже</label>
+                </div>
+                <div>
+                    <input class="progress__checkbox" type="checkbox" id="chack_field">
+                    <label class="progress__label" for="chack_field">Видел Чака Норриса</label>
+                </div>
+                <div>
+                    <input class="progress__checkbox" type="checkbox" id="souvenir_field">
+                    <label class="progress__label" for="souvenir_field">Накупил сувениров</label>
+                </div>
+                <div>
+                    <input class="progress__checkbox" type="checkbox" id="tower_field" checked>
+                    <label class="progress__label" for="tower_field">Удержал башню</label>
+                </div>
+                <div>
+                    <input class="progress__checkbox" type="checkbox" id="hotel_field">
+                    <label class="progress__label" for="hotel_field">Разгромил отель</label>
+                </div>
+
+            </article>
+            <article class="foto">
+                <h4 class="foto__header">Ваши фотографии из поездки*</h4>
+
+                <div>
+                    <input class="foto__gile" type="file" name="images" value="Загрузить фото">
+                </div>
+                <figure class="figure">
+                    <div class="figure_img">
+                        <img src="#" width="10" height="10">
+                    </div>
+                    <div class="figure_img">
+                        <img src="#" width="10" height="10">
+                    </div>
+                    <div class="figure_img">
+                        <img src="#" width="10" height="10">
+                    </div>
+                    <div class="figure_img">
+                        <img src="#" width="10" height="10">
+                    </div>
+                    <div class="figure_img">
+                        <img src="#" width="10" height="10">
+                    </div>
+                    <div class="figure_img">
+                        <img src="#" width="10" height="10">
+                    </div>
+                    <div class="figure_img">
+                        <img src="#" width="10" height="10">
+                    </div>
+
+                </figure>
+            </article>
+
             <div>
-                <input type="submit" name="images" value="Отправить форму">
+                <input class="foto__submit" type="submit" name="images" value="Отправить форму">
             </div>
             <div>
-                <p>&ndash; обязательные поля</p>
+                <p class="foto__text">* &ndash; обязательные поля</p>
             </div>
             <!-- всплывающее предупреждение  -->
-            <div>
-                <h4>Что&ndash;то пошло не так!</h4>
+            <div class="warning">
+                <h4 class="warning__header">Что&ndash;то пошло не так!</h4>
 
-                <p>Проверте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                <p class="warning__text">Проверте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
             </div>
 
         </form>
-    </div>
+    </section>
 
 </div>
 
 
-<footer>
-    <div>
-        <div>
-            <a href="#"><img src="#" alt="PINK"></a>
+<footer class="footer">
+    <div class="footer__align">
+        <div class="glasses-logo">
+            <a class="glasses-logo__link" href="#"><img src="#" alt="PINK"></a>
         </div>
-        <div>
-            <a href="#"><img src="#" alt="Twitter"></a>
-            <a href="#"><img src="#" alt="Facebook"></a>
-            <a href="#"><img src="#" alt="YouTube"></a>
+        <div class="iconSN">
+            <a class="iconSN__link" href="#"><img src="#" alt="Twitter"></a>
+            <a class="iconSN__link" href="#"><img src="#" alt="Facebook"></a>
+            <a class="iconSN__link" href="#"><img src="#" alt="YouTube"></a>
         </div>
-        <div>
-            <a href="#">Разработано<img src="#" alt="HTML Academy"></a>
+        <div class="developer">
+            <a class="developer__link" href="#">Разработано<img src="#" alt="HTML Academy"></a>
         </div>
     </div>
 
