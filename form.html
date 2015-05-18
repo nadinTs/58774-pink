@@ -92,11 +92,11 @@
                     <input class="date-item__input" type="date" name="date_departure" id="date_departure_field">
                     <label class="date-item__label" for="date_departure_field">Дата выезда</label>
                 </div>
-                <div class="toggle">
-                    <button class="toggle__minus" type="button">-</button>
-                    <input class="toggle__input" type="text" name="count_days" value="10 дней" id="count_days_field">
-                    <button class="toggle__plus" type="button">+</button>
-                    <label class="toggle__label" for="count_days_field">Продолжительность</label>
+                <div class="toggle-date">
+                    <button class="toggle-date__minus" type="button">-</button>
+                    <input class="toggle-date__input" type="text" name="count_days" value="10 дней" id="count_days_field">
+                    <button class="toggle-date__plus" type="button">+</button>
+                    <label class="toggle-date__label" for="count_days_field">Продолжительность</label>
                 </div>
                 <div class="date-item">
                     <input class="date-item__input" type="date" name="date_coming" id="date_coming_field">
@@ -107,11 +107,11 @@
             <article class="companions">
                 <label class="companions__label" for="count_companions_field">Количество попутчиков*</label>
 
-                <div class="toggle">
-                    <button class="toggle__minus" type="button">-</button>
-                    <input class="toggle__label" type="text" name="count_companions" value="2 чел"
+                <div class="toggle-companions">
+                    <button class="toggle-companions__minus" type="button">-</button>
+                    <input class="toggle-companions__label" type="text" name="count_companions" value="2 чел"
                            id="count_companions_field">
-                    <button class="toggle__plus" type="button">+</button>
+                    <button class="toggle-companions__plus" type="button">+</button>
                 </div>
                 <div class="column">
                     <div class="column-left"><!-- левая колонка -->
@@ -140,32 +140,32 @@
 
             </article>
 
-            <article class="progress">
-                <h4 class="progress__title">Ваши безбашенные достижения в путешествии</h4>
+            <article class="result-rest">
+                <h4 class="result-rest__title">Ваши безбашенные достижения в путешествии</h4>
 
-                <div class="checkbox">
-                    <input class="checkbox__item" type="checkbox" id="shark_field" checked>
-                    <label class="checkbox__label" for="shark_field">Сделал селфи с акулой</label>
+                <div class="rest-checkbox">
+                    <input class="rest-checkbox__item" type="checkbox" id="shark_field" checked>
+                    <label class="rest-checkbox__label" for="shark_field">Сделал селфи с акулой</label>
                 </div>
-                <div class="checkbox">
-                    <input class="checkbox__item" type="checkbox" id="burned_field" checked>
-                    <label class="checkbox__label" for="burned_field">Обгорел на пляже</label>
+                <div class="rest-checkbox">
+                    <input class="rest-checkbox__item" type="checkbox" id="burned_field" checked>
+                    <label class="rest-checkbox__label" for="burned_field">Обгорел на пляже</label>
                 </div>
-                <div class="checkbox">
-                    <input class="checkbox__item" type="checkbox" id="chack_field">
-                    <label class="checkbox__label" for="chack_field">Видел Чака Норриса</label>
+                <div class="rest-checkbox">
+                    <input class="rest-checkbox__item" type="checkbox" id="chack_field">
+                    <label class="rest-checkbox__label" for="chack_field">Видел Чака Норриса</label>
                 </div>
-                <div class="checkbox">
-                    <input class="checkbox__item" type="checkbox" id="souvenir_field">
-                    <label class="checkbox__label" for="souvenir_field">Накупил сувениров</label>
+                <div class="rest-checkbox">
+                    <input class="rest-checkbox__item" type="checkbox" id="souvenir_field">
+                    <label class="rest-checkbox__label" for="souvenir_field">Накупил сувениров</label>
                 </div>
-                <div class="checkbox">
-                    <input class="checkbox__item" type="checkbox" id="tower_field" checked>
-                    <label class="checkbox__label" for="tower_field">Удержал башню</label>
+                <div class="rest-checkbox">
+                    <input class="rest-checkbox__item" type="checkbox" id="tower_field" checked>
+                    <label class="rest-checkbox__label" for="tower_field">Удержал башню</label>
                 </div>
-                <div class="checkbox">
-                    <input class="checkbox__item" type="checkbox" id="hotel_field">
-                    <label class="checkbox__label" for="hotel_field">Разгромил отель</label>
+                <div class="rest-checkbox">
+                    <input class="rest-checkbox__item" type="checkbox" id="hotel_field">
+                    <label class="rest-checkbox__label" for="hotel_field">Разгромил отель</label>
                 </div>
 
             </article>
@@ -176,26 +176,26 @@
                     <input type="file" name="images" value="Загрузить фото">
                 </div>
 
-                <figure class="foto">
-                    <div class="foto__img">
+                <figure class="gallery-foto">
+                    <div class="gallery-foto__img">
                         <img src="#" width="10" height="10">
                     </div>
-                    <div class="foto__img">
+                    <div class="gallery-foto__img">
                         <img src="#" width="10" height="10">
                     </div>
-                    <div class="foto__img">
+                    <div class="gallery-foto__img">
                         <img src="#" width="10" height="10">
                     </div>
-                    <div class="foto__img">
+                    <div class="gallery-foto__img">
                         <img src="#" width="10" height="10">
                     </div>
-                    <div class="foto__img">
+                    <div class="gallery-foto__img">
                         <img src="#" width="10" height="10">
                     </div>
-                    <div class="foto__img">
+                    <div class="gallery-foto__img">
                         <img src="#" width="10" height="10">
                     </div>
-                    <div class="foto__img">
+                    <div class="gallery-foto__img">
                         <img src="#" width="10" height="10">
                     </div>
                 </figure>
@@ -217,9 +217,15 @@
                 </div>
             </div>
 
-        </form>
+        <div class="request-sent">
+            <h4 class="request-sent__title">Ваша заявка отправлена</h4>
+            <div class="request-sent__text">
+                Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.
+            </div>
+            <input class="request-sent__button" type="button" value="Закрыть окно">
+        </div>
+    </form>
     </section>
-
 </main>
 
 
