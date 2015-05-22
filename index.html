@@ -4,61 +4,67 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: pink</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page">
 
 <header class="main-header">
+    <div class="main-header__slogan">
+        <div class="logo">
+            <a class="logo__PINK" href="#"><span>PINK</span></a>
 
-    <div class="logo">
-        <a class="logo__link" href="#"><img src="#" alt="PINK"></a>
-    </div>
-    <div class="menu-button">
-        <a class="menu-button__link" href="#">Open menu</a>
-        <a class="menu-button__link" href="#">Close menu</a>
-    </div>
-    <h1 class="main-header__slogan">Взгляните на жизнь иначе</h1>
+            <div class="menu-button">
+                <a class="menu-button__open" href="#"><span class="menu-button
+                ">Open menu</span></a>
+                <a class="menu-button__close" href="#"><span>Close menu</span></a>
+            </div>
 
+        </div>
+        <h1 class="main-header__title">Взгляните на жизнь иначе!</h1>
+    </div>
     <!-- Выпадающее меню начало  -->
-    <div class="menu">
-        <nav class="ddmenu">
-            <ul>
-                <li class="ddmenu-item">
-                    <a class="ddmenu-item__link" href="#">Информация</a>
-                </li>
-                <li class="ddmenu-item">
-                    <a class="ddmenu-item__link" href="#">Возможности</a>
-                </li>
-                <li class="ddmenu-item">
-                    <a class="ddmenu-item__link" href="#">Отзывы</a>
-                </li>
-                <li class="ddmenu-item">
-                    <a class="ddmenu-item__link" href="#">Стоимость</a>
-                </li>
-            </ul>
-        </nav>
-        <form class="form" action="#" method="post">
-            <input class="button" type="button" value="Скачать приложение">
+
+    <nav class="ddmenu">
+        <ul>
+            <li class="ddmenu-item">
+                <a class="ddmenu-item__link" href="#">Информация</a>
+            </li>
+            <li class="ddmenu-item">
+                <a class="ddmenu-item__link" href="#">Возможности</a>
+            </li>
+            <li class="ddmenu-item">
+                <a class="ddmenu-item__link" href="#">Отзывы</a>
+            </li>
+            <li class="ddmenu-item">
+                <a class="ddmenu-item__link" href="#">Стоимость</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Выпадающее меню конец -->
+
+    <div class="iconsOS">
+        <form class="download-app" action="#" method="post">
+            <input class="download-app__button" type="button" value="Скачать приложение">
         </form>
-        <div class="iconsOS">
+        <div class="iconsOS-list">
             <!-- Иконки iOS, Android, Windows OS -->
             <ul>
-                <li class="iconsOS__item">
-                    <a href="#"><img src="#" alt="iOS"></a>
+                <li class="iconsOS-list__item">
+                    <a href="#"><img src="img/Apple-logo.svg" alt="iOS"></a>
                 </li>
-                <li class="iconsOS__item">
-                    <a href="#"><img src="#" alt="Android"></a>
+                <li class="iconsOS-list__item">
+                    <a href="#"><img src="img/Android-logo.svg" alt="Android"></a>
                 </li>
-                <li class="iconsOS__item">
-                    <a href="#"><img src="#" alt="Windows OS"></a>
+                <li class="iconsOS-list__item">
+                    <a href="#"><img src="img/Microsoft-logo.svg" alt="Windows OS"></a>
                 </li>
             </ul>
         </div>
-        <div class="menu__content">Доступно для iPhone, iPad, Android, Windows Phone, CS X, Windows 8</div>
+        <div class="iconsOS__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
     </div>
 
-    <!-- Выпадающее меню конец -->
+
 </header>
 
 <main>
@@ -72,160 +78,208 @@
             <h2 class="promo-item__title">Поднимает настроение</h2>
 
             <div class="promo-item__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-                несколько кликов!</div>
+                несколько кликов!
+            </div>
         </article>
         <article class="promo-item">
             <h2 class="promo-item__title">Меняет мир вокруг</h2>
 
             <div class="promo-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-                усилить эффект</div>
+                усилить эффект
+            </div>
         </article>
         <article class="promo-item">
             <h2 class="promo-item__title">Заводите новых друзей</h2>
 
             <div class="promo-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-                новых </div>
+                новых
+            </div>
         </article>
+
     </section>
 
 
     <section class="review">
 
-        <article class="review-item">
-            <h2 class="review-item__title">Николай Петров1</h2>
+        <div class="review-inner">
 
-            <div class="review-item__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые
-                вещи! А
-                еще
-                я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</div>
-        </article>
+            <div class="review-slider">
 
-        <article class="review-item">
-            <h2 class="review-item__title">Николай Петров2</h2>
+                <article class="review-item">
+                    <h2 class="review-item__title">Николай Петров1</h2>
 
-            <div class="review-item__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые
-                вещи! А
-                еще
-                я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</div>
-        </article>
+                    <div class="review-item__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому
+                        взглянуть
+                        на
+                        привычные серые
+                        вещи! А
+                        еще
+                        я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+                    </div>
+                </article>
 
-        <article class="review-item">
-            <h2 class="review-item__title">Николай Петров3</h2>
+                <article class="review-item">
+                    <h2 class="review-item__title">Николай Петров2</h2>
 
-            <div class="review-item__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на
-                привычные серые
-                вещи! А
-                еще
-                я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</div>
-        </article>
+                    <div class="review-item__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому
+                        взглянуть
+                        на
+                        привычные серые
+                        вещи! А
+                        еще
+                        я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+                    </div>
+                </article>
 
-        <div class="review__switch">
+                <article class="review-item">
+                    <h2 class="review-item__title">Николай Петров3</h2>
+
+                    <div class="review-item__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому
+                        взглянуть
+                        на
+                        привычные серые
+                        вещи! А
+                        еще
+                        я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+        <div class="review-toggle">
             <!-- переключатель страниц (точки) -->
-            <a class="review__switch-link" href="#"></a>
-            <a class="review__switch-link" href="#"></a>
-            <a class="review__switch-link" href="#"></a>
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+
+            <div class="review-controls">
+
+                <label for="btn-1"></label>
+                <label for="btn-2"></label>
+                <label for="btn-3"></label>
+
+            </div>
+
         </div>
 
     </section>
 
 
     <section class="app">
+        <div class="app-inner">
+            <div class="app-slider">
+                <article class="app-item">
+                    <div class="app-item__header">
+                        <h4 class="app-item__header-title">Стандарт</h4>
 
-        <article class="app-item">
-            <div class="app-item__header">
-                <h4 class="app-item__header-title">Стандарт</h4>
-                <div class="app-item__header-price">3,99 USD</div>
-            </div>
-            <div class="option">
-                <ul>
-                    <li class="option__item">
-                        Розовый фильтр
-                    </li>
-                    <li class="option__item">
-                        Смайлики
-                    </li>
-                    <li class="option__item option__item--not">
-                        Комментарии
-                    </li>
-                </ul>
-            </div>
-        </article>
-        <article class="app-item">
-            <div class="app-item__header">
-                <h4 class="app-item__header-title">Стандарт</h4>
-                <div class="app-item__header-price">3,99 USD</div>
-            </div>
-            <div class="option">
-                <ul>
-                    <li class="option__item">
-                        Розовый фильтр
-                    </li>
-                    <li class="option__item">
-                        Смайлики
-                    </li>
-                    <li class="option__item option__item--not">
-                        Комментарии
-                    </li>
-                </ul>
-            </div>
-        </article>
-        <article class="app-item">
-            <div class="app-item__header">
-                <h4 class="app-item__header-title">Стандарт</h4>
-                <div class="app-item__header-price">3,99 USD</div>
-            </div>
-            <div class="option">
-                <ul>
-                    <li class="option__item">
-                        Розовый фильтр
-                    </li>
-                    <li class="option__item">
-                        Смайлики
-                    </li>
-                    <li class="option__item option__item--not">
-                        Комментарии
-                    </li>
-                </ul>
-            </div>
-        </article>
+                        <div class="app-item__header-price">3,99 USD</div>
+                    </div>
+                    <div class="app-list">
+                        <ul>
+                            <li class="app-list__item">
+                                Розовый фильтр
+                            </li>
+                            <li class="app-list__item">
+                                Смайлики
+                            </li>
+                            <li class="app-list__item app-list__item--not">
+                                Комментарии
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="app-item">
+                    <div class="app-item__header">
+                        <h4 class="app-item__header-title">Стандарт</h4>
 
-        <div class="review__switch">
+                        <div class="app-item__header-price">3,99 USD</div>
+                    </div>
+                    <div class="app-list">
+                        <ul>
+                            <li class="app-list__item">
+                                Розовый фильтр
+                            </li>
+                            <li class="app-list__item">
+                                Смайлики
+                            </li>
+                            <li class="app-list__item app-list__item--not">
+                                Комментарии
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="app-item">
+                    <div class="app-item__header">
+                        <h4 class="app-item__header-title">Стандарт</h4>
+
+                        <div class="app-item__header-price">3,99 USD</div>
+                    </div>
+                    <div class="app-list">
+                        <ul>
+                            <li class="app-list__item">
+                                Розовый фильтр
+                            </li>
+                            <li class="app-list__item">
+                                Смайлики
+                            </li>
+                            <li class="app-list__item app-list__item--not">
+                                Комментарии
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="app-toggle">
             <!-- переключатель страниц (точки) -->
-            <a class="review__switch-link" href="#"></a>
-            <a class="review__switch-link" href="#"></a>
-            <a class="review__switch-link" href="#"></a>
+            <input type="radio" id="app-btn-1" name="app-toggle" checked>
+            <input type="radio" id="app-btn-2" name="app-toggle">
+            <input type="radio" id="app-btn-3" name="app-toggle">
+
+            <div class="app-controls">
+
+                <label for="app-btn-1"></label>
+                <label for="app-btn-2"></label>
+                <label for="app-btn-3"></label>
+
+            </div>
+
         </div>
     </section>
 </main>
 
 <footer class="footer">
+    <div class="footer__align">
+        <div class="footer-content">
 
-        <h2 class=bottom-question">
-            Остались вопросы? Свяжитесь с нами
-        </h2>
+            <h2 class="footer-content__question">
+                Остались вопросы? Свяжитесь с нами
+            </h2>
 
-        <div class="bottom-text">
-            Звоните:
-            <span class="bottom-contact"> +7(812)555&ndash;66&ndash;66</span>
-        </div>
+            <div class="footer-content__text">
+                Звоните:<br>
+                <span class="footer-content__contact"> +7(812)555&ndash;66&ndash;66</span>
+            </div>
 
-        <div class="bottom-text">
-            Пишите:
-            <span class="bottom-contact">
+            <div class="footer-content__text">
+                Пишите:<br>
+            <span class="footer-content__contact">
                 mail@htmlacademy.ru.
             </span>
-        </div>
+            </div>
 
-        <div class="bottom-text">
-            Приезжайте в гости:
+            <div class="footer-content__text">
+                Приезжайте в гости:<br>
 
-            <span class="bottom-contact">
-                ул. Большая Конюшенная, 19/8
+            <span class="footer-content__contact">
+                ул. Большая<br> Конюшенная, 19/8
             </span>
+            </div>
         </div>
-
+    </div>
 </footer>
 
 <!-- <script src="js/script.js"></script> -->

@@ -1,0 +1,82 @@
+
+.menu-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 65px;
+  width: 50px;
+
+
+  &__open,
+  &__close {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+  &__open span,
+  &__close span {
+    visibility: hidden;
+  }
+  &__open::after {
+    content: '';
+    background-color: @white;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: 10px;
+    right: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  &__open::before {
+    content: '';
+    background-color: @white;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: -10px;
+    right: 0;
+    transition: opacity 0.3s, transform 0.3s;
+
+  }
+  &__open {
+    content: '';
+    background-color: @white;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: 30px;
+    right: 20px;
+    transition: opacity 0.3s, transform 0.3s;
+
+  }
+  &__open:hover {
+    height: 0;
+    width: 0;
+  }
+  &__open:hover::after {
+    transform: rotate(45deg) translateY(-4px) translateX(-10px);
+
+  }
+
+  &__open:hover::before {
+    transform: rotate(-45deg) translateY(4px) translateX(-10px);
+    opacity: 1;
+  }
+}
+
+.download-app {
+  text-align: center;
+  padding: 15px 0;
+  &__button {
+    display: inline-block;
+    border: 3px solid @white;
+    background-color: @dark-gray;
+    color: @header-app;
+    font-size: @font-size-header-button;
+    border-radius: 25px;
+    width: 275px;
+    height: 50px;
+
+  }
+}

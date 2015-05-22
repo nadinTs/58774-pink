@@ -1,0 +1,65 @@
+.footer {
+  width: 320px;
+  height: 615px;
+  background: url('@{img-path}/map.png') no-repeat -345px 90px;
+  text-align: center;
+
+  &__align {
+    display: block;
+    position: absolute;
+    width: auto;
+    height: 412px;
+    background: #ffffff;
+    background-size: 20px 10px;
+    background-repeat: no-repeat;
+  }
+}
+
+.footer-content {
+  margin: 0;
+  padding: 0 20px;
+  height: 450px;
+  background-image: linear-gradient(to right bottom,  @white 25%, transparent 25%),
+  linear-gradient(to left bottom,@white  25%, transparent 25%);
+  background-position: 165px 390px,
+  -185px 390px;
+  background-size: 350px 70px;
+  background-repeat: no-repeat;
+
+  &:after {
+
+      content: '';
+      position: absolute;
+      bottom: -135px;
+      left: 145px;
+      width: 15px;
+      height: 15px;
+      background-color: @pink-contact;
+      border: 10px solid @white;
+      border-radius: 50%;
+      z-index: 102;
+
+  }
+
+  &__question {
+    font-weight: normal;
+    color: @font-color-text;
+    font-size: @font-size-footer-question;
+    line-height: 1.2em;
+  }
+  &__text {
+    padding: 10px 0;
+    font-weight: bold;
+    color: @black;
+    font-size: @font-size-promo-title;
+    line-height: 1.5em;
+    & span {
+      font-weight: normal;
+      color: @pink-contact;
+      font-size: @font-size-review-title;
+
+    }
+  }
+
+}
+
