@@ -1,13 +1,113 @@
-.menu {
 
-  &__content {
+.menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 65px;
+  width: 320px;
+
+  &__open,
+  &__close {
+    content: '';
+    position: relative;
+    top: 0;
+    right: 0;
+    display: block;
+  }
+  &__open span,
+  &__close span {
+    visibility: hidden;
+  }
+  &__open::after {
+    content: '';
+    background-color: @white;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: 10px;
+    right: 0;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  &__open::before {
+    content: '';
+    background-color: @white;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: -10px;
+    right: 0;
+    transition: opacity 0.3s, transform 0.3s;
 
   }
+  &__open {
+    content: '';
+    background-color: @white;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    top: 30px;
+    right: 20px;
+    transition: opacity 0.3s, transform 0.3s;
+
+  }
+  &__open:hover {
+    height: 0;
+    width: 0;
+
+  }
+
+  &__open:hover::after {
+    transform: rotate(45deg) translateY(-4px) translateX(-10px);
+
+  }
+
+  &__open:hover::before {
+    transform: rotate(-45deg) translateY(4px) translateX(-10px);
+    opacity: 1;
+  }
+  & > li:hover {
+    box-shadow: 0 1px 1px 0 @black;
+    background: @dark-gray url('@{img-path}/PINK.png') no-repeat 20px 20px;
+    background-color: @header-app;
+    width: 320px;
+    height: 60px;
+    left: 0px;
+    top: 0;
+
+
+  }
+
+  & > li:hover .ddmenu {
+    display: block;
+    margin-top: 2px;
+  }
 }
-.ddmenu{
+
+.ddmenu {
+  position: absolute;
   display: none;
-}
-.ddmenu-item {
-  &__link {
+  top: 60px;
+  left: 0px;
+  background-color: @header-app;
+
+  &-item {
+    box-shadow:
+      0 -1px 1px 0 @font-color-text,
+      0 1px 1px 0 @black;
+    margin-bottom: 2px;
+    width: 320px;
+    height: 20px;
+    background-color: @header-app;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 0;
+
+    &__link {
+      text-decoration: none;
+      color: @white;
+      font-size: @font-size-promo-title;
+      text-transform: uppercase;
+
+    }
   }
 }
