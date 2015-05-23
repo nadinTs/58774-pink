@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: pink</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,cyrillic-ext'
+          rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body class="page">
@@ -106,7 +109,24 @@
 
     <section class="review">
 
+        <!--<div class="review-toggle">-->
+        <!-- переключатель страниц (точки) -->
+        <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+
+        <div class="review-controls">
+
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+
+        </div>
+
+        <!--</div>-->
+
         <div class="review-inner">
+
 
             <div class="review-slider">
 
@@ -153,26 +173,25 @@
 
         </div>
 
-        <div class="review-toggle">
-            <!-- переключатель страниц (точки) -->
-            <input type="radio" id="btn-1" name="toggle" checked>
-            <input type="radio" id="btn-2" name="toggle">
-            <input type="radio" id="btn-3" name="toggle">
-
-            <div class="review-controls">
-
-                <label for="btn-1"></label>
-                <label for="btn-2"></label>
-                <label for="btn-3"></label>
-
-            </div>
-
-        </div>
-
     </section>
 
 
     <section class="app">
+        <!--<div class="app-toggle">-->
+            <!-- переключатель страниц (точки) -->
+            <input type="radio" id="app-btn-1" name="app-toggle" checked>
+            <input type="radio" id="app-btn-2" name="app-toggle">
+            <input type="radio" id="app-btn-3" name="app-toggle">
+
+            <div class="app-controls">
+
+                <label for="app-btn-1"></label>
+                <label for="app-btn-2"></label>
+                <label for="app-btn-3"></label>
+
+            </div>
+
+        <!--</div>-->
         <div class="app-inner">
             <div class="app-slider">
                 <article class="app-item">
@@ -198,7 +217,6 @@
                 <article class="app-item">
                     <div class="app-item__header">
                         <h4 class="app-item__header-title">Стандарт</h4>
-
                         <div class="app-item__header-price">3,99 USD</div>
                     </div>
                     <div class="app-list">
@@ -238,21 +256,7 @@
             </div>
         </div>
 
-        <div class="app-toggle">
-            <!-- переключатель страниц (точки) -->
-            <input type="radio" id="app-btn-1" name="app-toggle" checked>
-            <input type="radio" id="app-btn-2" name="app-toggle">
-            <input type="radio" id="app-btn-3" name="app-toggle">
 
-            <div class="app-controls">
-
-                <label for="app-btn-1"></label>
-                <label for="app-btn-2"></label>
-                <label for="app-btn-3"></label>
-
-            </div>
-
-        </div>
     </section>
 </main>
 
