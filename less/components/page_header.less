@@ -1,4 +1,6 @@
-.main-header{
+/*index*/
+
+.index-header{
   background-color: @dark-gray;
   width: 320px;
   height: 730px;
@@ -43,21 +45,44 @@
   &__content {
     color: @font-color-text;
     text-align: center;
-    padding: 5px 35px;
     font-size: @font-header-description;
     line-height: 1.5em;
+    padding: 0 20px;
 
   }
 }
 
 .iconsOS-list {
-  margin: 0;
-  padding: 5px 15px;
+  margin-bottom: 10px;
+  width: 320px;
+  text-align: center;
   &__item{
-    list-style: none;
     display: inline-block;
-    text-align: center;
-    margin-right: 30px;
+    margin-right: 10px;
+    width:46px;
+    height: 57px;
   }
 
+}
+
+/*blog*/
+.main-header{
+  background-color: @dark-gray;
+  width: 320px;
+  height: 197px;
+  &__slogan{
+    width: auto;
+    height: 197px;
+    background:@dark-gray url('@{img-path}/background-photo.png') no-repeat 50% -68px;
+
+  }
+  &__title{
+    font-family: @font-base;
+    font-size: @font-size-header-title;
+    font-weight: 100;
+    color: @font-color-text;
+    text-align: center ;
+    padding: 10px 15px;
+
+  }
 }

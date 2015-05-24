@@ -25,7 +25,7 @@
     content: '';
     background-color: @white;
     position: absolute;
-    width: 30px;
+    width: 50px;
     height: 3px;
     top: 10px;
     right: 0;
@@ -35,7 +35,7 @@
     content: '';
     background-color: @white;
     position: absolute;
-    width: 30px;
+    width: 50px;
     height: 3px;
     top: -10px;
     right: 0;
@@ -46,12 +46,30 @@
     content: '';
     background-color: @white;
     position: absolute;
-    width: 30px;
+    width: 50px;
     height: 3px;
     top: 30px;
     right: 20px;
     transition: opacity 0.3s, transform 0.3s;
 
+  }
+  &__open:hover{
+    background-color: @pink-contact;
+  }
+  &__open:active{
+    background-color: @pink-rgba;
+  }
+  &__open:hover::before{
+    background-color: @pink-contact;
+  }
+  &__open:active::before{
+    background-color: @pink-rgba;
+  }
+  &__open:hover::after{
+    background-color: @pink-contact;
+  }
+  &__open:active::after{
+    background-color: @pink-rgba;
   }
 //  &__open:hover {
 //    height: 0;

@@ -1,4 +1,5 @@
-.footer {
+/*index*/
+.footer-index {
   width: 320px;
   height: 615px;
   background: url('@{img-path}/map.png') no-repeat -345px 90px;
@@ -15,7 +16,7 @@
   }
 }
 
-.footer-content {
+.footer-index-content {
   margin: 0;
   padding: 0 20px;
   height: 450px;
@@ -28,16 +29,16 @@
 
   &:after {
 
-      content: '';
-      position: absolute;
-      bottom: -135px;
-      left: 145px;
-      width: 15px;
-      height: 15px;
-      background-color: @pink-contact;
-      border: 10px solid @white;
-      border-radius: 50%;
-      z-index: 102;
+    content: '';
+    position: absolute;
+    bottom: -135px;
+    left: 145px;
+    width: 15px;
+    height: 15px;
+    background-color: @pink-contact;
+    border: 10px solid @white;
+    border-radius: 50%;
+    z-index: 102;
 
   }
 
@@ -63,3 +64,115 @@
 
 }
 
+/*blog*/
+.footer {
+  width: 320px;
+  height: 310px;
+  &__align {
+
+  }
+}
+
+.footer-logo {
+  width: 320px;
+
+  & span {
+    display: none;
+  }
+  &__link {
+    display: block;
+    margin: 0 auto;
+    width: 145px;
+    height: 40px;
+    background: url('@{img-path}/footer-glasses.png') no-repeat 0 0;
+
+    &:hover {
+      background: url('@{img-path}/footer-glasses-hover.png') no-repeat 0 0;
+    }
+
+    &:active {
+      background: url('@{img-path}/footer-glasses-down.png') no-repeat 0 0;
+
+    }
+  }
+}
+
+.footer-iconSN {
+  margin: 40px 0;
+  &__link {
+    display: inline-block;
+    margin: 0 auto;
+    width: 145px;
+    height: 40px;
+    margin-right: 10px;
+
+
+    & span {
+      display: none;
+    }
+    &[title=Twitter] {
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      background: url('@{img-path}/footer-iconsSN-sprite.png') no-repeat 7px 5px;
+      border: 1px solid @font-color-text;
+      border-radius: 50%;
+    }
+    &[title=Twitter]:hover {
+      border: 1px solid @header-app;
+    }
+    &[title=Twitter]:active {
+      opacity: 0.3;
+    }
+    &[title=Facebook] {
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      background: url('@{img-path}/footer-iconsSN-sprite.png') no-repeat -57px 5px;
+      border: 1px solid @font-color-text;
+      border-radius: 50%;
+    }
+    &[title=Facebook]:hover {
+      border: 1px solid @header-app;
+    }
+    &[title=Facebook]:active {
+      opacity: 0.3;
+    }
+    &[title=YouTube] {
+      width: 20px;
+      height: 20px;
+      padding: 5px;
+      background: url('@{img-path}/footer-iconsSN-sprite.png') no-repeat -120px 5px;
+      border: 1px solid @font-color-text;
+      border-radius: 50%;
+    }
+    &[title=YouTube]:hover {
+      border: 1px solid @header-app;
+    }
+    &[title=YouTube]:active {
+      opacity: 0.3;
+    }
+  }
+}
+
+.footer-developer {
+  & span {
+    display: none;
+  }
+  &__link {
+    display: inline-block;
+    padding-top: 7px;
+    text-align: left;
+    vertical-align: middle;
+    width: 130px;
+    height: 28px;
+    color: @header-app;
+    background: url('@{img-path}/footer-logo.png') no-repeat right 0;
+    &:hover {
+      background: url('@{img-path}/footer-logo-hover.png') no-repeat  right 0;
+    }
+    &:active {
+      background: url('@{img-path}/footer-logo-active.png') no-repeat  right 0;
+    }
+  }
+}

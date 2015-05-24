@@ -1,0 +1,307 @@
+.promo {
+  padding: 0;
+  margin: 0;
+  width: 320px;
+  height: 1000px;
+  background-image: linear-gradient(-5deg, @back-light-grey 80%, @white 80%);
+}
+
+.promo-slogan {
+  color: @font-color-text;
+  text-align: center;
+  margin-bottom: 100px;
+  &__title {
+    font-weight: 100;
+    font-size: @font-size-header-title;
+    margin: 30px 20px;
+  }
+
+}
+
+.promo-item {
+  display: block;
+  bottom: 0;
+  padding: 0;
+  margin: 10px 20px;
+  line-height: 1.5em;
+  text-align: center;
+
+  &__title {
+    color: @black;
+    font-size: @font-size-promo-title;
+
+  }
+  &__text {
+    color: @font-color-text;
+
+  }
+}
+
+.promo-item:last-child {
+  bottom: 0;
+  height: 504px;
+  background: @back-light-grey url('@{img-path}/screen-mobile-3.png') no-repeat 50% 100%;
+}
+
+
+.review {
+  position: relative;
+  background-image: linear-gradient(-5deg, @back-light-grey 20%, @white 20%);
+  margin: 0;
+  width: 320px;
+  height: 445px;
+  & input[type=radio] {
+    display: none;
+  }
+
+  .review-inner {
+    overflow: hidden;
+  }
+
+  .review-slider {
+    width: 320%;
+  }
+}
+
+.review-item {
+  position: relative;
+  padding: 20px;
+  float: left;
+  width: 280px;
+  height: 300px;
+  transition: transform .8s ease;
+  text-align: center;
+  line-height: 1.5em;
+
+  &__title {
+    font-size: @font-size-header-button;
+    color: @black;
+
+  }
+  &__text {
+    font-size: @font-size-header-button;
+    color: @font-color-text;
+
+  }
+}
+.review-controls {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 130px;
+  z-index: 100;
+  text-align: center;
+
+  & label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    cursor: pointer;
+    background-color: @grey-toggle;
+    border-radius: 50%;
+    transition: background-color .2s;
+    vertical-align: middle;
+
+  }
+}
+
+#btn-1:checked ~ .review-controls label[for="btn-1"],
+#btn-2:checked ~ .review-controls label[for="btn-2"],
+#btn-3:checked ~ .review-controls label[for="btn-3"] {
+  border: 5px solid @header-app;
+  background: @white;
+}
+
+#btn-1:checked ~ .review-inner .review-slider > .review-item {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .review-inner .review-slider > .review-item {
+  transform: translate(-320px);
+}
+
+#btn-3:checked ~ .review-inner .review-slider > .review-item {
+  transform: translate(-640px);
+}
+
+.app {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 320px;
+  height: 380px;
+  background-image: linear-gradient(to bottom, @white 70%, @back-light-grey 70%);
+  & input[type=radio] {
+    display: none;
+  }
+
+}
+
+.app-inner {
+  overflow: hidden;
+}
+
+.app-slider {
+  width: 300%;
+  height: 250px;
+
+}
+
+.app-item {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+  width: 320px;
+  height: 180;
+  transition: transform .8s ease;
+  line-height: 1.5em;
+
+  &__header {
+    background-color: @header-app;
+    color: @white;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0;
+  }
+
+
+  &__header-title {
+    font-size: @font-size-promo-title;
+    margin: 0;
+    padding-bottom: 10px;
+    &:before {
+      padding: 0 ;
+      margin: 0;
+      content: 'ХИТ';
+      position: absolute;
+      color: @white;
+      font-size: @font-header-description;
+      font-weight: 300;
+      top: 10px;
+      left: -25px;
+      transform: rotate(315deg);
+      background-image: linear-gradient( -45deg, @pink-contact 80%, transparent 80%);
+      width: 100px;
+      height: 20px;
+      z-index: 50;
+    }
+
+  }
+  &__header-price {
+    font-size: @font-size-review-title;
+    margin: 0;
+
+  }
+}
+
+.app-controls label{
+  display: inline-block;
+  margin: 0;
+  height: 20px;
+  padding: 0;
+  background-color: @back-light-grey;
+  z-index: 100;
+}
+
+.app-controls {
+  position: absolute;
+  width: 320px;
+  left: 0;
+  bottom: 55px;
+  z-index: 101;
+  text-align: center;
+
+  & label {
+    background-color: @grey-toggle;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color .2s;
+    vertical-align: middle;
+
+  }
+}
+
+#app-btn-1:checked ~ .app-controls label[for="app-btn-1"],
+#app-btn-2:checked ~ .app-controls label[for="app-btn-2"],
+#app-btn-3:checked ~ .app-controls label[for="app-btn-3"] {
+  border: 5px solid @header-app;
+  background: @back-light-grey;
+}
+
+#app-btn-1:checked ~ .app-inner .app-slider > .app-item {
+  transform: translate(0);
+}
+
+#app-btn-2:checked ~ .app-inner .app-slider > .app-item {
+  transform: translate(-320px);
+}
+
+#app-btn-3:checked ~ .app-inner .app-slider > .app-item {
+  transform: translate(-640px);
+}
+
+.app-list {
+  &__item {
+    width: 280px;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    border-bottom: 2px solid @back-light-grey;
+    position: relative;
+    color: @font-color-text;
+    text-align: left;
+
+    &:after{
+      content: '';
+      background-color: @green-checkout;
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      top: 30px;
+      right: 20px;
+      transform: rotate(-45deg);
+      z-index: 100;
+    }
+    &:before {
+      content: '';
+      background-color: @green-checkout;
+      position: absolute;
+      width: 15px;
+      height: 3px;
+      top: 34px;
+      right: 42px;
+      transform: rotate(45deg);
+      z-index: 100;
+    }
+
+    &--not:after {
+      content: '';
+      background-color: @red-cross;
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      top: 30px;
+      right:30px;
+      transform: rotate(45deg);
+    }
+    &--not:before {
+      content: '';
+      background-color: @red-cross;
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      top: 30px;
+      right: 30px;
+      transform: rotate(-45deg);
+    }
+
+  }
+}
+
