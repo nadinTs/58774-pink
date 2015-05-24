@@ -1,17 +1,20 @@
 .announce {
-
+  & article:nth-last-child(2) {
+    border-bottom: none;
+  }
 }
+
 .announce-item {
   margin: 20px 20px;
   padding: 0;
   line-height: 1.5em;
-  box-shadow: 0 1px 0 @back-light-grey ;
+  border-bottom: 1px solid  @back-light-grey;
 
-  &__title{
+  &__title {
     margin: 0 0;
     padding: 0;
   }
-  &__title a{
+  &__title a {
     color: @header-app;
     font-size: @font-size-promo-title;
   }
@@ -20,13 +23,35 @@
     margin: 10px 0 20px 0;
     color: @pink-contact;
   }
-  &__text{
+  &__text {
     padding-bottom: 20px;
+
   }
-  &__text a{
+  &__text a {
     color: @header-app;
     font-size: @font-size-header-button;
 
+  }
+
+}
+
+.toggle-number {
+  width: 320px;
+  height: 65px;
+  text-align: center;
+
+  &__link {
+    color: @header-app;
+    font-weight: 600;
+    font-size: @font-size-header-button;
+    padding: 15px 20px;
+    margin-right: 10px;
+    border: 1px solid @font-color-text;
+    border-radius: 10%;
+
+    &:first-child {
+      border-color: @pink-contact;
+    }
   }
 
 }
