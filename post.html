@@ -16,36 +16,48 @@
         </div>
         <h1 class="main-header__title">Блог путешественников, пользователей Пинк</h1>
     </div>
+    <!-- Выпадающее меню начало  -->
+    <div>
+        <ul class="menu">
+            <li class="menu__item">
+                <a class="menu-button__open" href="#"><span class="menu-button
+                ">Open menu</span></a>
+                <a class="menu-button__close" href="#"><span>Close menu</span></a>
 
-    <!-- Выпадающее меню начало -->
-    <nav class="ddmenu">
-        <ul>
-            <li class="ddmenu-item">
-                <a class="ddmenu-item__link" href="#">Информация</a>
-            </li>
-            <li class="ddmenu-item">
-                <a class="ddmenu-item__link" href="#">Возможности</a>
-            </li>
-            <li class="ddmenu-item">
-                <a class="ddmenu-item__link" href="#">Отзывы</a>
-            </li>
-            <li class="ddmenu-item">
-                <a class="ddmenu-item__link" href="#">Стоимость</a>
+                <nav class="ddmenu">
+                    <ul>
+                        <li class="ddmenu-item">
+                            <a class="ddmenu-item__link" href="#">Информация</a>
+                        </li>
+                        <li class="ddmenu-item">
+                            <a class="ddmenu-item__link" href="#">Возможности</a>
+                        </li>
+                        <li class="ddmenu-item">
+                            <a class="ddmenu-item__link" href="#">Отзывы</a>
+                        </li>
+                        <li class="ddmenu-item">
+                            <a class="ddmenu-item__link" href="#">Стоимость</a>
+                        </li>
+                    </ul>
+                </nav>
             </li>
         </ul>
-    </nav>
+    </div>
     <!-- Выпадающее меню конец -->
 
 </header>
+
 
 <main>
     <section class="post">
         <article class="post-header">
             <h1 class="post-header__title">Антон и Надя в Тайланде</h1>
+
             <div class="post-header__date">Опубликовано 6 месяцев назад</div>
 
             <div>
-                <a class="post-header__link">Читайте рассказ о том, как семейная пара посещала Тайланд, стараясь
+                <a href="#" class="post-header__link">Читайте рассказ о том, как семейная пара посещала Тайланд,
+                    стараясь
                     максимально избегать избитых
                     туристических мест и районов.</a>
             </div>
@@ -54,10 +66,12 @@
         <article class="post-content">
             <h3 class="post-content__title">Предыстория</h3>
 
-            <p class="post-content__text">В Азию нам хотельсь попасть уже давно, но все время что&ndash;то останавливало.
+            <p class="post-content__text">В Азию нам хотельсь попасть уже давно, но все время что&ndash;то
+                останавливало.
                 Также не давал покоя
                 вопрос
                 гигиены и чистоты вокруг. Были сомнения и на счет местной еды. Однако, увидев выгодные билеты на <a
+                        class="post-content__link"
                         href="#">skyscanner.ru</a> мы все&ndash;таки решились!</p>
         </article>
 
@@ -70,16 +84,16 @@
                 разных
                 городах. В итоге мы остановилиьс на следующих:</p>
             <ul class="post-content__list">
-                <li class="post-content__list--circle">Point Yamu by Como(Пхукет)</li>
-                <li class="post-content__list--circle">Amari Vogue Hotel (Краби)</li>
-                <li class="post-content__list--circle">Photo Hotel (Пхукет)</li>
+                <li class="post-content__list--circle"><span>Point Yamu by Como(Пхукет)</span></li>
+                <li class="post-content__list--circle"><span>Amari Vogue Hotel (Краби)</span></li>
+                <li class="post-content__list--circle"><span>Photo Hotel (Пхукет)</span></li>
             </ul>
             <p class="post-content__text">В выборе отелей мы учитывали как расположение, так и отзывы на Tripadvisor.
                 Например, вот, что пишут люди
                 про
                 Point Yamu:</p>
 
-            <p class="post-content__text">Замечательное место, в которое хочется вернуться обязательно! Персонал
+            <p class="post-content__commit">Замечательное место, в которое хочется вернуться обязательно! Персонал
                 отзывчивый и
                 внимательный,
                 еда &ndash;
@@ -100,17 +114,10 @@
                 могут
                 попробовать жареных тараканчиков. Мы не рискнули.</p>
         </article>
-
-        <div class="switch-word">
-            <div>
-                <a class="switch-word__previous" href="#">Пред.</a>
-            </div>
-            <div>
-                <a class="switch-word__next" href="#">След.</a>
-            </div>
-            <div>
-                <a class="switch-word__back" href="#">Назад к списку</a>
-            </div>
+        <div class="paginator">
+            <a class="paginator__previous" href="#">Пред.</a>
+            <a class="paginator__next" href="#">След.</a>
+            <a class="paginator__back" href="#">Назад к списку</a>
         </div>
 
     </section>
@@ -120,20 +127,20 @@
 <footer class="footer">
     <div class="footer__align">
         <div class="footer-logo">
-            <a class="footer-logo__link" href="#"><img src="#" alt="PINK"></a>
+            <a class="footer-logo__link" href="#"><span>PINK</span></a>
         </div>
-        <div class="iconSN">
-            <!-- иконки соцсетей -->
-            <a class="iconSN__link" href="#"><img src="#" alt="Twitter"></a>
-            <a class="iconSN__link" href="#"><img src="#" alt="Facebook"></a>
-            <a class="iconSN__link" href="#"><img src="#" alt="YouTube"></a>
+        <div class="footer-iconSN">
+            <a class="footer-iconSN__link" href="#" title="Twitter"><span>Twitter</span></a>
+            <a class="footer-iconSN__link" href="#" title="Facebook"><span>Facebook</span></a>
+            <a class="footer-iconSN__link" href="#" title="YouTube"><span>YouTube</span></a>
         </div>
-        <div class="developer">
-            <a class="developer__link" href="#">Разработано<img src="#" alt="HTML Academy"></a>
+        <div class="footer-developer">
+            <a class="footer-developer__link" href="#" title="HTML Academy">Разработано<span> HTML Academy</span></a>
         </div>
     </div>
 
 </footer>
+
 
 </body>
 </html>
