@@ -1,0 +1,600 @@
+.submit {
+  width: 320px;
+  &__slogan {
+    display: block;
+    width: auto;
+    height: 70px;
+    padding: 50px 0;
+    margin: 0 20px;
+    text-align: center;
+    line-height: 1.5em;
+
+  }
+  &__slogan h4 {
+    font-size: @font-size-header-button;
+    font-weight: 100;
+    color: @header-app;
+
+  }
+}
+
+.form {
+  font-size: @font-size-promo-title;
+
+}
+
+.full-name {
+  margin-bottom: 40px;
+}
+
+.user-name {
+  margin: 0 20px;
+  &__label {
+    display: block;
+    color: @pink-contact;
+    text-transform: uppercase;
+    font-size: @font-header-description;
+    font-weight: 400;
+    padding: 15px;
+    margin-top: 10px;
+  }
+  &__input {
+    display: block;
+    width: 260px;
+    height: 50px;
+    padding-left: 15px;
+    border: 2px solid @back-light-grey;
+    font-size: @font-size-promo-title;
+    color: @header-app;
+  }
+  &__input:hover {
+    border: 2px solid @header-app;
+  }
+  &__input:active {
+    border: 2px solid @pink-contact;
+  }
+}
+
+.form-app {
+  background-color: @back-light-grey;
+  width: 320px;
+  height: 335px;
+  text-align: center;
+  //  padding: 0 20px;
+  &__title {
+    text-transform: uppercase;
+    font-size: @font-header-description;
+    font-weight: normal;
+    color: @pink-contact;
+    padding: 40px 0 30px 0;
+
+  }
+}
+
+.form-app-item {
+  text-align: left;
+  margin: 0 20px;
+  display: block;
+  padding-bottom: 50px;
+  &__input {
+    display: none;
+
+  }
+  &__label {
+    display: block;
+    position: relative;
+    width: 210px;
+    height: 30px;
+    padding-left: 75px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    color: @header-app;
+
+  }
+  &__label::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+
+    background-color: @white;
+    border: 9px solid @white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 1px @grey-toggle;
+  }
+  &__label:hover::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: @white;
+    border: 9px solid @white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 1px @header-app;
+  }
+  &__label:active::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    background-color: @white;
+    border: 9px solid @white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 1px @pink-contact;
+  }
+
+}
+
+#iOS:checked ~ .form-app-controls label[for="iOS"]:before {
+  background-color: @pink-contact;
+}
+
+#android:checked ~ .form-app-controls label[for="android"]:before {
+  background-color: @pink-contact;
+}
+
+#windows:checked ~ .form-app-controls label[for="windows"]:before {
+  background-color: @pink-contact;
+}
+
+.date {
+  text-align: center;
+  &__title {
+    color: @pink-contact;
+    text-transform: uppercase;
+    padding: 40px 0;
+    font-weight: normal;
+    font-size: @font-header-description;
+  }
+}
+
+.date-item {
+  margin: 0 20px;
+  &__input {
+    display: block;
+    width: 266px;
+    height: 56px;
+    text-align: left;
+    padding-left: 10px;
+    border: 2px solid @back-light-grey;
+    font-size: @font-size-promo-title;
+    color: @header-app;
+
+  }
+  &__input:hover {
+    border: 2px solid @header-app;
+  }
+  &__input:active {
+    border: 2px solid @pink-contact;
+  }
+
+  &__label {
+    display: block;
+    width: auto;
+    color: @pink-contact;
+    text-transform: uppercase;
+    font-size: @font-header-description;
+    padding: 15px 0 30px;
+    text-align: center;
+  }
+}
+
+.date-toggle {
+  margin: 0 20px;
+  position: relative;
+
+  &__input {
+    display: block;
+    width: 266px;
+    height: 56px;
+    text-align: center;
+    padding-left: 10px;
+    border: 2px solid @back-light-grey;
+    font-size: @font-size-promo-title;
+    color: @header-app;
+
+  }
+  &__minus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    left: 0;
+    border: 2px solid @back-light-grey;
+    background-color: @white;
+    font-size: @font-size-50px;
+    color: @header-app;
+    font-weight: lighter;
+    float: right;
+
+  }
+  &__plus {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 0;
+    right: 0;
+    border: 2px solid @back-light-grey;
+    background-color: @white;
+    border-radius: 2%;
+    font-size: @font-size-50px;
+    color: @header-app;
+    font-weight: lighter;
+    float: right;
+  }
+  &__plus:hover,
+  &__minus:hover {
+    border: 2px solid @header-app;
+  }
+  &__plus:active,
+  &__minus:active {
+    color: @white;
+    background-color: @header-app;
+  }
+
+  &__label {
+    display: block;
+    width: auto;
+    color: @pink-contact;
+    text-transform: uppercase;
+    font-size: @font-header-description;
+    padding: 15px 0 30px;
+    text-align: center;
+  }
+}
+
+.companions {
+  background-color: @back-light-grey;
+  width: 320px;
+  height: 740px;
+  text-align: center;
+
+  &__label {
+    display: block;
+    text-align: center;
+    font-size: @font-header-description;
+    color: @pink-contact;
+    text-transform: uppercase;
+    padding: 40px 0 30px 0;
+  }
+}
+
+.toggle-companions {
+  margin-bottom: 40px;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  width: 280;
+  height: 110px;
+  border-bottom: 2px solid @grey-toggle;
+
+  &__input {
+    width: 160px;
+    height: 56px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: @back-light-grey;
+    border-top: 2px solid @grey-toggle;
+    border-bottom: 2px solid @grey-toggle;
+    font-size: @font-size-promo-title;
+    color: @header-app;
+    float: left;
+  }
+
+  &__minus {
+    width: 60px;
+    height: 60px;
+    border: 2px solid @grey-toggle;
+    background-color: @white;
+    font-size: @font-size-50px;
+    font-weight: lighter;
+    float: left;
+
+  }
+  &__plus {
+    width: 60px;
+    height: 60px;
+    border: 2px solid @grey-toggle;
+    background-color: @white;
+    font-size: @font-size-50px;
+    color: @header-app;
+    font-weight: lighter;
+    float: right;
+  }
+  &__plus:hover,
+  &__minus:hover {
+    border: 2px solid @header-app;
+  }
+  &__plus:active,
+  &__minus:active {
+    color: @white;
+    background-color: @header-app;
+  }
+}
+
+.companions-fullname {
+  clear: both;
+  width: 320px;
+  padding-bottom: 40px;
+}
+
+.header-group {
+  display: inline-block;
+  width: 275px;
+  color: @pink-contact;
+
+  &__sign {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 55px;
+    height: 20px;
+    font-size: @font-header-description;
+
+  }
+  &__name {
+    float: right;
+    width: 197px;
+    padding-left: 20px;
+    height: 20px;
+    text-align: left;
+    font-size: @font-header-description;
+    text-transform: uppercase;
+
+  }
+}
+
+.group-name {
+  display: inline-block;
+  border: 2px solid @grey-toggle;
+  width: 275px;
+  color: @header-app;
+
+  &__number {
+    margin: 0;
+    padding: 0;
+    float: left;
+    padding-top: 20px;
+    width: 55px;
+    height: 35px;
+    border-right: 2px solid @grey-toggle;
+    font-size: @font-header-description;
+
+  }
+  &__input {
+    float: right;
+    width: 197px;
+    padding-top: 5px;
+    padding-left: 20px;
+    height: 50px;
+    background-color: @white;
+    font-size: @font-size-promo-title;
+
+  }
+}
+
+.nickname-group {
+  clear: both;
+  width: 320px;
+
+  &__label {
+    display: block;
+    float: right;
+    width: 220px;
+    height: 15px;
+    padding: 20px 0 10px 20px;
+    color: @pink-contact;
+    font-size: @font-header-description;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  &__input {
+    margin-left: 55px;
+    height: 55px;
+    width: 195px;
+    padding-left: 20px;
+    font-size: @font-size-promo-title;
+    border: 2px solid @grey-toggle;
+    color: @header-app;
+
+  }
+}
+
+.result-rest {
+  padding-top: 50px;
+  width: 320px;
+
+  &__title {
+    color: @pink-contact;
+    font-size: @font-header-description;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 40px 40px 40px;
+    line-height: 1.2em;
+    font-weight: normal;
+  }
+
+  &__item {
+    display: none;
+  }
+  &__label {
+    position: relative;
+    display: block;
+    width: 280px;
+    height: 28px;
+    padding-left: 60px;
+    padding-top: 12px;
+    margin-bottom: 40px;
+    font-size: @font-size-promo-title;
+
+  }
+  &__label::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    border: 2px solid @back-light-grey;
+    border-radius: 2%;
+  }
+  &__label:hover::before {
+    border-color: @header-app;
+  }
+  &__label:active::before {
+    border-color: @pink-contact;
+  }
+}
+
+#shark_field:checked ~ .rest-controls label[for="shark_field"]:before {
+  background: url("@{img-path}/vector.png") no-repeat 50% 50%;
+
+}
+
+#burned_field:checked ~ .rest-controls label[for="burned_field"]:before {
+  background: url("@{img-path}/vector.png") no-repeat 50% 50%;
+
+}
+
+#chack_field:checked ~ .rest-controls label[for="chack_field"]:before {
+  background: url("@{img-path}/vector.png") no-repeat 50% 50%;
+
+}
+
+#souvenir_field:checked ~ .rest-controls label[for="souvenir_field"]:before {
+  background: url("@{img-path}/vector.png") no-repeat 50% 50%;
+}
+
+#tower_field:checked ~ .rest-controls label[for="tower_field"]:before {
+  background: url("@{img-path}/vector.png") no-repeat 50% 50%;
+}
+
+#hotel_field:checked ~ .rest-controls label[for="hotel_field"]:before {
+  background: url("@{img-path}/vector.png") no-repeat 50% 50%;
+}
+
+.gallery {
+  width: 320px;
+  background-color: @back-light-grey;
+  padding-top: 40px;
+  &__title {
+    color: @pink-contact;
+    font-size: @font-header-description;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 40px 40px 40px;
+    line-height: 1.2em;
+    font-weight: normal;
+  }
+
+}
+
+.input-align {
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  border-bottom: 2px solid @grey-toggle;
+}
+
+.gallery-input {
+  margin: 0 auto;
+  width: 280px;
+  height: 40px;
+  padding-top: 20px;
+  background-color: @white;
+  color: @header-app;
+  font-weight: bold;
+  font-size: @font-size-promo-title;
+  border: 2px solid @grey-toggle;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+
+  &__title {
+    color: @header-app;
+    font-size: @font-size-review-title;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  &__file {
+    margin-top: -50px;
+    margin-left: -410px;
+    -moz-opacity: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    font-size: 150px;
+    height: 100px;
+  }
+}
+
+.gallery-foto{
+  display: inline-block;
+  width: 280px;
+  margin: 0 20px;
+  &__img {
+    float: left;
+    padding: 38px 38px 0 0;
+    position: relative;
+  }
+  &__img:nth-child(3n+3) {
+    padding-right: 0;
+  }
+  &__img::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background: url("@{img-path}/cross.png") no-repeat 50% 50%;
+    border: 2px solid @grey-toggle;
+    border-radius: 50%;
+    z-index: 100;
+  }
+  &__img:nth-child(3n+3)::before {
+     top: 20px;
+     right: -20px;
+   }
+  &__img:hover::before{
+    background: url("@{img-path}/cross-hover.png") no-repeat 50% 50%;
+    border-color: @header-app;
+  }
+  &__img:active::before{
+    background: url("@{img-path}/cross-active.png") no-repeat 50% 50%;
+    border-color: @header-app;
+    background-color: @header-app;
+  }
+}
+.gallery-button-submit{
+  width: 320px;
+  height: 120px;
+  margin: 40px 20px;
+}
+.gallery-text {
+  color: @header-app;
+  font-size: @font-size-header-button;
+  text-transform: uppercase;
+  text-align: center;
+  & span {
+    color: @pink-contact;
+  }
+}
+
+
+
+.warning {
+  display: none;
+}
+
+.request-sent {
+  display: none;
+}
