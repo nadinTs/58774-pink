@@ -4,8 +4,8 @@
     display: block;
     width: auto;
     height: 70px;
-    padding: 50px 0;
-    margin: 0 20px;
+    padding: 50px 20px;
+    margin: 0;
     text-align: center;
     line-height: 1.5em;
 
@@ -24,19 +24,19 @@
 }
 
 .full-name {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .user-name {
-  margin: 0 20px;
+  padding: 0 30px;
   &__label {
+    width: 250px;
     display: block;
     color: @pink-contact;
     text-transform: uppercase;
     font-size: @font-header-description;
     font-weight: 400;
-    padding: 15px;
-    margin-top: 10px;
+    padding: 20px 15px 10px 15px ;
   }
   &__input {
     display: block;
@@ -50,7 +50,8 @@
   &__input:hover {
     border: 2px solid @header-app;
   }
-  &__input:active {
+
+  &__input:focus, &__input:focus {
     border: 2px solid @pink-contact;
   }
 }
@@ -58,7 +59,7 @@
 .form-app {
   background-color: @back-light-grey;
   width: 320px;
-  height: 335px;
+  min-height: 335px;
   text-align: center;
   //  padding: 0 20px;
   &__title {
@@ -73,7 +74,7 @@
 
 .form-app-item {
   text-align: left;
-  margin: 0 20px;
+  padding: 0 20px;
   display: block;
   padding-bottom: 50px;
   &__input {
@@ -87,7 +88,7 @@
     height: 30px;
     padding-left: 75px;
     padding-top: 10px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     text-align: left;
     color: @header-app;
 
@@ -156,7 +157,7 @@
 }
 
 .date-item {
-  margin: 0 20px;
+  padding: 0 20px;
   &__input {
     display: block;
     width: 266px;
@@ -176,8 +177,8 @@
   }
 
   &__label {
+    width: 300px;
     display: block;
-    width: auto;
     color: @pink-contact;
     text-transform: uppercase;
     font-size: @font-header-description;
@@ -187,13 +188,16 @@
 }
 
 .date-toggle {
-  margin: 0 20px;
+  padding: 0 20px;
   position: relative;
 
-  &__input {
+  &__input,
+  &__input:hover,
+  &__input:active,
+  &__input:focus{
     display: block;
     width: 266px;
-    height: 56px;
+    height: 57px;
     text-align: center;
     padding-left: 10px;
     border: 2px solid @back-light-grey;
@@ -207,11 +211,7 @@
     height: 60px;
     top: 0;
     left: 0;
-    border: 2px solid @back-light-grey;
-    background-color: @white;
-    font-size: @font-size-50px;
-    color: @header-app;
-    font-weight: lighter;
+    background: url("@{img-path}/_base-.png") no-repeat 0 0;
     float: right;
 
   }
@@ -221,27 +221,30 @@
     height: 60px;
     top: 0;
     right: 0;
-    border: 2px solid @back-light-grey;
-    background-color: @white;
-    border-radius: 2%;
-    font-size: @font-size-50px;
-    color: @header-app;
-    font-weight: lighter;
+    background: url("@{img-path}/_base+.png") no-repeat 0 0;
     float: right;
   }
-  &__plus:hover,
+
   &__minus:hover {
-    border: 2px solid @header-app;
+    background: url("@{img-path}/_hover-.png") no-repeat 0 0;
   }
-  &__plus:active,
+  &__plus:hover {
+    background: url("@{img-path}/_hover+.png") no-repeat 0 0;
+  }
+
+  &__plus:active{
+    background: url("@{img-path}/_active+.png") no-repeat 0 0;
+
+  }
+
   &__minus:active {
-    color: @white;
-    background-color: @header-app;
+    background: url("@{img-path}/_active-.png") no-repeat 0 0;
+
   }
 
   &__label {
     display: block;
-    width: auto;
+    width: 300px;
     color: @pink-contact;
     text-transform: uppercase;
     font-size: @font-header-description;
@@ -253,7 +256,7 @@
 .companions {
   background-color: @back-light-grey;
   width: 320px;
-  height: 740px;
+  min-height: 740px;
   text-align: center;
 
   &__label {
@@ -267,17 +270,20 @@
 }
 
 .toggle-companions {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   padding: 0;
   display: inline-block;
   text-align: center;
   width: 280;
-  height: 110px;
+  min-height: 110px;
   border-bottom: 2px solid @grey-toggle;
 
-  &__input {
+  &__input,
+  &__input:hover,
+  &__input:active,
+  &__input:focus{
     width: 160px;
-    height: 56px;
+    height: 57px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -292,31 +298,27 @@
   &__minus {
     width: 60px;
     height: 60px;
-    border: 2px solid @grey-toggle;
-    background-color: @white;
-    font-size: @font-size-50px;
-    font-weight: lighter;
+    background: url("@{img-path}/_base-.png") no-repeat 0 0;
     float: left;
 
   }
   &__plus {
     width: 60px;
     height: 60px;
-    border: 2px solid @grey-toggle;
-    background-color: @white;
-    font-size: @font-size-50px;
-    color: @header-app;
-    font-weight: lighter;
+    background: url("@{img-path}/_base+.png") no-repeat 0 0;
     float: right;
   }
-  &__plus:hover,
-  &__minus:hover {
-    border: 2px solid @header-app;
+  &__plus:hover {
+    background: url("@{img-path}/_hover+.png") no-repeat 0 0;
   }
-  &__plus:active,
+  &__minus:hover {
+    background: url("@{img-path}/_hover-.png") no-repeat 0 0;
+  }
+  &__plus:active{
+    background: url("@{img-path}/_active+.png") no-repeat 0 0;
+  }
   &__minus:active {
-    color: @white;
-    background-color: @header-app;
+    background: url("@{img-path}/_active-.png") no-repeat 0 0;
   }
 }
 
@@ -330,6 +332,8 @@
   display: inline-block;
   width: 275px;
   color: @pink-contact;
+  padding-top: 30px;
+
 
   &__sign {
     margin: 0;
@@ -397,8 +401,12 @@
     text-align: left;
   }
 
-  &__input {
-    margin-left: 55px;
+  &__input,
+  &__input:hover,
+  &__input:active,
+  &__input:focus
+  {
+    margin-left: 60px;
     height: 55px;
     width: 195px;
     padding-left: 20px;
@@ -418,7 +426,7 @@
     font-size: @font-header-description;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 40px 40px 40px;
+    padding: 0 40px 40px 40px;
     line-height: 1.2em;
     font-weight: normal;
   }
@@ -429,11 +437,11 @@
   &__label {
     position: relative;
     display: block;
-    width: 280px;
+    width: 260px;
     height: 28px;
     padding-left: 60px;
     padding-top: 12px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     font-size: @font-size-promo-title;
 
   }
@@ -491,7 +499,7 @@
     font-size: @font-header-description;
     text-align: center;
     text-transform: uppercase;
-    margin: 0 40px 40px 40px;
+    padding: 0 40px 40px 40px;
     line-height: 1.2em;
     font-weight: normal;
   }
@@ -500,46 +508,26 @@
 
 .input-align {
   width: 280px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-  border-bottom: 2px solid @grey-toggle;
+  margin: 0;
+  padding: 0 20px;
 }
 
 .gallery-input {
-  margin: 0 auto;
+  margin: 0;
   width: 280px;
   height: 40px;
-  padding-top: 20px;
-  background-color: @white;
-  color: @header-app;
-  font-weight: bold;
-  font-size: @font-size-promo-title;
-  border: 2px solid @grey-toggle;
-  cursor: pointer;
-  text-align: center;
-  overflow: hidden;
+  padding-bottom: 40px;
+  border-bottom: 2px solid @grey-toggle;
 
-  &__title {
-    color: @header-app;
-    font-size: @font-size-review-title;
-    font-weight: bold;
-    cursor: pointer;
-  }
+
   &__file {
-    margin-top: -50px;
-    margin-left: -410px;
-    -moz-opacity: 0;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    font-size: 150px;
-    height: 100px;
-  }
+}
 }
 
 .gallery-foto{
   display: inline-block;
   width: 280px;
-  margin: 0 20px;
+  padding: 0 20px;
   &__img {
     float: left;
     padding: 38px 38px 0 0;
@@ -575,9 +563,9 @@
   }
 }
 .gallery-button-submit{
-  width: 320px;
-  height: 120px;
-  margin: 40px 20px;
+  width: 28 0px;
+  min-height: 120px;
+  padding: 40px 20px;
 }
 .gallery-text {
   color: @header-app;
@@ -588,7 +576,9 @@
     color: @pink-contact;
   }
 }
-
+.gallery-submit{
+  padding-bottom: 40px;
+}
 
 
 .warning {

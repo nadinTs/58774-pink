@@ -5,9 +5,10 @@ body {
   font-family: @font-base;
 
 }
-input:active, input:focus{
+input:active, input:focus, button{
   box-shadow:none;
   border: none;
+  outline: none;
 }
 input{border: none}
 a {
@@ -30,3 +31,11 @@ h1, h2, h3, h4 {
   padding: 0;
 
 }
+p, figure{
+  margin: 0;
+  padding: 0;
+}
+::-webkit-input-placeholder {color:@header-app;}
+::-moz-placeholder          {color:@header-app;}/* Firefox 19+ */
+:-moz-placeholder           {color:@header-app;}/* Firefox 18- */
+:-ms-input-placeholder      {color:@header-app;}

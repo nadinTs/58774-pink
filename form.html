@@ -9,44 +9,39 @@
 
 <body class="page">
 
-<header class="main-header main-header--form">
-    <div class="main-header__slogan main-header__slogan--form">
+<header class="main-header ">
+    <div class="main-header__slogan">
         <div class="logo">
             <a class="logo__PINK" href="#"><span>PINK</span></a>
-        </div>
-        <div class="form-header-title">
-            <h1 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        </div>
-    </div>
-    <!-- Выпадающее меню начало  -->
-    <div>
-        <ul class="menu">
-            <li class="menu__item">
-                <a class="menu-button__open" href="#"><span class="menu-button
+
+            <div class="button-menu-header">
+                <a class="button-menu-header__open" href="#"><span class="menu-button
                 ">Open menu</span></a>
-                <a class="menu-button__close" href="#"><span>Close menu</span></a>
+                <a class="button-menu-header__close" href="#"><span>Close menu</span></a>
+            </div>
+        </div>
+        <h1 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
 
-                <nav class="ddmenu">
-                    <ul>
-                        <li class="ddmenu-item">
-                            <a class="ddmenu-item__link" href="#">Информация</a>
-                        </li>
-                        <li class="ddmenu-item">
-                            <a class="ddmenu-item__link" href="#">Возможности</a>
-                        </li>
-                        <li class="ddmenu-item">
-                            <a class="ddmenu-item__link" href="#">Отзывы</a>
-                        </li>
-                        <li class="ddmenu-item">
-                            <a class="ddmenu-item__link" href="#">Стоимость</a>
-                        </li>
-                    </ul>
-                </nav>
-            </li>
-        </ul>
+        <!-- Выпадающее меню начало  -->
+        <nav class="ddmenu">
+            <ul>
+                <li class="ddmenu-item">
+                    <a class="ddmenu-item__link" href="#">Информация</a>
+                </li>
+                <li class="ddmenu-item">
+                    <a class="ddmenu-item__link" href="#">Возможности</a>
+                </li>
+                <li class="ddmenu-item">
+                    <a class="ddmenu-item__link" href="#">Отзывы</a>
+                </li>
+                <li class="ddmenu-item">
+                    <a class="ddmenu-item__link" href="#">Стоимость</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Выпадающее меню конец -->
     </div>
-    <!-- Выпадающее меню конец -->
-
 </header>
 
 
@@ -61,17 +56,17 @@
     <div class="user-name">
         <label class="user-name__label" for="user_name_field">Имя:*</label>
         <input class="user-name__input" type="text" name="user_name" id="user_name_field"
-               value="Введите ваше имя" required>
+               placeholder="Введите ваше имя" autofocus required>
     </div>
     <div class="user-name">
         <label class="user-name__label" for="user_surname_field">Фамилия:*</label>
         <input class="user-name__input" type="text" name="user_surname" id="user_surname_field"
-               value="Укажите фамилию" required>
+               placeholder="Укажите фамилию" required>
     </div>
     <div class="user-name">
         <label class="user-name__label" for="user_patronymic_field">Отчество:</label>
         <input class="user-name__input" type="text" name="user_patronymic" id="user_patronymic_field"
-               value="Ну и отчество тоже">
+               placeholder="Ну и отчество тоже">
     </div>
 </div>
 
@@ -99,10 +94,10 @@
         <label class="date-item__label" for="date_departure_field">Дата выезда</label>
     </div>
     <div class="date-toggle">
-        <button class="date-toggle__minus" type="button">-</button>
-        <input class="date-toggle__input" type="text" name="count_days" value="10"
+        <button class="date-toggle__minus" type="button"></button>
+        <input class="date-toggle__input" type="text" name="count_days" placeholder="10"
                id="count_days_field">
-        <button class="date-toggle__plus" type="button">+</button>
+        <button class="date-toggle__plus" type="button"></button>
         <label class="date-toggle__label" for="count_days_field">Продолжительность</label>
     </div>
     <div class="date-item">
@@ -115,10 +110,10 @@
     <label class="companions__label" for="count_companions_field">Количество попутчиков*</label>
 
     <div class="toggle-companions">
-        <button class="toggle-companions__minus" type="button">-</button>
-        <input class="toggle-companions__input" type="text" name="count_companions" value="2 чел"
+        <button class="toggle-companions__minus" type="button"></button>
+        <input class="toggle-companions__input" type="text" name="count_companions" placeholder="2"
                id="count_companions_field">
-        <button class="toggle-companions__plus" type="button">+</button>
+        <button class="toggle-companions__plus" type="button"></button>
     </div>
     <div class="companions-fullname">
         <div class="header-group">
@@ -131,7 +126,7 @@
             </label>
 
             <input class="group-name__input" type="text" name="companion_name" id="companion_name_field"
-                   value="Введите ваше имя">
+                   placeholder="Введите ваше имя">
         </div>
         <div class="nickname-group">
             <label class="nickname-group__label" for="companion_nickname_field">
@@ -141,7 +136,7 @@
 
             <input class="nickname-group__input" type="text" name="companion_nickname"
                    id="companion_nickname_field"
-                   value="Ну как же без этого!">
+                   placeholder="Ну как же без этого!">
         </div>
     </div>
     <div class="companions-fullname">
@@ -155,7 +150,7 @@
             </label>
 
             <input class="group-name__input" type="text" name="companion_name" id="companion_name_field2"
-                   value="Введите ваше имя">
+                   placeholder="Введите ваше имя">
         </div>
         <div class="nickname-group">
             <label class="nickname-group__label" for="companion_nickname_field">
@@ -165,7 +160,7 @@
 
             <input class="nickname-group__input" type="text" name="companion_nickname"
                    id="companion_nickname_field2"
-                   value="Ну как же без этого!">
+                   placeholder="Ну как же без этого!">
         </div>
     </div>
 
@@ -201,7 +196,6 @@
 
     <div class="input-align">
         <div class="gallery-input">
-            <div class="gallery-input__title">Загрузить фото</div>
             <input class="gallery-input__file" type="file" name="images" value="Загрузить фото">
         </div>
     </div>
@@ -235,7 +229,7 @@
 </article>
 <div class="gallery-button-submit">
     <div class="gallery-submit">
-        <input type="submit" name="images" value="Отправить форму">
+        <input class="gallery-submit__input" type="submit" name="images" value="Отправить форму">
     </div>
     <div class="gallery-text">
         <span>*</span> &ndash; обязательные поля

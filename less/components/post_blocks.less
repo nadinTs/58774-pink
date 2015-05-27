@@ -7,10 +7,10 @@
 
 .post-header {
   width: 280px;
-  height: 320;
+  min-height: 320;
   text-align: center;
-  margin: 0 20px;
-  padding-bottom: 20px;
+  padding: 0 20px 20px 20px;
+  margin: 0;
   border-bottom: 1px solid @back-light-grey;
   &__title {
     width: 260px;
@@ -24,7 +24,7 @@
     font-size: @font-size-12px;
     font-weight: normal;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    padding-bottom: 25px;
   }
   &__link {
     color: @header-app;
@@ -44,13 +44,14 @@
   }
   &__text {
     line-height: 1.5em;
+    padding: 10px 0;
   }
   &__link {
     color: @pink-contact;
     text-decoration: underline;
   }
   &__list {
-    margin-left: 20px;
+    padding-left: 20px;
     line-height: 3em;
   }
   &__list span {
@@ -69,13 +70,13 @@
 
 .paginator {
   width: 280px;
-  margin: 40px auto 60px;
+  padding: 40px 20px 60px 20px;
   text-align: center;
 
   & a {
     display: inline-block;
     padding-top: 20px;
-    height: 40px;
+    height: 38px;
     border: 1px solid @back-light-grey;
     color: @header-app;
     font-size: @font-size-promo-title;
@@ -84,15 +85,16 @@
   }
 
   &__previous {
-    width: 128px;
-    margin-right: 14px;
-    margin-bottom: 20px;
+    width: 114px;
+    padding-right: 14px;
+    float: left;
   }
   &__next {
     width: 128px;
-    margin-bottom: 20px;
+    float: right;
   }
   &__back {
+    margin-top: 20px;
     width: 278px;
   }
 }
