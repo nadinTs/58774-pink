@@ -3,7 +3,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-githooks');
   grunt.loadNpmTasks('grunt-lintspaces');
 
@@ -14,14 +13,6 @@ module.exports = function(grunt) {
       style: {
         files: {
           'css/style.css': 'less/style.less'
-        }
-      }
-    },
-
-    sass: {
-      style: {
-        files: {
-          'css/style.css': 'sass/style.scss'
         }
       }
     },

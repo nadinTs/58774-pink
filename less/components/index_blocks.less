@@ -2,18 +2,18 @@
   padding: 0;
   margin: 0;
   width: 320px;
-  height: 1000px;
-  background-image: linear-gradient(-5deg, @back-light-grey 80%, @white 80%);
+  min-height: 1000px;
+  background-image: linear-gradient(-5deg, @back-light-grey 76%, @white 76%);
 }
 
 .promo-slogan {
   color: @font-color-text;
   text-align: center;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
   &__title {
-    font-weight: 100;
+    font-weight: normal;
     font-size: @font-size-header-title;
-    margin: 30px 20px;
+    padding: 30px 20px 0 20px;
   }
 
 }
@@ -21,25 +21,27 @@
 .promo-item {
   display: block;
   bottom: 0;
-  padding: 0;
-  margin: 10px 20px;
+  margin: 0;
+  padding: 10px 20px 20px 20px;
   line-height: 1.5em;
   text-align: center;
 
   &__title {
     color: @black;
     font-size: @font-size-promo-title;
+    padding-bottom: 20px;
 
   }
   &__text {
     color: @font-color-text;
+    font-size: @font-header-description;
 
   }
 }
 
 .promo-item:last-child {
   bottom: 0;
-  height: 504px;
+  min-height: 504px;
   background: @back-light-grey url('@{img-path}/screen-mobile-3.png') no-repeat 50% 100%;
 }
 
@@ -49,7 +51,7 @@
   background-image: linear-gradient(-5deg, @back-light-grey 20%, @white 20%);
   margin: 0;
   width: 320px;
-  height: 445px;
+  min-height: 445px;
   & input[type=radio] {
     display: none;
   }
@@ -68,7 +70,7 @@
   padding: 20px;
   float: left;
   width: 280px;
-  height: 300px;
+  min-height: 300px;
   transition: transform .8s ease;
   text-align: center;
   line-height: 1.5em;
@@ -76,11 +78,14 @@
   &__title {
     font-size: @font-size-header-button;
     color: @black;
+    padding-top: 30px;
+    padding-bottom: 25px;
 
   }
   &__text {
-    font-size: @font-size-header-button;
+    font-size: @font-header-description;
     color: @font-color-text;
+    line-height: 2em;
 
   }
 }
@@ -95,10 +100,11 @@
   & label {
     display: inline-block;
     width: 10px;
-    height: 10px;
+    min-height: 10px;
     margin: 0 3px;
     cursor: pointer;
     background-color: @grey-toggle;
+    border: 5px solid @white;
     border-radius: 50%;
     transition: background-color .2s;
     vertical-align: middle;
@@ -130,8 +136,8 @@
   margin: 0;
   padding: 0;
   width: 320px;
-  height: 380px;
-  background-image: linear-gradient(to bottom, @white 70%, @back-light-grey 70%);
+  min-height: 380px;
+  background-image: linear-gradient(to bottom, @white 73%, @back-light-grey 73%);
   & input[type=radio] {
     display: none;
   }
@@ -144,7 +150,7 @@
 
 .app-slider {
   width: 300%;
-  height: 250px;
+  min-height: 250px;
 
 }
 
@@ -156,7 +162,7 @@
   vertical-align: middle;
   text-align: center;
   width: 320px;
-  height: 180;
+  min-height: 180;
   transition: transform .8s ease;
   line-height: 1.5em;
 
@@ -170,6 +176,13 @@
 
 
   &__header-title {
+    font-size: @font-size-promo-title;
+    margin: 0;
+    padding-bottom: 10px;
+
+
+  }
+  &__header-title--hit {
     font-size: @font-size-promo-title;
     margin: 0;
     padding-bottom: 10px;
@@ -211,7 +224,7 @@
   position: absolute;
   width: 320px;
   left: 0;
-  bottom: 55px;
+  bottom: 45px;
   z-index: 101;
   text-align: center;
 
@@ -222,6 +235,7 @@
     height: 10px;
     margin: 0 3px;
     cursor: pointer;
+    border: 5px solid @back-light-grey;
     border-radius: 50%;
     transition: background-color .2s;
     vertical-align: middle;
