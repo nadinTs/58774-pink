@@ -22,8 +22,8 @@
   height: 450px;
   background-image: linear-gradient(to right bottom,  @white 25%, transparent 25%),
   linear-gradient(to left bottom,@white  25%, transparent 25%);
-  background-position: 165px 390px,
-  -185px 390px;
+  background-position: 165px 410px,
+  -185px 410px;
   background-size: 350px 70px;
   background-repeat: no-repeat;
 
@@ -43,10 +43,13 @@
   }
 
   &__question {
-    font-weight: normal;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin: 0;
     color: @font-color-text;
     font-size: @font-size-footer-question;
     line-height: 1.2em;
+    font-weight: 100;
   }
   &__text {
     padding: 10px 0;
@@ -54,10 +57,11 @@
     color: @black;
     font-size: @font-size-promo-title;
     line-height: 1.5em;
-    & span {
+    & span,
+    & span a{
       font-weight: normal;
       color: @pink-contact;
-      font-size: @font-size-review-title;
+      font-size: @font-size-footer-question;
 
     }
   }

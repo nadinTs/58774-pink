@@ -3,10 +3,10 @@
 .index-header{
   background-color: @dark-gray;
   width: 320px;
-  height: 730px;
+  min-height: 730px;
   &__slogan{
     width: auto;
-    height: 457px;
+    min-height: 730px;
     background:@dark-gray url('@{img-path}/phone-in-hand.png') no-repeat 50% -68px;
 
   }
@@ -16,7 +16,7 @@
     font-weight: 400;
     color: @font-color-text;
     text-align: center ;
-    padding: 10px 30px;
+    padding: 10px 30px 340px 30px;
 
   }
 }
@@ -24,13 +24,14 @@
 
 .logo {
   background-color: @dark-gray ;
-  height: 65px;
+  min-height: 65px;
   opacity: 0.8;
 
   &__PINK {
     background:@dark-gray url('@{img-path}/PINK.png') no-repeat 20px 20px;
     display: block;
-    height: 65px;
+    float: left;
+    min-height: 65px;
     width: 100px;
     top: 20px;
     left: 20px;
@@ -47,20 +48,20 @@
     text-align: center;
     font-size: @font-header-description;
     line-height: 1.5em;
-    padding: 0 20px;
+    padding: 0 20px 30px 20px;
 
   }
 }
 
 .iconsOS-list {
-  margin-bottom: 10px;
-  width: 320px;
+  width: 260px;
+  padding: 0  30px;
   text-align: center;
   &__item{
     display: inline-block;
-    margin-right: 10px;
-    width:46px;
-    height: 57px;
+    padding-right: 34px;
+    min-height: 57px;
+    vertical-align: baseline;
   }
 
 }
@@ -69,11 +70,17 @@
 .main-header{
   background-color: @dark-gray;
   width: 320px;
-  height: 197px;
+  min-height: 197px;
+  &--form{
+    min-height: 235px;
+  }
   &__slogan{
     width: auto;
-    height: 197px;
+    min-height: 197px;
     background:@dark-gray url('@{img-path}/background-photo.png') no-repeat 50% -68px;
+    &--form{
+      min-height: 235px;
+    }
 
   }
   &__title{
@@ -82,7 +89,16 @@
     font-weight: 100;
     color: @font-color-text;
     text-align: center ;
-    padding: 10px 15px;
+    padding: 30px 15px 10px 15px;
 
   }
+
 }
+
+/*form*/
+.form-header-title h1{
+  display: block;
+  min-height: 450px;
+  width: auto;
+}
+

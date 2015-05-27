@@ -1,76 +1,196 @@
 
-.menu-button {
-
+.button-menu-header {
+  width: 63px;
+  height: 63px;
   position: relative;
-  right: 0;
-  top: 0;
-  height: 65px;
-  width: 320px;
-
-  &__open,
-  &__close {
+  float: right;
+  & a {
+    display: block;
     position: absolute;
-    content: '';
-    height: 50px;
-    width: 50px;
+    width: 63px;
+    height: 33px;
     top: 0;
     right: 0;
-    display: block;
-  }
-  &__open span,
-  &__close span {
-    visibility: hidden;
-  }
-  &__open::after {
-    content: '';
-    background-color: @white;
-    position: absolute;
-    width: 50px;
-    height: 3px;
-    top: 10px;
-    right: 0;
-    transition: opacity 0.3s, transform 0.3s;
-  }
-  &__open::before {
-    content: '';
-    background-color: @white;
-    position: absolute;
-    width: 50px;
-    height: 3px;
-    top: -10px;
-    right: 0;
-    transition: opacity 0.3s, transform 0.3s;
+    padding-top: 30px;
+
+    & span {
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: @white;
+      font-size: @font-size-zero;
+
+    }
+    & span::before,
+    & span::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 2px;
+      background-color: @white;
+
+    }
+    & span::before {
+      transform: translate(0, -10px);
+    }
+    & span::after {
+      transform: translate(0, 8px);
+    }
 
   }
-  &__open {
-    content: '';
-    background-color: @white;
-    position: absolute;
-    width: 50px;
-    height: 3px;
-    top: 30px;
-    right: 20px;
-    transition: opacity 0.3s, transform 0.3s;
+  a:hover {
+    & span,
+    & span::after,
+    & span::before {
+      background-color: @pink-contact;
+    }
+  }
+  a:active {
+    & span,
+    & span::after,
+    & span::before {
+      background-color: @pink-rgba;
+    }
+  }
+
+  &__close {
 
   }
-  &__open:hover{
-    background-color: @pink-contact;
-  }
-  &__open:active{
-    background-color: @pink-rgba;
-  }
-  &__open:hover::before{
-    background-color: @pink-contact;
-  }
-  &__open:active::before{
-    background-color: @pink-rgba;
-  }
-  &__open:hover::after{
-    background-color: @pink-contact;
-  }
-  &__open:active::after{
-    background-color: @pink-rgba;
-  }
+}
+//  border: 1px solid red;
+//    float: right;
+//    position: relative;
+//    //  right: 0;
+//    //  top: 0;
+//    height: 65px;
+//    width: 65px
+//  border: 1px solid red;
+//    & a {
+//  }
+//
+//  &__open,
+//  &__close {
+////    position: absolute;
+////    content: '';
+////    height: 50px;
+////    width: 50px;
+////    top: 0;
+////    right: 0;
+////    display: block;
+//  }
+//  &__open span,
+//  &__close span {
+//    font-size: @font-size-zero;
+//  }
+//  &__open::after {
+//    content: '';
+//    background-color: @white;
+//    position: absolute;
+//    width: 50px;
+//    height: 3px;
+//    top: 10px;
+//    right: 0;
+//    transition: opacity 0.3s, transform 0.3s;
+//  }
+//  &__open::before {
+//    content: '';
+//    background-color: @white;
+//    position: absolute;
+//    width: 50px;
+//    height: 3px;
+//    top: -10px;
+//    right: 0;
+//    transition: opacity 0.3s, transform 0.3s;
+//
+//  }
+//  &__open {
+//    content: '';
+//    background-color: @white;
+//    position: absolute;
+//    width: 50px;
+//    height: 3px;
+//    top: 30px;
+//    right: 20px;
+//    transition: opacity 0.3s, transform 0.3s;
+//
+//  }
+//  &__open:hover{
+//    background-color: @pink-contact;
+//  }
+//  &__open:active{
+//    background-color: @pink-rgba;
+//  }
+//  &__open:hover::before{
+//    background-color: @pink-contact;
+//  }
+//  &__open:active::before{
+//    background-color: @pink-rgba;
+//  }
+//  &__open:hover::after{
+//    background-color: @pink-contact;
+//  }
+//  &__open:active::after{
+//    background-color: @pink-rgba;
+//  }
+////&__open::after {
+//    content: '';
+//    background-color: @white;
+//    position: absolute;
+//    width: 50px;
+//    height: 3px;
+//    top: 10px;
+//    right: 0;
+//    transition: opacity 0.3s, transform 0.3s;
+//  }
+//  &__open::before {
+//    content: '';
+//    background-color: @white;
+//    position: absolute;
+//    width: 50px;
+//    height: 3px;
+//    top: -10px;
+//    right: 0;
+//    transition: opacity 0.3s, transform 0.3s;
+//
+//  }
+//  &__open {
+//    content: '';
+//    background-color: @white;
+//    position: absolute;
+//    width: 50px;
+//    height: 3px;
+//    top: 30px;
+//    right: 20px;
+//    transition: opacity 0.3s, transform 0.3s;
+//
+//  }
+//  &__open:hover{
+//    background-color: @pink-contact;
+//  }
+//  &__open:active{
+//    background-color: @pink-rgba;
+//  }
+//  &__open:hover::before{
+//    background-color: @pink-contact;
+//  }
+//  &__open:active::before{
+//    background-color: @pink-rgba;
+//  }
+//  &__open:hover::after{
+//    background-color: @pink-contact;
+//  }
+//  &__open:active::after{
+//    background-color: @pink-rgba;
+//  }
+
+
+
+
+
+
+
+
+    /**/
 //  &__open:hover {
 //    height: 0;
 //    width: 0;
@@ -85,12 +205,11 @@
 //    transform: rotate(-45deg) translateY(4px) translateX(-10px);
 //    opacity: 1;
 //  }
-}
+//}
 
 .download-app {
-  margin: 15px 0;
   text-align: center;
-  padding: 15px 0;
+  padding: 30px 0;
   &__button {
     display: inline-block;
     border: 3px solid @white;
@@ -101,6 +220,7 @@
     border-radius: 25px;
     width: 275px;
     height: 50px;
+    cursor: pointer;
 
     &:hover {
       background-color: @white;

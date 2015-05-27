@@ -17,59 +17,58 @@
         <div class="logo">
             <a class="logo__PINK" href="#"><span>PINK</span></a>
 
-        </div>
-        <h1 class="index-header__title">Взгляните на жизнь иначе!</h1>
-    </div>
-    <!-- Выпадающее меню начало  -->
-    <div>
-        <ul class="menu">
-            <li class="menu__item">
-                <a class="menu-button__open" href="#"><span class="menu-button
+            <div class="button-menu-header">
+                <a class="button-menu-header__open" href="#"><span class="menu-button
                 ">Open menu</span></a>
-                <a class="menu-button__close" href="#"><span>Close menu</span></a>
+                <a class="button-menu-header__close" href="#"><span>Close menu</span></a>
+            </div>
+        </div>
 
-                <nav class="ddmenu">
-                    <ul>
-                        <li class="ddmenu-item">
-                            <a class="ddmenu-item__link" href="#">Информация</a>
-                        </li>
-                        <li class="ddmenu-item">
-                            <a class="ddmenu-item__link" href="#">Возможности</a>
-                        </li>
-                        <li class="ddmenu-item">
-                            <a class="ddmenu-item__link" href="#">Отзывы</a>
-                        </li>
-                        <li class="ddmenu-item">
-                            <a class="ddmenu-item__link" href="#">Стоимость</a>
-                        </li>
-                    </ul>
-                </nav>
-            </li>
-        </ul>
-    </div>
+        <!-- Выпадающее меню начало  -->
 
 
-    <!-- Выпадающее меню конец -->
-
-    <div class="iconsOS">
-        <form class="download-app" action="#" method="post">
-            <input class="download-app__button" type="button" value="Скачать приложение">
-        </form>
-        <div class="iconsOS-list">
-            <!-- Иконки iOS, Android, Windows OS -->
+        <nav class="ddmenu">
             <ul>
-                <li class="iconsOS-list__item">
-                    <a href="#"><img src="img/header-logo-apple.png" width="46" height="57" alt="iOS"></a>
+                <li class="ddmenu-item">
+                    <a class="ddmenu-item__link" href="#">Информация</a>
                 </li>
-                <li class="iconsOS-list__item">
-                    <a href="#"><img src="img/header-logo-android.png" width="42" height="47" alt="Android"></a>
+                <li class="ddmenu-item">
+                    <a class="ddmenu-item__link" href="#">Возможности</a>
                 </li>
-                <li class="iconsOS-list__item">
-                    <a href="#"><img src="img/header-logo-microsoft.png" width="44" height="42" alt="Windows OS"></a>
+                <li class="ddmenu-item">
+                    <a class="ddmenu-item__link" href="#">Отзывы</a>
+                </li>
+                <li class="ddmenu-item">
+                    <a class="ddmenu-item__link" href="#">Стоимость</a>
                 </li>
             </ul>
+        </nav>
+
+
+        <!-- Выпадающее меню конец -->
+        <h1 class="index-header__title">Взгляните на жизнь иначе!</h1>
+
+        <div class="iconsOS">
+            <form class="download-app" action="#" method="post">
+                <input class="download-app__button" type="button" value="Скачать приложение">
+            </form>
+            <div class="iconsOS-list">
+                <!-- Иконки iOS, Android, Windows OS -->
+                <ul>
+                    <li class="iconsOS-list__item">
+                        <a href="#"><img src="img/header-logo-apple.png" width="46" height="57" alt="iOS"></a>
+                    </li>
+                    <li class="iconsOS-list__item">
+                        <a href="#"><img src="img/header-logo-android.png" width="42" height="47" alt="Android"></a>
+                    </li>
+                    <li class="iconsOS-list__item">
+                        <a href="#"><img src="img/header-logo-microsoft.png" width="44" height="42"
+                                         alt="Windows OS"></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="iconsOS__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
         </div>
-        <div class="iconsOS__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
     </div>
 
 
@@ -177,26 +176,24 @@
 
 
     <section class="app">
-        <!--<div class="app-toggle">-->
-            <!-- переключатель страниц (точки) -->
-            <input type="radio" id="app-btn-1" name="app-toggle" checked>
-            <input type="radio" id="app-btn-2" name="app-toggle">
-            <input type="radio" id="app-btn-3" name="app-toggle">
+        <!-- переключатель страниц (точки) -->
+        <input type="radio" id="app-btn-1" name="app-toggle" checked>
+        <input type="radio" id="app-btn-2" name="app-toggle">
+        <input type="radio" id="app-btn-3" name="app-toggle">
 
-            <div class="app-controls">
+        <div class="app-controls">
 
-                <label for="app-btn-1"></label>
-                <label for="app-btn-2"></label>
-                <label for="app-btn-3"></label>
+            <label for="app-btn-1"></label>
+            <label for="app-btn-2"></label>
+            <label for="app-btn-3"></label>
 
-            </div>
+        </div>
 
-        <!--</div>-->
         <div class="app-inner">
             <div class="app-slider">
                 <article class="app-item">
                     <div class="app-item__header">
-                        <h4 class="app-item__header-title">Стандарт</h4>
+                        <h4 class="app-item__header-title app-item__header-title--hit">Стандарт</h4>
 
                         <div class="app-item__header-price">3,99 USD</div>
                     </div>
@@ -217,6 +214,7 @@
                 <article class="app-item">
                     <div class="app-item__header">
                         <h4 class="app-item__header-title">Стандарт</h4>
+
                         <div class="app-item__header-price">3,99 USD</div>
                     </div>
                     <div class="app-list">
@@ -270,14 +268,15 @@
 
             <div class="footer-index-content__text">
                 Звоните:<br>
-                <span class="footer-index-content__contact"> +7(812)555&ndash;66&ndash;66</span>
+                <span><a href="tel: +78125556666" class="footer-index-content__contact">
+                    +7(812)555&ndash;66&ndash;66</a></span>
             </div>
 
             <div class="footer-index-content__text">
                 Пишите:<br>
-            <span class="footer-index-content__contact">
-                mail@htmlacademy.ru.
-            </span>
+            <span><a href="mailto:mail@htmlacademy.ru" class="footer-index-content__contact">
+                mail@htmlacademy.ru
+            </a></span>
             </div>
 
             <div class="footer-index-content__text">
