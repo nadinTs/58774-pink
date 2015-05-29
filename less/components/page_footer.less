@@ -2,7 +2,6 @@
 .footer-index {
   width: 320px;
   height: 615px;
-  background: url('@{img-path}/map.png') no-repeat -345px 90px;
   text-align: center;
 
   &__align {
@@ -180,4 +179,38 @@
       background: url('@{img-path}/footer-logo-active.png') no-repeat  right 0;
     }
   }
+}
+
+
+@media (min-width: @screen-md) and (max-width: (@screen-lg - 1)) {
+  .footer-index {
+    min-width: 700px;
+    max-width: 1039px;
+    &__align {
+
+      width: auto;
+
+    }
+  }
+  .footer-index-content {
+
+
+    &__question {
+      font-size: @font-size-title-header-tablet;
+    }
+    &__text {
+    float: left;
+    width: 300px;
+
+      &--tablet {
+        width: 600px;
+        text-align: center;
+      }
+
+      }
+    }
+
+
+
+
 }

@@ -3,14 +3,17 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: pink</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,cyrillic-ext'
           rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" charset="utf-8"
+            src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=Oc-VIgTSxjlJrwnFOUtW_UZFZpDCsQoW&width=600&height=450&id=mymap"></script>
+<body>
+<div class="page">
 
-</head>
-
-<body class="page">
+<div class="page__inner">
 
 <header class="index-header">
     <div class="index-header__slogan">
@@ -46,7 +49,9 @@
 
 
         <!-- Выпадающее меню конец -->
-        <h1 class="index-header__title">Взгляните на жизнь иначе!</h1>
+        <div class="index-header__title">
+            <h1>Взгляните на жизнь иначе!</h1>
+        </div>
 
         <div class="iconsOS">
             <form class="download-app" action="#" method="post">
@@ -76,39 +81,45 @@
 
 <main>
     <section class="promo">
-        <div class="promo-slogan">
-            <h2 class="promo-slogan__title">Устали от серости мегаполиса?</h2>
+        <div class="promo__wrap">
+            <div class="promo-slogan">
+                <h2 class="promo-slogan__title">Устали от серости мегаполиса?</h2>
 
-            <h2 class="promo-slogan__title">Нам есть, что вам предложить!</h2>
+                <h2 class="promo-slogan__title">Нам есть, что вам предложить!</h2>
+            </div>
+            <article class="promo-item">
+                <h2 class="promo-item__title">Поднимает настроение</h2>
+
+                <div class="promo-item__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+                    несколько кликов!
+                </div>
+            </article>
+            <article class="promo-item">
+                <h2 class="promo-item__title">Меняет мир вокруг</h2>
+
+                <div class="promo-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                    усилить эффект
+                </div>
+            </article>
+            <article class="promo-item">
+                <h2 class="promo-item__title">Заводите новых друзей</h2>
+
+                <div class="promo-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+                    новых
+                </div>
+            </article>
         </div>
-        <article class="promo-item">
-            <h2 class="promo-item__title">Поднимает настроение</h2>
-
-            <div class="promo-item__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
-                несколько кликов!
-            </div>
-        </article>
-        <article class="promo-item">
-            <h2 class="promo-item__title">Меняет мир вокруг</h2>
-
-            <div class="promo-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-                усилить эффект
-            </div>
-        </article>
-        <article class="promo-item">
-            <h2 class="promo-item__title">Заводите новых друзей</h2>
-
-            <div class="promo-item__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
-                новых
-            </div>
-        </article>
-
     </section>
-
+    <section class="tablet-effect">
+        <article class="tablet-effect-clock">
+            <h2 class="tablet-effect-clock__title">Эффект<br> на 24 часа!</h2>
+            <div class="tablet-effect-clock__text">Британские  ученые провели исследования и доказали, что положителный эффект от использования приложения длится целые сутки!</div>
+            <a class="tablet-effect-clock__link" href="#">Узнать больше об исследовании</a>
+        </article>
+    </section>
 
     <section class="review">
 
-        <!--<div class="review-toggle">-->
         <!-- переключатель страниц (точки) -->
         <input type="radio" id="btn-1" name="toggle" checked>
         <input type="radio" id="btn-2" name="toggle">
@@ -122,7 +133,6 @@
 
         </div>
 
-        <!--</div>-->
 
         <div class="review-inner">
 
@@ -140,6 +150,10 @@
                         еще
                         я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
                     </div>
+                    <div class="review-sign">
+                        <h4 class="review-sign__title">Николай Петров1 </h4>
+                        <div class="review-sign__text">25 лет, водитель трамвая</div>
+                    </div>
                 </article>
 
                 <article class="review-item">
@@ -152,6 +166,10 @@
                         вещи! А
                         еще
                         я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+                    </div>
+                    <div class="review-sign">
+                        <h4 class="review-sign__title">Николай Петров2 </h4>
+                        <div class="review-sign__text">25 лет, водитель трамвая</div>
                     </div>
                 </article>
 
@@ -166,6 +184,10 @@
                         еще
                         я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
                     </div>
+                    <div class="review-sign">
+                        <h4 class="review-sign__title">Николай Петров3 </h4>
+                        <div class="review-sign__text">25 лет, водитель трамвая</div>
+                    </div>
                 </article>
 
             </div>
@@ -176,84 +198,99 @@
 
 
     <section class="app">
-        <!-- переключатель страниц (точки) -->
-        <input type="radio" id="app-btn-1" name="app-toggle" checked>
-        <input type="radio" id="app-btn-2" name="app-toggle">
-        <input type="radio" id="app-btn-3" name="app-toggle">
+        <div class="app__wrap">
+            <!-- переключатель страниц (точки) -->
+            <input type="radio" id="app-btn-1" name="app-toggle" checked>
+            <input type="radio" id="app-btn-2" name="app-toggle">
+            <input type="radio" id="app-btn-3" name="app-toggle">
 
-        <div class="app-controls">
+            <div class="app-controls">
 
-            <label for="app-btn-1"></label>
-            <label for="app-btn-2"></label>
-            <label for="app-btn-3"></label>
+                <label for="app-btn-1"></label>
+                <label for="app-btn-2"></label>
+                <label for="app-btn-3"></label>
 
-        </div>
+            </div>
 
-        <div class="app-inner">
-            <div class="app-slider">
-                <article class="app-item">
-                    <div class="app-item__header">
-                        <h4 class="app-item__header-title app-item__header-title--hit">Стандарт</h4>
+            <div class="app-inner">
+                <div class="app-slider">
+                    <article class="app-item app-item-tablet">
+                        <div class="app-item__header app-item__header--tablet">
+                            <h4 class="app-item__header-title">1</h4>
 
-                        <div class="app-item__header-price">3,99 USD</div>
-                    </div>
-                    <div class="app-list">
-                        <ul>
-                            <li class="app-list__item">
-                                Розовый фильтр
-                            </li>
-                            <li class="app-list__item">
-                                Смайлики
-                            </li>
-                            <li class="app-list__item app-list__item--not">
-                                Комментарии
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="app-item">
-                    <div class="app-item__header">
-                        <h4 class="app-item__header-title">Стандарт</h4>
+                            <div class="app-item__header-price">2</div>
+                        </div>
+                        <div class="app-list">
+                            <ul>
+                                <li class="app-list__item ">Розовый фильтр</li>
+                                <li class="app-list__item ">Смайлики</li>
+                                <li class="app-list__item ">Комментарии</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="app-item">
+                        <div class="app-item__header">
+                            <h4 class="app-item__header-title">База</h4>
 
-                        <div class="app-item__header-price">3,99 USD</div>
-                    </div>
-                    <div class="app-list">
-                        <ul>
-                            <li class="app-list__item">
-                                Розовый фильтр
-                            </li>
-                            <li class="app-list__item">
-                                Смайлики
-                            </li>
-                            <li class="app-list__item app-list__item--not">
-                                Комментарии
-                            </li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="app-item">
-                    <div class="app-item__header">
-                        <h4 class="app-item__header-title">Стандарт</h4>
+                            <div class="app-item__header-price">1,99 USD</div>
+                        </div>
+                        <div class="app-list">
+                            <ul>
+                                <li class="app-list__item app-list__item--yes">
+                                    <span class="app-list__item-text">Розовый фильтр</span>
+                                </li>
+                                <li class="app-list__item app-list__item--not">
+                                    <span class="app-list__item-text">Смайлики</span>
+                                </li>
+                                <li class="app-list__item app-list__item--not">
+                                    <span class="app-list__item-text">Комментарии</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="app-item">
+                        <div class="app-item__header">
+                            <h4 class="app-item__header-title app-item__header-title--hit">Стандарт</h4>
 
-                        <div class="app-item__header-price">3,99 USD</div>
-                    </div>
-                    <div class="app-list">
-                        <ul>
-                            <li class="app-list__item">
-                                Розовый фильтр
-                            </li>
-                            <li class="app-list__item">
-                                Смайлики
-                            </li>
-                            <li class="app-list__item app-list__item--not">
-                                Комментарии
-                            </li>
-                        </ul>
-                    </div>
-                </article>
+                            <div class="app-item__header-price">3,99 USD</div>
+                        </div>
+                        <div class="app-list">
+                            <ul>
+                                <li class="app-list__item  app-list__item--yes">
+                                    <span class="app-list__item-text">Розовый фильтр</span>
+                                </li>
+                                <li class="app-list__item  app-list__item--yes">
+                                    <span class="app-list__item-text">Смайлики</span>
+                                </li>
+                                <li class="app-list__item app-list__item--not">
+                                    <span class="app-list__item-text">Комментарии</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="app-item">
+                        <div class="app-item__header">
+                            <h4 class="app-item__header-title">Анлим</h4>
+
+                            <div class="app-item__header-price">9,99 USD</div>
+                        </div>
+                        <div class="app-list">
+                            <ul>
+                                <li class="app-list__item  app-list__item--yes">
+                                    <span class="app-list__item-text">Розовый фильтр</span>
+                                </li>
+                                <li class="app-list__item  app-list__item--yes">
+                                    <span class="app-list__item-text">Смайлики</span>
+                                </li>
+                                <li class="app-list__item app-list__item--yes">
+                                    <span class="app-list__item-text">Комментарии</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
             </div>
         </div>
-
 
     </section>
 </main>
@@ -263,7 +300,7 @@
         <div class="footer-index-content">
 
             <h2 class="footer-index-content__question">
-                Остались вопросы? Свяжитесь с нами
+                Остались вопросы?<br> Свяжитесь с нами
             </h2>
 
             <div class="footer-index-content__text">
@@ -279,18 +316,20 @@
             </a></span>
             </div>
 
-            <div class="footer-index-content__text">
+            <div class="footer-index-content__text footer-index-content__text--tablet">
                 Приезжайте в гости:<br>
 
             <span class="footer-index-content__contact">
                 ул. Большая<br> Конюшенная, 19/8
             </span>
             </div>
+            <div id="mymap"></div>
         </div>
     </div>
 </footer>
 
 <!-- <script src="js/script.js"></script> -->
-
+</div>
+</div>
 </body>
 </html>
