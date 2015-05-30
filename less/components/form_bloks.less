@@ -3,8 +3,7 @@
   &__slogan {
     display: block;
     width: auto;
-    height: 70px;
-    padding: 50px 20px;
+    padding: 50px 20px 40px 20px;
     margin: 0;
     text-align: center;
     line-height: 1.5em;
@@ -36,23 +35,23 @@
     text-transform: uppercase;
     font-size: @font-header-description;
     font-weight: 400;
-    padding: 20px 15px 10px 15px ;
+    padding: 20px 15px 10px 15px;
   }
   &__input {
     display: block;
-    width: 260px;
+    width: 240px;
     height: 50px;
-    padding-left: 15px;
-    border: 2px solid @back-light-grey;
+    padding: 0 20px;
+    border: 1px solid @back-light-grey;
     font-size: @font-size-promo-title;
     color: @header-app;
   }
   &__input:hover {
-    border: 2px solid @header-app;
+    border: 1px solid @header-app;
   }
 
   &__input:focus, &__input:focus {
-    border: 2px solid @pink-contact;
+    border: 1px solid @pink-contact;
   }
 }
 
@@ -61,7 +60,6 @@
   width: 320px;
   min-height: 335px;
   text-align: center;
-  //  padding: 0 20px;
   &__title {
     text-transform: uppercase;
     font-size: @font-header-description;
@@ -104,7 +102,7 @@
     background-color: @white;
     border: 9px solid @white;
     border-radius: 50%;
-    box-shadow: 0px 0px 2px 1px @grey-toggle;
+    box-shadow: 0px 0px 1px 1px @grey-toggle;
   }
   &__label:hover::before {
     position: absolute;
@@ -116,7 +114,7 @@
     background-color: @white;
     border: 9px solid @white;
     border-radius: 50%;
-    box-shadow: 0px 0px 2px 1px @header-app;
+    box-shadow: 0px 0px 1px 1px @header-app;
   }
   &__label:active::before {
     position: absolute;
@@ -164,20 +162,19 @@
     height: 56px;
     text-align: left;
     padding-left: 10px;
-    border: 2px solid @back-light-grey;
+    border: 1px solid @back-light-grey;
     font-size: @font-size-promo-title;
     color: @header-app;
 
   }
   &__input:hover {
-    border: 2px solid @header-app;
+    border: 1px solid @header-app;
   }
   &__input:active {
-    border: 2px solid @pink-contact;
+    border: 1px solid @pink-contact;
   }
 
   &__label {
-    width: 300px;
     display: block;
     color: @pink-contact;
     text-transform: uppercase;
@@ -194,52 +191,44 @@
   &__input,
   &__input:hover,
   &__input:active,
-  &__input:focus{
-    display: block;
-    width: 266px;
-    height: 57px;
+  &__input:focus {
+    width: 160px;
+    height: 58px;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    padding-left: 10px;
-    border: 2px solid @back-light-grey;
+    background-color: @white;
+    border-top: 1px solid @grey-toggle;
+    border-bottom: 1px solid @grey-toggle;
     font-size: @font-size-promo-title;
     color: @header-app;
-
+    float: left;
   }
+
   &__minus {
-    position: absolute;
     width: 60px;
     height: 60px;
-    top: 0;
-    left: 0;
-    background: url("@{img-path}/_base-.png") no-repeat 0 0;
-    float: right;
+    background: url("@{img-path}/base-minus.png") no-repeat 0 0;
+    float: left;
 
   }
   &__plus {
-    position: absolute;
     width: 60px;
     height: 60px;
-    top: 0;
-    right: 0;
-    background: url("@{img-path}/_base+.png") no-repeat 0 0;
+    background: url("@{img-path}/base-minus.png") no-repeat 0 0;
     float: right;
   }
-
-  &__minus:hover {
-    background: url("@{img-path}/_hover-.png") no-repeat 0 0;
-  }
   &__plus:hover {
-    background: url("@{img-path}/_hover+.png") no-repeat 0 0;
+    background: url("@{img-path}/hover-plus.png") no-repeat 0 0;
   }
-
-  &__plus:active{
-    background: url("@{img-path}/_active+.png") no-repeat 0 0;
-
+  &__minus:hover {
+    background: url("@{img-path}/hover-minus.png") no-repeat 0 0;
   }
-
+  &__plus:active {
+    background: url("@{img-path}/active-plus.png") no-repeat 0 0;
+  }
   &__minus:active {
-    background: url("@{img-path}/_active-.png") no-repeat 0 0;
-
+    background: url("@{img-path}/active-minus.png") no-repeat 0 0;
   }
 
   &__label {
@@ -256,8 +245,8 @@
 .companions {
   background-color: @back-light-grey;
   width: 320px;
-  min-height: 740px;
   text-align: center;
+  padding-bottom: 40px;
 
   &__label {
     display: block;
@@ -271,25 +260,23 @@
 
 .toggle-companions {
   padding-bottom: 40px;
-  padding: 0;
   display: inline-block;
   text-align: center;
-  width: 280;
-  min-height: 110px;
-  border-bottom: 2px solid @grey-toggle;
+  width: 280px;
+  border-bottom: 1px solid @grey-toggle;
 
   &__input,
   &__input:hover,
   &__input:active,
-  &__input:focus{
+  &__input:focus {
     width: 160px;
-    height: 57px;
+    height: 58px;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: @back-light-grey;
-    border-top: 2px solid @grey-toggle;
-    border-bottom: 2px solid @grey-toggle;
+    border-top: 1px solid @grey-toggle;
+    border-bottom: 1px solid @grey-toggle;
     font-size: @font-size-promo-title;
     color: @header-app;
     float: left;
@@ -298,122 +285,78 @@
   &__minus {
     width: 60px;
     height: 60px;
-    background: url("@{img-path}/_base-.png") no-repeat 0 0;
+    background: url("@{img-path}/base-minus.png") no-repeat 0 0;
     float: left;
 
   }
   &__plus {
     width: 60px;
     height: 60px;
-    background: url("@{img-path}/_base+.png") no-repeat 0 0;
+    background: url("@{img-path}/base-minus.png") no-repeat 0 0;
     float: right;
   }
   &__plus:hover {
-    background: url("@{img-path}/_hover+.png") no-repeat 0 0;
+    background: url("@{img-path}/hover-plus.png") no-repeat 0 0;
   }
   &__minus:hover {
-    background: url("@{img-path}/_hover-.png") no-repeat 0 0;
+    background: url("@{img-path}/hover-minus.png") no-repeat 0 0;
   }
-  &__plus:active{
-    background: url("@{img-path}/_active+.png") no-repeat 0 0;
+  &__plus:active {
+    background: url("@{img-path}/active-plus.png") no-repeat 0 0;
   }
   &__minus:active {
-    background: url("@{img-path}/_active-.png") no-repeat 0 0;
+    background: url("@{img-path}/active-minus.png") no-repeat 0 0;
   }
 }
 
 .companions-fullname {
-  clear: both;
-  width: 320px;
-  padding-bottom: 40px;
-}
-
-.header-group {
-  display: inline-block;
-  width: 275px;
-  color: @pink-contact;
-  padding-top: 30px;
-
-
-  &__sign {
-    margin: 0;
-    padding: 0;
+  width: 280px;
+  padding: 10px 20px 0 20px;
+  .companions-left {
     float: left;
-    width: 55px;
-    height: 20px;
-    font-size: @font-header-description;
+    width: 60px;
+    &__sign {
+      padding: 20px 0 10px 0;
+      color: @pink-contact;
+      font-size: @font-header-description;
+      font-weight: 100;
 
-  }
-  &__name {
-    float: right;
-    width: 197px;
-    padding-left: 20px;
-    height: 20px;
-    text-align: left;
-    font-size: @font-header-description;
-    text-transform: uppercase;
+    }
+    &__number {
+      border: 1px solid @grey-toggle;
+      width: 60px;
+      height: 40px;
+      padding-top: 20px;
+      color: @header-app;
 
-  }
-}
-
-.group-name {
-  display: inline-block;
-  border: 2px solid @grey-toggle;
-  width: 275px;
-  color: @header-app;
-
-  &__number {
-    margin: 0;
-    padding: 0;
-    float: left;
-    padding-top: 20px;
-    width: 55px;
-    height: 35px;
-    border-right: 2px solid @grey-toggle;
-    font-size: @font-header-description;
-
-  }
-  &__input {
-    float: right;
-    width: 197px;
-    padding-top: 5px;
-    padding-left: 20px;
-    height: 50px;
-    background-color: @white;
-    font-size: @font-size-promo-title;
-
+    }
   }
 }
 
-.nickname-group {
-  clear: both;
-  width: 320px;
-
-  &__label {
-    display: block;
-    float: right;
-    width: 220px;
-    height: 15px;
-    padding: 20px 0 10px 20px;
-    color: @pink-contact;
-    font-size: @font-header-description;
-    text-transform: uppercase;
-    text-align: left;
-  }
+.companions-right {
+  float: right;
+  width: 220px;
 
   &__input,
   &__input:hover,
   &__input:active,
-  &__input:focus
-  {
-    margin-left: 60px;
-    height: 55px;
-    width: 195px;
-    padding-left: 20px;
+  &__input:focus {
+    height: 60px;
+    width: 180px;
     font-size: @font-size-promo-title;
-    border: 2px solid @grey-toggle;
+    font-weight: 100;
+    border: 1px solid @grey-toggle;
     color: @header-app;
+//    margin-bottom: 30px;
+    padding: 0 20px;
 
+  }
+  &__label {
+    color: @pink-contact;
+    font-size: @font-header-description;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding: 20px 0 10px 0;
   }
 }
 
@@ -452,7 +395,7 @@
     left: 0;
     width: 40px;
     height: 40px;
-    border: 2px solid @back-light-grey;
+    border: 1px solid @back-light-grey;
     border-radius: 2%;
   }
   &__label:hover::before {
@@ -517,14 +460,13 @@
   width: 280px;
   height: 40px;
   padding-bottom: 40px;
-  border-bottom: 2px solid @grey-toggle;
-
+  border-bottom: 1px solid @grey-toggle;
 
   &__file {
-}
+  }
 }
 
-.gallery-foto{
+.gallery-foto {
   display: inline-block;
   width: 280px;
   padding: 0 20px;
@@ -544,29 +486,31 @@
     width: 30px;
     height: 30px;
     background: url("@{img-path}/cross.png") no-repeat 50% 50%;
-    border: 2px solid @grey-toggle;
+    border: 1px solid @grey-toggle;
     border-radius: 50%;
     z-index: 100;
   }
   &__img:nth-child(3n+3)::before {
-     top: 20px;
-     right: -20px;
-   }
-  &__img:hover::before{
+    top: 20px;
+    right: -20px;
+  }
+  &__img:hover::before {
     background: url("@{img-path}/cross-hover.png") no-repeat 50% 50%;
     border-color: @header-app;
   }
-  &__img:active::before{
+  &__img:active::before {
     background: url("@{img-path}/cross-active.png") no-repeat 50% 50%;
     border-color: @header-app;
     background-color: @header-app;
   }
 }
-.gallery-button-submit{
+
+.gallery-button-submit {
   width: 28 0px;
   min-height: 120px;
   padding: 40px 20px;
 }
+
 .gallery-text {
   color: @header-app;
   font-size: @font-size-header-button;
@@ -576,10 +520,10 @@
     color: @pink-contact;
   }
 }
-.gallery-submit{
+
+.gallery-submit {
   padding-bottom: 40px;
 }
-
 
 .warning {
   display: none;
