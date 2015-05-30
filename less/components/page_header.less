@@ -4,12 +4,10 @@
   background-color: @dark-gray;
   width: 100%;
   max-width: 700px;
-  min-height: 725px;
   background: @dark-gray url('@{img-path}/background-mobile@1x.jpg') no-repeat 50% 0;
 
   &__slogan {
     width: 100%;
-    min-height: 715px;
     background: url('@{img-path}/iphone-hand-mobile.png') no-repeat 50% 202px;
 
   }
@@ -18,7 +16,6 @@
     display: block;
     margin: 0 auto;
     width: 260px;
-    min-height: 423px;
 
     & h1 {
       padding-top: 10px;
@@ -56,7 +53,7 @@
 .iconsOS {
   text-align: center;
   width: 320px;
-  margin: 0 auto;
+  margin: 350px auto 0 auto;
 
   &__content {
     color: @font-color-text;
@@ -88,23 +85,22 @@
 /*blog*/
 .main-header {
   background-color: @dark-gray;
-  width: 320px;
-  min-height: 195px;
+  max-width: 699px;
 
   &__slogan {
-    width: auto;
-    min-height: 195px;
-    background:@dark-gray url('@{img-path}/background-photo.png') no-repeat 50% -68px;
+    width: 100%;
+    background: @dark-gray url('@{img-path}/background-mobile@1x.jpg') no-repeat 50% 0;
 
   }
   &__title {
+    width: 300px;
     font-family: @font-base;
     font-size: @font-size-header-title;
     font-weight: 100;
     color: @font-color-text;
     text-align: center;
     padding: 30px 10px 35px 10px;
-
+    margin: 0 auto;
   }
 
 }
@@ -116,15 +112,12 @@
 
     &__slogan {
       width: 100%;
-      min-height: 730px;
       background: url('@{img-path}/iphone-hand-tablet@1x.png') no-repeat 50% 100%;
-
-
 
     }
     &__title {
       width: 100%;
-      min-height: 290px;
+      padding: 30px 0 35px 0;
 
     }
     & h1 {
@@ -137,6 +130,7 @@
       font-weight: 100;
     }
   }
+
   .logo {
 
     &__PINK {
@@ -158,12 +152,32 @@
     margin-left: 3%;
 
   }
+
   .logo {
     min-height: 105px;
   }
 
-}
+  /*blog*/
+  .main-header {
+    max-width: 1039px;
+    width: 100%;
 
+    &__slogan {
+      width: 100%;
+      background: @dark-gray url('@{img-path}/background-tablet@1x.jpg') no-repeat 50% 0px;
+
+    }
+    &__title {
+      width: 670px;
+      padding: 30px 0px 35px 0px;
+      margin: 0 auto;
+      font-size: @font-size-50px;
+      font-weight: 100;
+
+    }
+
+  }
+}
 
 
 

@@ -5,8 +5,8 @@
 }
 
 .announce-item {
-  padding: 20px 20px 40px 20px;
-  margin: 0;
+  padding: 20px 0 40px 0;
+  margin: 0 20px;
   line-height: 1.5em;
   border-bottom: 1px solid  @back-light-grey;
 
@@ -37,7 +37,6 @@
 
 .toggle-number {
   display: block;
-  width: 320px;
   text-align: center;
 
   &__link {
@@ -46,13 +45,73 @@
     font-weight: 600;
     font-size: @font-size-header-button;
     padding: 15px 20px;
-    margin:0 10px 10px 0;
+    margin: 0 10px 10px 0;
     border: 1px solid @font-color-text;
     border-radius: 10%;
 
     &:first-child {
       border-color: @pink-contact;
     }
+  }
+
+}
+
+@media (min-width: @screen-md) and (max-width: (@screen-lg - 1)) {
+
+
+
+  .announce-item {
+    padding: 20px 0 40px 0;
+    margin: 0 20px 0 60px;
+
+
+    &__title {
+      position: relative;
+      display: block;
+      &::before {
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: -40px;
+        width: 30px;
+        height: 30px;
+        background: url("@{img-path}/tablet-message.png") no-repeat 0 0;
+        z-index: 100;
+      }
+    }
+
+  }
+
+  .toggle-number {
+    display: block;
+    position: relative;
+    text-align: left;
+    margin-left: 60px;
+    &::before {
+      position: absolute;
+      content: 'СТР.';
+      color: @header-app;
+      font-size: @font-size-promo-title;
+      font-weight: bold;
+      top: 20px;
+      left: -40px;
+      width: 30px;
+      height: 30px;
+    }
+
+    &__link {
+      display: inline-block;
+      color: @header-app;
+      font-weight: 600;
+      font-size: @font-size-promo-title;
+      padding: 15px 20px;
+      margin: 0 10px 10px 0;
+
+      &:first-child {
+        border-color: @pink-contact;
+      }
+    }
+
   }
 
 }
