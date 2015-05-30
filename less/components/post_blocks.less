@@ -7,16 +7,15 @@
 
 .post-header {
   width: 280px;
-  min-height: 320;
   text-align: center;
-  padding: 0 20px 20px 20px;
+  padding: 40px 20px 20px 20px;
   margin: 0;
   border-bottom: 1px solid @back-light-grey;
   &__title {
     width: 260px;
     font-size: @font-size-30px;
     font-weight: bold;
-    padding: 40px 20px 20px 10px;
+    padding: 0 20px 20px 10px;
     margin: 0;
   }
   &__date {
@@ -35,16 +34,16 @@
 
 .post-content {
   text-align: left;
-  padding: 0 20px;
+  padding:35px 20px 0 20px;
   &__title {
     text-transform: uppercase;
     font-size: @font-size-header-button;
     font-weight: bolder;
-    padding: 30px 0 5px 0;
+    padding: 0;
   }
   &__text {
     line-height: 1.5em;
-    padding: 10px 0;
+    padding-top: 15px;
   }
   &__link {
     color: @pink-contact;
@@ -65,6 +64,12 @@
     padding: 0 5px 0 20px;
     border-left: 1px solid @pink-contact;
     line-height: 1.5em;
+    margin-top: 40px;
+
+    &--italic{
+      font-style: italic;
+      color: @font-color-text;
+    }
   }
 }
 
