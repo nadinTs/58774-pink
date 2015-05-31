@@ -53,12 +53,16 @@
     visibility: hidden;
   }
 }
-
+.iconsOS-wrap {
+  background-color: @dark-gray;
+  width: 100%;
+  height: 100%;
+}
 .iconsOS {
   text-align: center;
   width: 320px;
+  margin: 0 auto;
   background-color: @dark-gray;
-//  margin: 350px auto 0 auto;
 
   &__content {
     color: @font-color-text;
@@ -75,8 +79,7 @@
 .iconsOS-list {
     .clearfix;
     width: 260px;
-    margin: 0 auto;
-    vertical-align: baseline;
+    margin-left: 40px;
 
   & ul>li:last-child {
     padding-right: 0px;
@@ -88,6 +91,7 @@
     padding-right: 34px;
     min-height: 57px;
     text-align: center;
+    vertical-align: baseline;
 
   }
 
@@ -115,58 +119,74 @@
   }
 
 }
-
+/***********/
 @media (min-width: @screen-md) and (max-width: (@screen-lg - 1)) {
   .index-header {
     max-width: 1199px;
-    background: @dark-gray url('@{img-path}/background-tablet@1x.jpg') no-repeat 50% 0;
+    background: @dark-gray url('@{img-path}/background-tablet@1x.jpg') no-repeat -250px 0;
 
+    &__wrap {
+      background: none;
+    }
     &__slogan {
       width: 100%;
-      background: url('@{img-path}/iphone-hand-tablet@1x.png') no-repeat 50% 100%;
+      background: url('@{img-path}/iphone-hand-tablet@1x.png') no-repeat 0 75px;
 
     }
     &__title {
+      .clearfix;
       width: 100%;
-      padding: 30px 0 35px 0;
+      padding: 30px 0 32px 0;
 
     }
     & h1 {
       width: 200px;
       float: left;
-      padding-top: 95px;
-      margin-left: 13%;
+      padding-top: 63px;
+      margin-left: 90px;
       font-family: @font-base;
       font-size: @font-size-title-header-tablet;
       font-weight: 100;
+      line-height: 1.2em;
     }
   }
 
   .logo {
+    min-height: 110px;
 
     &__PINK {
-      background: @dark-gray url('@{img-path}/glasses-header-white.png') no-repeat 20px 20px;
+      background: url('@{img-path}/glasses-header-white.png') no-repeat 40px 27px;
       width: 200px;
-      min-height: 105px;
-      top: 30px;
+      min-height: 109px;
     }
     &__PINK:hover {
-      background: @dark-gray url('@{img-path}/glasses-header-pink.png') no-repeat 20px 20px;
+      background:  url('@{img-path}/glasses-header-pink.png') no-repeat 40px 27px;
     }
     &__PINK:active {
-      background: @dark-gray url('@{img-path}/glasses-header-active.png') no-repeat 20px 20px;
+      background: url('@{img-path}/glasses-header-active.png') no-repeat 40px 27px;
     }
 
   }
 
   .iconsOS {
-    margin-left: 3%;
+    margin-left: 20px;
+    background-color: transparent;
 
+    &__content {
+      color: @white;
+      text-align: center;
+      font-size: @font-size-promo-title;
+      line-height: 1.48em;
+      padding: 20px 0 108px 20px;
+      margin: 0 auto;
+      letter-spacing: -0.02em;
+
+    }
+  }
+  .iconsOS-wrap{
+    background-color: transparent;
   }
 
-  .logo {
-    min-height: 105px;
-  }
 
   /*blog*/
   .main-header {

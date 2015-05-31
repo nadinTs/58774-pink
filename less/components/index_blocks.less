@@ -334,16 +334,16 @@
 
   }
 }
-
+/********************/
 @media (min-width: @screen-md) and (max-width: (@screen-lg - 1)) {
   .promo {
     max-width: 1039px;
     min-height: 730px;
-    background-image: linear-gradient(-5deg, @back-light-grey 65%, @white 65%);
+    background-image: linear-gradient(-5deg, @back-light-grey 62.5%, @white 62.5%);
 
     &__wrap {
-      background: url('@{img-path}/iphone-screen-tablet-3@1x.png') no-repeat 10% 100%;
-      min-height: 730px;
+      background: url('@{img-path}/iphone-screen-tablet-3@1x.png') no-repeat 40px 100%;
+      min-height: 725px;
       max-width: 1039px;
       text-align: center;
     }
@@ -351,23 +351,25 @@
   }
 
   .promo-slogan {
-    padding-top: 40px;
+    padding: 47px 0 90px 0;
     width: 600px;
-
-    & h2:last-child {
-      width: 580px;
-    }
+    margin-left:50px ;
+//
+//    & h2:last-child {
+//      width: 580px;
+//    }
 
     &__title {
       font-size: @font-size-title-header-tablet;
       padding: 0;
+      line-height: 1.23em;
     }
 
   }
 
   .promo-item {
     width: 320px;
-    padding: 10px 20px 20px 45%;
+    padding: 33px 15px 0 348px;
 
     text-align: left;
 
@@ -377,9 +379,7 @@
 
     }
     &__text {
-
-      font-size: @font-size-promo-title;
-
+      font-size: @font-header-description;
     }
   }
 
@@ -393,30 +393,30 @@
 
   .tablet-effect-clock {
     min-height: 360px;
-    width: auto;
-    background: url('@{img-path}/tablet-clock.png') no-repeat 8% 80%;
+
+    background: url('@{img-path}/tablet-clock.png') no-repeat 40px 50px;
 
     &__title {
       margin: 0;
-      padding: 90px 100px 20px 45%;
+      font-size: @font-size-30px;
       color: @black;
-      font-size: @tablet-clock-title;
-      font-weight: bold;
-      line-height: 1.1em;
+      padding: 90px 100px 12px 348px;
+      line-height: 1.2em;
 
     }
     &__text {
       margin: 0;
-      padding: 0 50px 20px 45%;
+      padding: 0 50px 10px 348px;
       color: @header-app;
-      font-size: @font-size-header-button;
-      line-height: 1.5em;
+      font-size: @font-header-description;
+      line-height: 1.74em;
     }
     &__link {
+      display: block;
       margin: 0;
-      padding: 100px 50px 20px 45%;
+      padding: 0 50px 20px 348px;
       color: @pink-contact;
-      font-size: @font-size-header-button;
+      font-size: @font-header-description;
       line-height: 1.5em;
       text-decoration: underline;
     }
@@ -424,11 +424,12 @@
 
   .review {
     min-height: 345px;
-    padding-top: 20px;
+    padding: 20px 0 0 20px;
   }
 
   .review-inner {
     width: 620px;
+    padding-top: 35px;
   }
 
   .review-slider {
@@ -438,19 +439,18 @@
   .review-item {
     padding: 0;
     width: 620px;
-    min-height: 300px;
+    min-height: 237px;
     transition: transform .8s ease;
     text-align: center;
-    line-height: 1.5em;
 
     &__title {
       display: none;
 
     }
     &__text {
-      font-size: @font-header-description;
+      font-size: @font-size-promo-title;
       color: @font-color-text;
-      line-height: 2em;
+      line-height: 1.74em;
 
     }
   }
@@ -458,20 +458,20 @@
   .review-sign {
     display: block;
     &__title {
-      font-size: @font-size-promo-title;
+      font-size: @font-size-review-title;
       color: @black;
-      padding-top: 30px;
-      padding-bottom: 10px;
+      padding:37px 0 10px 0;
     }
     &__text {
-      font-size: @font-size-12px;
-      color: @font-color-text;
+      font-size: @font-header-description;
+      color: @tablet-color-text-base;
     }
   }
 
   .review-controls {
     width: 100%;
-    bottom: 100px;
+    padding-left: 10px;
+    bottom: 70px;
   }
 
   #btn-1:checked ~ .review-inner .review-slider > .review-item {
@@ -489,6 +489,7 @@
   .app {
     max-width: 1039px;
     min-height: 290px;
+    padding: 34px 0 0 20px;
     background-image: linear-gradient(to bottom,  @back-light-grey 0,  @back-light-grey 0);
 
     &__wrap {
@@ -524,8 +525,14 @@
     min-height: 100%;
     line-height: 1em;
 
+    &__header-price {
+      font-size: @font-size-promo-title;
+      font-weight: 100;
+      margin: 0;
+    }
+
     &__header {
-      padding: 15px 0 5px 0;
+      padding: 20px 0 1px 0;
       min-height: 60px;
       border-right: 2px solid @grey-toggle;
       &--tablet{
@@ -536,6 +543,12 @@
       }
 
     }
+    &__header-title {
+      font-size: @font-size-header-button;
+      margin: 0;
+      padding-bottom: 8px;
+
+    }
 
   }
 
@@ -543,7 +556,7 @@
     &__item {
       width: auto;
       text-transform: none;
-      padding: 10px 0  0 10px;
+      padding: 10px 0  0 15px;
       border-top: 2px solid @grey-toggle;
       border-left: 2px solid @grey-toggle;
       border-bottom: none;
@@ -553,12 +566,12 @@
       min-height: 35px;
 
       &--yes:after{
-        top: 20px;
-        right: 50px;
+        top: 18px;
+        right: 56px;
       }
       &--yes:before {
         top: 24px;
-        right: 72px;
+        right: 78px;
       }
       &--not:after {
               top: 20px;
