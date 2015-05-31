@@ -51,30 +51,31 @@
 <section class="submit">
 <div class="submit__slogan">
     <h4>Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную
-        карту!</h4>
+        карту!<span>Пожалуйста, заполните форму ниже:</span></h4>
 </div>
 <form class="form" action="#" method="post">
-    <div class="full-name">
-        <div class="user-name">
-            <label class="user-name__label" for="user_name_field">Имя:*</label>
-            <input class="user-name__input" type="text" name="user_name" id="user_name_field"
-                   placeholder="Введите ваше имя" autofocus required>
-        </div>
-        <div class="user-name">
-            <label class="user-name__label" for="user_surname_field">Фамилия:*</label>
-            <input class="user-name__input" type="text" name="user_surname" id="user_surname_field"
-                   placeholder="Укажите фамилию" required>
-        </div>
-        <div class="user-name">
-            <label class="user-name__label" for="user_patronymic_field">Отчество:</label>
-            <input class="user-name__input" type="text" name="user_patronymic" id="user_patronymic_field"
-                   placeholder="Ну и отчество тоже">
-        </div>
+<div class="full-name">
+    <div class="user-name">
+        <label class="user-name__label" for="user_name_field">Имя:*</label>
+        <input class="user-name__input" type="text" name="user_name" id="user_name_field"
+               placeholder="Введите ваше имя" autofocus required>
     </div>
+    <div class="user-name">
+        <label class="user-name__label" for="user_surname_field">Фамилия:*</label>
+        <input class="user-name__input" type="text" name="user_surname" id="user_surname_field"
+               placeholder="Укажите фамилию" required>
+    </div>
+    <div class="user-name">
+        <label class="user-name__label" for="user_patronymic_field">Отчество:</label>
+        <input class="user-name__input" type="text" name="user_patronymic" id="user_patronymic_field"
+               placeholder="Ну и отчество тоже">
+    </div>
+</div>
 
-    <div class="form-app">
+<div class="form-app">
+    <fieldset class="form-app__fieldset">
         <!-- Сделать обязательным для заполнения -->
-        <h4 class="form-app__title">С каким приложением вы путешествовали?*</h4>
+        <legend class="form-app__title">С каким приложением вы путешествовали?*</legend>
 
         <input class="form-app-item__input" type="radio" name="os" id="iOS">
         <input class="form-app-item__input" type="radio" name="os" id="android">
@@ -86,10 +87,12 @@
             <label class="form-app-item__label" for="windows">Windows Phone</label>
 
         </div>
+    </fieldset>
 
-    </div>
-    <article class="date">
-        <h4 class="date__title">Когда вы путешествовали?*</h4>
+</div>
+<article class="date">
+    <fieldset class="date__fieldset">
+        <legend class="date__title">Когда вы путешествовали?*</legend>
 
         <div class="date-item">
             <input class="date-item__input" type="button" name="date_departure" id="date_departure_field">
@@ -106,15 +109,16 @@
             <input class="date-item__input" type="button" name="date_coming" id="date_coming_field">
             <label class="date-item__label" for="date_coming_field">Дата возвращения</label>
         </div>
-    </article>
+    </fieldset>
+</article>
 
-    <article class="companions">
-        <label class="companions__label" for="count_companions_field">Количество попутчиков*</label>
+<article class="companions">
+    <fieldset class="companions__fieldset">
+        <legend class="companions__label">Количество попутчиков*</legend>
 
         <div class="toggle-companions">
             <button class="toggle-companions__minus" type="button"></button>
-            <input class="toggle-companions__input" type="text" name="count_companions" placeholder="2"
-                   id="count_companions_field">
+            <input class="toggle-companions__input" type="text" name="count_companions" placeholder="2">
             <button class="toggle-companions__plus" type="button"></button>
         </div>
         <div class="companions-fullname clearfix">
@@ -162,98 +166,98 @@
 
         </div>
 
+    </fieldset>
+</article>
 
-        </div>
+<article class="result-rest">
+    <fieldset class="result-rest__fieldset">
 
+    <legend class="result-rest__title">Ваши безбашенные достижения в путешествии</legend>
 
-    </article>
-
-    <article class="result-rest">
-
-        <h4 class="result-rest__title">Ваши безбашенные достижения в путешествии</h4>
-
-        <input class="result-rest__item" type="checkbox" id="shark_field" checked>
-        <input class="result-rest__item" type="checkbox" id="burned_field" checked>
-        <input class="result-rest__item" type="checkbox" id="chack_field">
-        <input class="result-rest__item" type="checkbox" id="souvenir_field">
-        <input class="result-rest__item" type="checkbox" id="tower_field" checked>
-        <input class="result-rest__item" type="checkbox" id="hotel_field">
+    <input class="result-rest__item" type="checkbox" id="shark_field" checked>
+    <input class="result-rest__item" type="checkbox" id="burned_field" checked>
+    <input class="result-rest__item" type="checkbox" id="chack_field">
+    <input class="result-rest__item" type="checkbox" id="souvenir_field">
+    <input class="result-rest__item" type="checkbox" id="tower_field" checked>
+    <input class="result-rest__item" type="checkbox" id="hotel_field">
 
 
-        <div class="rest-controls">
+    <div class="rest-controls">
 
-            <label class="result-rest__label" for="shark_field">Сделал селфи с акулой</label>
-            <label class="result-rest__label" for="burned_field">Обгорел на пляже</label>
-            <label class="result-rest__label" for="chack_field">Видел Чака Норриса</label>
-            <label class="result-rest__label" for="souvenir_field">Накупил сувениров</label>
-            <label class="result-rest__label" for="tower_field">Удержал башню</label>
-            <label class="result-rest__label" for="hotel_field">Разгромил отель</label>
+        <label class="result-rest__label" for="shark_field">Сделал селфи с акулой</label>
+        <label class="result-rest__label" for="burned_field">Обгорел на пляже</label>
+        <label class="result-rest__label" for="chack_field">Видел Чака Норриса</label>
+        <label class="result-rest__label" for="souvenir_field">Накупил сувениров</label>
+        <label class="result-rest__label" for="tower_field">Удержал башню</label>
+        <label class="result-rest__label" for="hotel_field">Разгромил отель</label>
 
-        </div>
-
-    </article>
-    <article class="gallery">
-        <h4 class="gallery__title">Ваши фотографии из поездки*</h4>
-
-        <div class="input-align">
-            <div class="gallery-input">
-                <input class="gallery-input__file" type="file" name="images" value="Загрузить фото">
-            </div>
-        </div>
-
-        <figure class="gallery-foto">
-            <div class="gallery-foto__img">
-                <img src="img/_picter.png" width="67" height="68">
-            </div>
-            <div class="gallery-foto__img">
-                <img src="img/_picter.png" width="67" height="68">
-            </div>
-            <div class="gallery-foto__img">
-                <img src="img/_picter.png" width="67" height="68">
-            </div>
-            <div class="gallery-foto__img">
-                <img src="img/_picter.png" width="67" height="68">
-            </div>
-            <div class="gallery-foto__img">
-                <img src="img/_picter.png" width="67" height="68">
-            </div>
-            <div class="gallery-foto__img">
-                <img src="img/_picter.png" width="67" height="68">
-            </div>
-            <div class="gallery-foto__img">
-                <img src="img/_picter.png" width="67" height="68">
-            </div>
-            <div class="gallery-foto__img">
-                <img src="img/_picter.png" width="67" height="68">
-            </div>
-        </figure>
-    </article>
-    <div class="gallery-button-submit">
-        <div class="gallery-submit">
-            <input class="gallery-submit__input" type="submit" name="images" value="Отправить форму">
-        </div>
-        <div class="gallery-text">
-            <span>*</span> &ndash; обязательные поля
-        </div>
     </div>
-    <!-- всплывающее предупреждение  -->
-    <div class="warning">
-        <h4 class="warning__title">Что&ndash;то пошло не так!</h4>
+</fieldset>
+</article>
+<article class="gallery">
+    <fieldset class="gallery__fieldset">
+    <legend class="gallery__title">Ваши фотографии из поездки*</legend>
 
-        <div class="warning__text">
-            Проверте поля, выделенные красным, скорее всего вы забыли их заполнить
+    <div class="input-align">
+        <div class="gallery-input">
+            <input class="gallery-input__file" type="file" name="images" value="Загрузить фото">
         </div>
     </div>
 
-    <div class="request-sent">
-        <h4 class="request-sent__title">Ваша заявка отправлена</h4>
-
-        <div class="request-sent__text">
-            Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
-            оповестим вас.
+    <figure class="gallery-foto">
+        <div class="gallery-foto__img">
+            <img src="img/_picter.png" width="67" height="68">
         </div>
-        <input class="request-sent__button" type="button" value="Закрыть окно">
+        <div class="gallery-foto__img">
+            <img src="img/_picter.png" width="67" height="68">
+        </div>
+        <div class="gallery-foto__img">
+            <img src="img/_picter.png" width="67" height="68">
+        </div>
+        <div class="gallery-foto__img">
+            <img src="img/_picter.png" width="67" height="68">
+        </div>
+        <div class="gallery-foto__img">
+            <img src="img/_picter.png" width="67" height="68">
+        </div>
+        <div class="gallery-foto__img">
+            <img src="img/_picter.png" width="67" height="68">
+        </div>
+        <div class="gallery-foto__img">
+            <img src="img/_picter.png" width="67" height="68">
+        </div>
+        <div class="gallery-foto__img">
+            <img src="img/_picter.png" width="67" height="68">
+        </div>
+    </figure>
+        </fieldset>
+</article>
+<div class="gallery-button-submit">
+    <div class="gallery-submit">
+        <input class="gallery-submit__input" type="submit" name="images" value="Отправить форму">
     </div>
+    <div class="gallery-text">
+        <span>*</span> &ndash; обязательные поля
+    </div>
+</div>
+<!-- всплывающее предупреждение  -->
+<div class="warning">
+    <h4 class="warning__title">Что&ndash;то пошло не так!</h4>
+
+    <div class="warning__text">
+        Проверте поля, выделенные красным, скорее всего вы забыли их заполнить
+    </div>
+</div>
+
+<div class="request-sent">
+    <h4 class="request-sent__title">Ваша заявка отправлена</h4>
+
+    <div class="request-sent__text">
+        Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и
+        оповестим вас.
+    </div>
+    <input class="request-sent__button" type="button" value="Закрыть окно">
+</div>
 </form>
 </section>
 </main>

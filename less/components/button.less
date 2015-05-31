@@ -1,22 +1,24 @@
 
 .button-menu-header {
-  width: 63px;
-  height: 63px;
+//  width: 70px;
+//  height: 30px;
   position: relative;
   float: right;
+  padding-right: 10px;
+  background-color: @dark-gray;
   & a {
     display: block;
     position: absolute;
-    width: 63px;
-    height: 33px;
+    width: 70px;
+    height: 30px;
     top: 0;
     right: 0;
-    padding-top: 30px;
+    padding-top: 31px;
 
     & span {
       display: block;
       width: 50px;
-      height: 2px;
+      height: 4px;
       background-color: @white;
       font-size: @font-size-zero;
 
@@ -26,7 +28,7 @@
       content: '';
       display: block;
       width: 50px;
-      height: 2px;
+      height: 4px;
       background-color: @white;
 
     }
@@ -34,7 +36,7 @@
       transform: translate(0, -10px);
     }
     & span::after {
-      transform: translate(0, 8px);
+      transform: translate(0, 6px);
     }
 
   }
@@ -62,18 +64,19 @@
 
 .download-app {
   text-align: center;
-  padding: 30px 0;
+  padding: 28px 0 30px 0;
   &__button {
     display: inline-block;
     border: 3px solid @white;
     background-color: @dark-gray;
     color: @white;
-    font-size: @font-size-review-title;
-    font-weight: 600;
+    font-size: @font-size-promo-title;
+    font-weight: 400;
     border-radius: 25px;
-    width: 275px;
-    height: 50px;
+    width: 279px;
+    height: 54px;
     cursor: pointer;
+    letter-spacing: 0.09em;
 
     &:hover {
       background-color: @white;

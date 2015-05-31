@@ -8,23 +8,24 @@
 
   &__wrap {
     background: url('@{img-path}/screen-mobile-3.png') no-repeat 50% 100%;
-    min-height: 1000px;
+    min-height: 1001px;
     max-width: 699px;
     text-align: center;
   }
 }
 
 .promo-slogan {
-  color: @font-color-text;
+  color: @tablet-color-text-base;
   text-align: center;
-  padding-bottom: 100px;
   width: 320px;
   margin: 0 auto;
+  padding: 38px 0 85px 0;
 
   &__title {
-    font-size: @font-size-header-title;
+    font-size: @font-size-24px;
     font-weight: 100;
-    padding: 30px 20px 0 20px;
+    padding: 0 20px 27px 20px;
+    line-height: 1.28em;
   }
 
 }
@@ -32,19 +33,19 @@
 .promo-item {
   display: block;
   margin: 0 auto;
-  width: 320px;
-  padding: 10px 20px 20px 20px;
+  width: 280px;
+  padding-bottom: 31px;
   line-height: 1.5em;
   text-align: center;
 
   &__title {
     color: @black;
     font-size: @font-size-promo-title;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
 
   }
   &__text {
-    color: @font-color-text;
+    color: @tablet-color-text-base;
     font-size: @font-header-description;
 
   }
@@ -58,7 +59,7 @@
   position: relative;
   background-image: linear-gradient(-5deg, @back-light-grey 20%, @white 20%);
   margin: 0 auto;
-  min-height: 445px;
+  padding-bottom: 102px;
   & input[type=radio] {
     display: none;
   }
@@ -85,16 +86,16 @@
   line-height: 1.5em;
 
   &__title {
-    font-size: @font-size-header-button;
+    font-size: @font-size-promo-title;
     color: @black;
-    padding-top: 30px;
-    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 16px;
 
   }
   &__text {
     font-size: @font-header-description;
-    color: @font-color-text;
-    line-height: 2em;
+    color: @tablet-color-text-base;
+    line-height: 2.2em;
 
   }
 }
@@ -106,19 +107,19 @@
 .review-controls {
   position: absolute;
   width: 100%;
-  left: 0;
+  left: 1px;
   bottom: 130px;
   z-index: 100;
   text-align: center;
 
   & label {
     display: inline-block;
-    width: 10px;
-    min-height: 10px;
-    margin: 0 3px;
+    width: 6px;
+    height: 6px;
+    margin: 0 5px;
     cursor: pointer;
     background-color: @grey-toggle;
-    border: 5px solid @white;
+    border: 3px solid @white;
     border-radius: 50%;
     transition: background-color .2s;
     vertical-align: middle;
@@ -129,7 +130,7 @@
 #btn-1:checked ~ .review-controls label[for="btn-1"],
 #btn-2:checked ~ .review-controls label[for="btn-2"],
 #btn-3:checked ~ .review-controls label[for="btn-3"] {
-  border: 5px solid @header-app;
+  border: 3px solid @tablet-color-text-base;
   background: @white;
 }
 
@@ -157,7 +158,7 @@
     display: none;
   }
   &__wrap {
-    background-image: linear-gradient(to bottom, @header-app 80px, @white 80px);
+    background-image: linear-gradient(to bottom, @tablet-color-text-base 80px, @white 80px);
 
   }
 
@@ -187,28 +188,26 @@
   vertical-align: middle;
   text-align: center;
   width: 320px;
-  min-height: 260px;
   transition: transform .8s ease;
   line-height: 1.5em;
 
   &__header {
-    background-color: @header-app;
+    background-color: @tablet-color-text-base;
     color: @white;
     text-transform: uppercase;
     margin: 0;
-    padding: 10px 0;
+    padding: 20px 0 22px 0;
   }
 
   &__header-title {
     font-size: @font-size-promo-title;
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 
   }
   &__header--hit {
     font-size: @font-size-promo-title;
     margin: 0;
-    padding-bottom: 10px;
     &:before {
       padding: 0;
       margin: 0;
@@ -228,7 +227,8 @@
 
   }
   &__header-price {
-    font-size: @font-size-review-title;
+    font-size: @font-size-24px;
+    font-weight: 100;
     margin: 0;
 
   }
@@ -246,11 +246,11 @@
   & label {
     background-color: @grey-toggle;
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 6px;
+    height: 6px;
     margin: 0 3px;
     cursor: pointer;
-    border: 5px solid @back-light-grey;
+    border: 3px solid @back-light-grey;
     border-radius: 50%;
     transition: background-color .2s;
     vertical-align: middle;
@@ -261,7 +261,7 @@
 #app-btn-1:checked ~ .app-controls label[for="app-btn-1"],
 #app-btn-2:checked ~ .app-controls label[for="app-btn-2"],
 #app-btn-3:checked ~ .app-controls label[for="app-btn-3"] {
-  border: 5px solid @header-app;
+  border: 3px solid @tablet-color-text-base;
   background: @back-light-grey;
 }
 
@@ -280,11 +280,12 @@
 .app-list {
   &__item {
     width: 280px;
+    font-size: @font-header-description;
     text-transform: uppercase;
-    padding: 20px 20px;
+    padding: 18px 20px;
     border-bottom: 2px solid @grey-toggle;
     position: relative;
-    color: @font-color-text;
+    color: @tablet-color-text-base;
     text-align: left;
 
     &--yes:after {

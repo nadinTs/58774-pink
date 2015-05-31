@@ -4,44 +4,48 @@
   background-color: @dark-gray;
   width: 100%;
   max-width: 700px;
-  background: @dark-gray url('@{img-path}/background-mobile@1x.jpg') no-repeat 50% 0;
+  background: @dark-gray url('@{img-path}/background-mobile@1x.jpg') no-repeat 50% -2px;
 
   &__slogan {
     width: 100%;
-    background: url('@{img-path}/iphone-hand-mobile.png') no-repeat 50% 202px;
 
   }
+  &__wrap {
+    width: 100%;
+    background: url('@{img-path}/iphone-hand-mobile.png') no-repeat 0 172px;
 
+  }
   &__title {
     display: block;
     margin: 0 auto;
+    padding-bottom: 314px;
     width: 260px;
 
     & h1 {
-      padding-top: 10px;
+      padding-top: 19px;
       font-family: @font-base;
-      font-size: @font-size-header-title;
-      font-weight: 400;
-      color: @font-color-text;
+      font-size: @font-size-24px;
+      font-weight: 100;
+      color: @white;
       text-align: center;
+      line-height: 1.25em;
     }
 
   }
 }
 
 .logo {
-  background-color: @dark-gray;
-  min-height: 65px;
-  opacity: 0.8;
+  background-color: @dark-gray-opacity;
+  min-height: 66px;
   width: 100%;
 
   &__PINK {
-    background: url('@{img-path}/PINK.png') no-repeat 20px 20px;
+    background: url('@{img-path}/PINK.png') no-repeat 20px 22px;
     display: block;
     float: left;
     min-height: 65px;
     width: 100px;
-    top: 20px;
+    top: 0;
     left: 3%;
 
   }
@@ -53,24 +57,31 @@
 .iconsOS {
   text-align: center;
   width: 320px;
-  margin: 350px auto 0 auto;
+  background-color: @dark-gray;
+//  margin: 350px auto 0 auto;
 
   &__content {
     color: @font-color-text;
     text-align: center;
     font-size: @font-header-description;
-    line-height: 1.5em;
-    padding: 0 20px 30px 20px;
+    line-height: 1.74em;
+    padding: 9px 20px 30px 20px;
     margin: 0 auto;
+    letter-spacing: -0.02em;
 
   }
 }
 
 .iconsOS-list {
-  width: 260px;
-  padding: 0 30px;
-  margin: 0 auto;
-  vertical-align: baseline;
+    .clearfix;
+    width: 260px;
+    margin: 0 auto;
+    vertical-align: baseline;
+
+  & ul>li:last-child {
+    padding-right: 0px;
+  }
+
 
   &__item {
     display: inline-block;
@@ -93,11 +104,11 @@
 
   }
   &__title {
-    width: 300px;
+    width: 250px;
     font-family: @font-base;
     font-size: @font-size-header-title;
     font-weight: 100;
-    color: @font-color-text;
+    color: @white;
     text-align: center;
     padding: 30px 10px 35px 10px;
     margin: 0 auto;
@@ -168,7 +179,7 @@
 
     }
     &__title {
-      width: 670px;
+      width: 600px;
       padding: 30px 0px 35px 0px;
       margin: 0 auto;
       font-size: @font-size-50px;
