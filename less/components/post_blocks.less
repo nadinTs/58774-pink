@@ -1,21 +1,20 @@
 .post {
-  width: 320px;
+  max-width: 699px;
   margin: 0;
   padding: 0;
-  color: @header-app;
+  color: @tablet-color-text-base;
 }
 
 .post-header {
-  width: 280px;
+  max-width: 699px;
   text-align: center;
   padding: 40px 20px 20px 20px;
   margin: 0;
-  border-bottom: 1px solid @back-light-grey;
   &__title {
-    width: 260px;
+    width: 100%;
     font-size: @font-size-30px;
     font-weight: bold;
-    padding: 0 20px 20px 10px;
+    padding: 0 20px 35px 10px;
     margin: 0;
   }
   &__date {
@@ -26,24 +25,30 @@
     padding-bottom: 25px;
   }
   &__link {
-    color: @header-app;
-    line-height: 1.5em;
-    padding: 0 5px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid @back-light-grey;
+    & a {
+      color: @tablet-color-text-base;
+      font-size: @font-size-header-button;
+      line-height: 1.5em;
+    }
   }
 }
 
 .post-content {
   text-align: left;
-  padding:35px 20px 0 20px;
+  padding: 35px 20px 0 20px;
+  color: @tablet-color-text-base;
   &__title {
     text-transform: uppercase;
-    font-size: @font-size-header-button;
+    font-size: @font-size-promo-title;
     font-weight: bolder;
     padding: 0;
   }
   &__text {
     line-height: 1.5em;
     padding-top: 15px;
+    font-size: @font-header-description;
   }
   &__link {
     color: @pink-contact;
@@ -54,7 +59,7 @@
     line-height: 3em;
   }
   &__list span {
-    color: @header-app;
+    color: @tablet-color-text-base;
   }
   &__list--circle {
     list-style-type: disc;
@@ -66,9 +71,9 @@
     line-height: 1.5em;
     margin-top: 40px;
 
-    &--italic{
+    &--italic {
       font-style: italic;
-      color: @font-color-text;
+      color: @color-text-italic;
     }
   }
 }
@@ -77,13 +82,14 @@
   width: 280px;
   padding: 40px 20px 60px 20px;
   text-align: center;
+  margin: 0 auto;
 
   & a {
     display: inline-block;
     padding-top: 20px;
     height: 38px;
     border: 1px solid @back-light-grey;
-    color: @header-app;
+    color: @tablet-color-text-base;
     font-size: @font-size-promo-title;
     font-weight: bold;
     text-transform: uppercase;
@@ -102,4 +108,41 @@
     margin-top: 20px;
     width: 278px;
   }
+}
+
+@media (min-width: @screen-md) and (max-width: (@screen-lg - 1)) {
+
+  .post {
+    max-width: 1199px;
+  }
+
+  .post-header {
+    max-width: 1199px;
+    padding: 40px 40px 20px 40px;
+  }
+
+  .paginator {
+    max-width: 1199px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+
+    &__previous {
+      float: left;
+      order: 1;
+    }
+    &__next {
+      float: right;
+      order: 3;
+    }
+    &__back {
+      margin: 0;
+      float: inherit;
+      order: 2;
+    }
+  }
+
 }
