@@ -2,6 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: pink</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&subset=latin,cyrillic-ext'
@@ -22,7 +23,7 @@
                 <a class="button-menu-header__close" href="#"><span>Close menu</span></a>
             </div>
         </div>
-        <h1 class="main-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        <h1 class="main-header__title main-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
 
         <!-- Выпадающее меню начало  -->
         <nav class="ddmenu">
@@ -75,7 +76,7 @@
 <div class="form-app">
     <fieldset class="form-app__fieldset">
         <!-- Сделать обязательным для заполнения -->
-        <legend class="form-app__title">С каким приложением вы путешествовали?*</legend>
+        <legend class="form-app__title">С каким приложением путешествовали?*</legend>
 
         <input class="form-app-item__input" type="radio" name="os" id="iOS">
         <input class="form-app-item__input" type="radio" name="os" id="android">
@@ -94,18 +95,18 @@
     <fieldset class="date__fieldset">
         <legend class="date__title">Когда вы путешествовали?*</legend>
 
-        <div class="date-item">
+        <div class="date-item date-item--left-form">
             <input class="date-item__input" type="button" name="date_departure" id="date_departure_field">
             <label class="date-item__label" for="date_departure_field">Дата выезда</label>
         </div>
         <div class="date-toggle">
             <button class="date-toggle__minus" type="button"></button>
-            <input class="date-toggle__input" type="text" name="count_days" placeholder="10"
-                   id="count_days_field">
+            <input class="date-toggle__input" type="text" name="count_days" placeholder="10">
             <button class="date-toggle__plus" type="button"></button>
-            <label class="date-toggle__label" for="count_days_field">Продолжительность</label>
+
+            <div class="date-toggle__label">Продолжительность</div>
         </div>
-        <div class="date-item">
+        <div class="date-item date-item--down-form">
             <input class="date-item__input" type="button" name="date_coming" id="date_coming_field">
             <label class="date-item__label" for="date_coming_field">Дата возвращения</label>
         </div>
@@ -206,28 +207,28 @@
 
     <figure class="gallery-foto">
         <div class="gallery-foto__img">
-            <img src="img/_picter.png" width="67" height="68">
+            <img src="img/_picter.png" width="120" height="120">
         </div>
         <div class="gallery-foto__img">
-            <img src="img/_picter.png" width="67" height="68">
+            <img src="img/_picter.png" width="120" height="120">
         </div>
         <div class="gallery-foto__img">
-            <img src="img/_picter.png" width="67" height="68">
+            <img src="img/_picter.png" width="120" height="120">
         </div>
         <div class="gallery-foto__img">
-            <img src="img/_picter.png" width="67" height="68">
+            <img src="img/_picter.png" width="120" height="120">
         </div>
         <div class="gallery-foto__img">
-            <img src="img/_picter.png" width="67" height="68">
+            <img src="img/_picter.png" width="120" height="120">
         </div>
         <div class="gallery-foto__img">
-            <img src="img/_picter.png" width="67" height="68">
+            <img src="img/_picter.png" width="120" height="120">
         </div>
         <div class="gallery-foto__img">
-            <img src="img/_picter.png" width="67" height="68">
+            <img src="img/_picter.png" width="120" height="120">
         </div>
         <div class="gallery-foto__img">
-            <img src="img/_picter.png" width="67" height="68">
+            <img src="img/_picter.png" width="120" height="120">
         </div>
     </figure>
         </fieldset>
