@@ -1,43 +1,50 @@
 .post {
-  max-width: 699px;
-  margin: 0;
+  max-width: 280px;
+  margin: 0 auto;
   padding: 0;
   color: @tablet-color-text-base;
 }
 
+fieldset {
+  display: none;
+}
+
 .post-header {
-  max-width: 699px;
+  width: 280px;
   text-align: center;
-  padding: 40px 20px 20px 20px;
-  margin: 0;
+  padding: 35px 0 0 0;
+  margin: 0 20px;
   &__title {
     width: 100%;
     font-size: @font-size-30px;
     font-weight: bold;
-    padding: 0 20px 35px 10px;
+    padding: 0 0 22px 0;
     margin: 0;
+    line-height: 1.2em;
   }
   &__date {
     color: @pink-contact;
     font-size: @font-size-12px;
     font-weight: normal;
     text-transform: uppercase;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
+
   }
+
   &__link {
-    padding-bottom: 30px;
+    padding-bottom: 24px;
     border-bottom: 1px solid @back-light-grey;
     & a {
       color: @tablet-color-text-base;
       font-size: @font-size-header-button;
-      line-height: 1.5em;
+      line-height: 1.7em;
     }
   }
 }
 
 .post-content {
   text-align: left;
-  padding: 35px 20px 0 20px;
+  padding: 30px 20px 0 20px;
   color: @tablet-color-text-base;
   &__title {
     text-transform: uppercase;
@@ -46,8 +53,8 @@
     padding: 0;
   }
   &__text {
-    line-height: 1.5em;
-    padding-top: 15px;
+    line-height: 1.96em;
+    padding-top: 25px;
     font-size: @font-header-description;
   }
   &__link {
@@ -55,16 +62,19 @@
     text-decoration: underline;
   }
   &__list {
-    padding-left: 20px;
-    line-height: 3em;
+    padding: 10px 0 10px 20px;
+
+    font-size: @font-header-description;
   }
   &__list span {
     color: @tablet-color-text-base;
   }
   &__list--circle {
     list-style-type: disc;
-    color: @pink-contact
+    color: @pink-contact;
+    line-height: 4.3em;
   }
+
   &__commit {
     padding: 0 5px 0 20px;
     border-left: 1px solid @pink-contact;
@@ -110,6 +120,7 @@
   }
 }
 
+/********************/
 @media (min-width: @screen-md) and (max-width: (@screen-lg - 1)) {
 
   .post {
@@ -117,8 +128,50 @@
   }
 
   .post-header {
-    max-width: 1199px;
-    padding: 40px 40px 20px 40px;
+    width: 620px;
+    padding: 77px 40px 0 20px;
+    &__title {
+      font-size: @font-size-50px;
+    }
+    &__link {
+      border: none;
+      & a{
+        font-size: @font-size-24px;
+      }
+    }
+    &__date {
+      display: none;
+    }
+    &__date-fieldset {
+      padding: 0 20px 0 20px;
+      font-size: @font-header-description;
+      text-transform: uppercase;
+      color: @pink-contact;
+    }
+
+    &--fieldset {
+      display: block;
+      width: 620px;
+      margin: 12px auto 0 auto;
+      text-align: center;
+      border-top: 1px solid @grey-toggle;
+      border-bottom: none;
+      border-right: none;
+      border-left: none;
+    }
+  }
+  .post-content {
+    width: 620px;
+    margin: 0 auto;
+    padding: 43px 40px 0 37px;
+    &__title {
+      font-size: @font-size-24px;
+    }
+    &__text {
+      font-size: @font-size-promo-title;
+      line-height: 1.7em;
+      padding-top: 20px;
+    }
   }
 
   .paginator {
