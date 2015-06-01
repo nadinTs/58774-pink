@@ -1,18 +1,18 @@
 .announce {
+  padding-top: 35px;
   & article:nth-last-child(2) {
     border-bottom: none;
   }
 }
 
 .announce-item {
-  padding: 20px 0 40px 0;
+  padding: 0 0 24px 0;
   margin: 0 20px;
-  line-height: 1.5em;
-  border-bottom: 1px solid  @back-light-grey;
 
   &__title {
     margin: 0 0;
     padding: 0;
+    line-height: 1em;
   }
   &__title a {
     color: @header-app;
@@ -21,15 +21,21 @@
 
   &__date {
     margin: 0;
-    padding: 10px 0 20px 0;
+    padding: 8px 0 20px 0;
     color: @pink-contact;
+    font-size: @font-size-12px;
+    text-transform: uppercase;
   }
   &__text {
+    line-height: 1.74em;
+    border-bottom: 1px solid  @grey-toggle;
+    padding-bottom: 20px;
+
 
   }
   &__text a {
     color: @header-app;
-    font-size: @font-size-header-button;
+    font-size: @font-header-description;
 
   }
 
@@ -37,17 +43,18 @@
 
 .toggle-number {
   display: block;
-  text-align: center;
-
+//  text-align: center;
+  min-width: 320px;
+  margin: 20px 20px 50px 20px;
   &__link {
     display: inline-block;
     color: @header-app;
     font-weight: 600;
     font-size: @font-size-header-button;
-    padding: 15px 20px;
-    margin: 0 10px 10px 0;
+    padding: 19px 26px;
+    margin: 0 6px 10px 0;
     border: 1px solid @font-color-text;
-    border-radius: 10%;
+    border-radius: 2px;
 
     &:first-child {
       border-color: @pink-contact;
@@ -55,14 +62,16 @@
   }
 
 }
-
+/****************/
 @media (min-width: @screen-md) and (max-width: (@screen-lg - 1)) {
 
-
+.announce {
+  padding-top: 95px;
+}
 
   .announce-item {
-    padding: 20px 0 40px 0;
-    margin: 0 20px 0 60px;
+    padding: 0 0 50px 0;
+    margin: 0 40px 0 100px;
 
 
     &__title {
@@ -72,11 +81,27 @@
         position: absolute;
         content: '';
         top: 5px;
-        left: -40px;
+        left: -57px;
         width: 30px;
         height: 30px;
         background: url("@{img-path}/tablet-message.png") no-repeat 0 0;
         z-index: 100;
+      }
+      & a {
+        font-size: @font-size-tablet-blog-title;
+      }
+    }
+
+    &__date {
+      padding: 14px 0 25px 0;
+      font-size: @font-header-description;
+    }
+    &__text {
+      margin-right: 40px;
+      padding-bottom: 40px;
+      & a {
+        font-size: @font-size-promo-title;
+        line-height: 1.7;
       }
     }
 
@@ -102,9 +127,9 @@
     &__link {
       display: inline-block;
       color: @header-app;
-      font-weight: 600;
+      font-weight: bold;
       font-size: @font-size-promo-title;
-      padding: 15px 20px;
+      padding: 19px 25px;
       margin: 0 10px 10px 0;
 
       &:first-child {

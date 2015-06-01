@@ -3,6 +3,7 @@
   width: 320px;
   height: 615px;
   text-align: center;
+  padding-top: 40px;
 
   &__align {
     display: block;
@@ -72,7 +73,7 @@
   max-width: 699px;
   margin: 30px 0;
   &__align {
-    max-width: 699px;
+    width: 200px;
     text-align: center;
     margin: 0 auto;
   }
@@ -87,7 +88,7 @@
   &__link {
     display: block;
     margin: 0 auto;
-    width: 145px;
+    width: 160px;
     height: 40px;
     background: url('@{img-path}/footer-glasses.png') no-repeat 0 0;
 
@@ -103,56 +104,53 @@
 }
 
 .footer-iconSN {
-  padding: 40px 0;
+  padding: 40px 0 40px 3px;
+  width: 190px;
+//  margin: 0 auto;
   &__link {
     display: inline-block;
-    margin: 0 auto;
-    width: 145px;
-    height: 40px;
     margin-right: 10px;
-
-
     & span {
       display: none;
     }
     &[title=Twitter] {
-      width: 20px;
-      height: 20px;
-      padding: 5px;
-      background: url('@{img-path}/footer-iconsSN-sprite.png') no-repeat 7px 5px;
-      border: 1px solid @font-color-text;
+      width: 24px;
+      height: 24px;
+      padding: 10px;
+      background: url('@{img-path}/footer-iconsSN-sprite.png') no-repeat 11px 11px;
+      border: 2px solid @font-color-text;
       border-radius: 50%;
     }
     &[title=Twitter]:hover {
-      border: 1px solid @header-app;
+      border: 2px solid @header-app;
     }
     &[title=Twitter]:active {
       opacity: 0.3;
     }
     &[title=Facebook] {
-      width: 20px;
-      height: 20px;
-      padding: 5px;
-      background: url('@{img-path}/footer-iconsSN-sprite.png') no-repeat -57px 5px;
-      border: 1px solid @font-color-text;
+      width: 24px;
+      height: 24px;
+      padding: 10px;
+      background: url('@{img-path}/footer-iconsSN-sprite.png') no-repeat -52px 11px;
+      border: 2px solid @font-color-text;
       border-radius: 50%;
     }
     &[title=Facebook]:hover {
-      border: 1px solid @header-app;
+      border: 2px solid @header-app;
     }
     &[title=Facebook]:active {
       opacity: 0.3;
     }
     &[title=YouTube] {
-      width: 20px;
-      height: 20px;
-      padding: 5px;
-      background: url('@{img-path}/footer-iconsSN-sprite.png') no-repeat -120px 5px;
-      border: 1px solid @font-color-text;
+      width: 24px;
+      height: 24px;
+      padding: 10px;
+      background: url('@{img-path}/footer-iconsSN-sprite.png') no-repeat -115px 11px;
+      border: 2px solid @font-color-text;
       border-radius: 50%;
     }
     &[title=YouTube]:hover {
-      border: 1px solid @header-app;
+      border: 2px solid @header-app;
     }
     &[title=YouTube]:active {
       opacity: 0.3;
@@ -161,28 +159,32 @@
 }
 
 .footer-developer {
+  width: 190px;
   & span {
     display: none;
   }
   &__link {
     display: inline-block;
-    padding-top: 7px;
+    padding-top: 2px;
     text-align: left;
     vertical-align: middle;
     width: 130px;
-    height: 28px;
+    height: 33px;
+    font-size: @font-header-description;
     color: @header-app;
-    background: url('@{img-path}/footer-logo.png') no-repeat right 0;
+    background: url('@{img-path}/footer-logo.png') no-repeat right 0px;
     &:hover {
-      background: url('@{img-path}/footer-logo-hover.png') no-repeat  right 0;
+      background: url('@{img-path}/footer-logo-hover.png') no-repeat  right 0px;
     }
     &:active {
-      background: url('@{img-path}/footer-logo-active.png') no-repeat  right 0;
+      background: url('@{img-path}/footer-logo-active.png') no-repeat  right 0px;
     }
   }
 }
 
 
+
+/*********************************************/
 @media (min-width: @screen-md) and (max-width: (@screen-lg - 1)) {
   .footer-index {
     min-width: 700px;
@@ -217,6 +219,7 @@
     max-width: 1199px;
     &__align {
       display: inline-block;
+      width: 699px;
 
     }
   }
@@ -227,7 +230,7 @@
   }
   .footer-iconSN {
     float: left;
-    width: 150px;
+    width: 200px;
     padding: 10px 0;
 
   }
@@ -239,3 +242,6 @@
 
   }
 }
+
+
+
