@@ -456,9 +456,9 @@
 }
 
 .gallery {
-  max-width: 699px;
   background-color: @back-light-grey;
   padding-top: 40px;
+  margin: 0 auto;
   &__fieldset {
     border: none;
     width: 320px;
@@ -742,9 +742,7 @@
       text-align: left;
     }
 
-
   }
-
 
   .toggle-companions {
     padding: 0 0 40px 65px;
@@ -771,56 +769,56 @@
     }
   }
 
-
-    .companions-fullname {
-      width: 382px;
-      padding: 10px 20px 25px 62px;
-      .companions-left {
-        float: left;
-        width: 60px;
-        &__sign {
-          padding: 20px 0 10px 0;
-          color: @pink-contact;
-          font-size: @font-header-description;
-          font-weight: 100;
-
-        }
-        &__number {
-          border: 1px solid @grey-toggle;
-          width: 60px;
-          height: 40px;
-          padding-top: 20px;
-          color: @tablet-color-text-base;
-
-        }
-      }
-    }
-
-    .companions-right {
-      float: right;
-      width: 297px;
-
-      &__input,
-      &__input:hover,
-      &__input:active,
-      &__input:focus {
-        height: 60px;
-        width: 256px;
-        font-size: @font-size-promo-title;
-        font-weight: 100;
-        border: 1px solid @grey-toggle;
-        color: @tablet-color-text-base;
-        padding: 0 20px;
-
-      }
-      &__label {
+  .companions-fullname {
+    width: 382px;
+    padding: 10px 20px 25px 62px;
+    .companions-left {
+      float: left;
+      width: 60px;
+      &__sign {
+        padding: 20px 0 10px 0;
         color: @pink-contact;
         font-size: @font-header-description;
         font-weight: 100;
-        text-transform: uppercase;
-        padding: 20px 0 10px 0;
+
+      }
+      &__number {
+        border: 1px solid @grey-toggle;
+        width: 60px;
+        height: 40px;
+        padding-top: 20px;
+        color: @tablet-color-text-base;
+
       }
     }
+  }
+
+  .companions-right {
+    float: right;
+    width: 297px;
+
+    &__input,
+    &__input:hover,
+    &__input:active,
+    &__input:focus {
+      height: 60px;
+      width: 256px;
+      font-size: @font-size-promo-title;
+      font-weight: 100;
+      border: 1px solid @grey-toggle;
+      color: @tablet-color-text-base;
+      padding: 0 20px;
+
+    }
+    &__label {
+      color: @pink-contact;
+      font-size: @font-header-description;
+      font-weight: 100;
+      text-transform: uppercase;
+      padding: 20px 0 10px 0;
+    }
+  }
+
   .result-rest {
     padding-top: 50px;
     max-width: 1199px;
@@ -832,36 +830,34 @@
       margin: 0 auto;
     }
 
+    &__label {
+      position: relative;
+      display: block;
+      width: 260px;
+      height: 28px;
+      padding-left: 123px;
+      padding-top: 12px;
+      padding-bottom: 40px;
+      font-size: @font-size-promo-title;
 
-        &__label {
-          position: relative;
-          display: block;
-          width: 260px;
-          height: 28px;
-          padding-left: 123px;
-          padding-top: 12px;
-          padding-bottom: 40px;
-          font-size: @font-size-promo-title;
-
-        }
-        &__label::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 61px;
-          width: 40px;
-          height: 40px;
-          border: 1px solid @back-light-grey;
-          border-radius: 2%;
-        }
-        &__label:hover::before {
-          border-color: @tablet-color-text-base;
-        }
-        &__label:active::before {
-          border-color: @pink-contact;
-        }
+    }
+    &__label::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 61px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid @back-light-grey;
+      border-radius: 2%;
+    }
+    &__label:hover::before {
+      border-color: @tablet-color-text-base;
+    }
+    &__label:active::before {
+      border-color: @pink-contact;
+    }
   }
-
 
   .gallery {
     max-width: 1199px;
@@ -884,7 +880,6 @@
     }
 
   }
-}
 
   .gallery-input {
     margin: 0;
@@ -892,7 +887,6 @@
     height: 40px;
     padding-bottom: 98px;
     border-bottom: 1px solid @grey-toggle;
-
 
   }
 
@@ -928,3 +922,4 @@
       right: -20px;
     }
   }
+}
