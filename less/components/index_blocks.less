@@ -337,14 +337,14 @@
 /********************/
 @media (min-width: @screen-md) and (max-width: (@screen-lg - 1)) {
   .promo {
-    max-width: 1039px;
+    max-width: 1199px;
     min-height: 730px;
     background-image: linear-gradient(-5deg, @back-light-grey 62.5%, @white 62.5%);
 
     &__wrap {
       background: url('@{img-path}/iphone-screen-tablet-3@1x.png') no-repeat 40px 100%;
       min-height: 725px;
-      max-width: 1039px;
+      max-width: 1199px;
       text-align: center;
     }
 
@@ -387,7 +387,7 @@
     display: block;
     min-height: 370px;
     min-width: 700px;
-    max-width: 1039px;
+    max-width: 100%;
 
   }
 
@@ -487,7 +487,7 @@
   }
 
   .app {
-    max-width: 1039px;
+    max-width: 1199px;
     min-height: 290px;
     padding: 34px 0 0 20px;
     background-image: linear-gradient(to bottom,  @back-light-grey 0,  @back-light-grey 0);
@@ -594,3 +594,282 @@
   }
 }
 
+/*******************/
+/*******************/
+
+
+@media (min-width: @screen-lg) {
+  .promo {
+    min-width: 1199px;
+    min-height: 730px;
+    max-width: 100%;
+    background-image: linear-gradient(-5deg, @back-light-grey 69%, @white 69%);
+
+    &__wrap {
+      background: none;
+      min-height: 725px;
+      max-width: 100%;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+  }
+
+  .promo-slogan {
+    padding: 66px 0 73px 150px;
+    width: 900px;
+    margin: 0 auto;
+
+    &__title {
+      font-size: @font-size-50px;
+      padding: 0;
+      line-height: 1.23em;
+    }
+
+  }
+
+  .promo-item-desktop {
+    display: inline-block;
+    width: 850px;
+    margin: 0 auto;
+  }
+
+  .promo-item {
+    width: 250px;
+    padding: 351px 0 0 0;
+    margin-right: 50px;
+    text-align: center;
+    float: left;
+
+    &__title {
+      line-height: 1.2;
+      font-size: @font-size-30px;
+      padding-bottom: 19px;
+
+    }
+    &__text {
+      font-size: @font-size-promo-title;
+      color: @tablet-color-text-base;
+      line-height: 1.7em;
+      padding-bottom: 61px;
+    }
+
+    &--desk-left {
+      background: url("@{img-path}/iphone-screen-desktop-1@1x.png") no-repeat 50% 0;
+
+    }
+    &--desk-center {
+      background: url("@{img-path}/iphone-screen-desktop-2@1x.png") no-repeat 50% 0;
+
+    }
+    &--desk-right {
+      background: url("@{img-path}/iphone-screen-desktop-3@1x.png") no-repeat 50% 0;
+      float: right;
+      margin-right: 0;
+
+    }
+  }
+
+  .tablet-effect {
+    display: block;
+    min-height: 370px;
+    min-width: 1200px;
+    max-width: 100%;
+
+  }
+
+  .tablet-effect-clock {
+    min-height: 360px;
+
+    background: url('@{img-path}/watch-desktop.png') no-repeat 130px 0;
+
+    &__title {
+      margin: 0;
+      font-size: @font-size-30px;
+      color: @black;
+      padding: 90px 100px 23px 496px;
+      line-height: 1.2em;
+
+    }
+    &__text {
+      margin: 0;
+      padding: 0 210px 30px 496px;
+      color: @header-app;
+      font-size: @font-size-promo-title;
+      line-height: 1.74em;
+    }
+    &__link {
+      display: block;
+      margin: 0;
+      padding: 0 50px 20px 496px;
+      color: @pink-contact;
+      font-size: @font-size-promo-title;
+      line-height: 1.5em;
+      text-decoration: underline;
+    }
+  }
+
+  .review {
+    min-height: 345px;
+    padding: 20px 0 0 20px;
+  }
+
+  .review-inner {
+    width: 740px;
+    padding-top: 95px;
+    padding-bottom: 165px;
+  }
+
+  .review-slider {
+    width: 300%;
+  }
+
+  .review-item {
+    padding: 0;
+    width: 740px;
+    min-height: 237px;
+    transition: transform .8s ease;
+    text-align: center;
+
+    &__title {
+      display: none;
+
+    }
+    &__text {
+      background: url("@{img-path}/quotes.png") no-repeat 50% 0;
+      font-size: @font-size-promo-title;
+      color: @tablet-color-text-base;
+      line-height: 1.74em;
+      padding-top: 112px;
+
+    }
+
+
+
+  }
+
+  .review-sign {
+    display: block;
+    &__title {
+      font-size: @font-size-24px;
+      color: @black;
+      padding: 37px 0 10px 0;
+    }
+    &__text {
+      font-size: @font-size-promo-title;
+      color: @tablet-color-text-base;
+    }
+  }
+
+  .review-controls {
+    display: none;
+  }
+
+  .app {
+    max-width: 100%;
+//    min-height: 290px;
+    padding: 26px 0 0 0;
+    background-image: linear-gradient(to bottom,  @back-light-grey 0,  @back-light-grey 0);
+
+    &__wrap {
+      background-image: linear-gradient(to bottom,  @back-light-grey 0,  @back-light-grey 0);
+
+    }
+
+  }
+
+  .app-inner {
+    overflow: hidden;
+    width: 940px;
+    margin: 0 auto;
+    border-right:2px solid @grey-toggle;
+    border-bottom:2px solid @grey-toggle;
+  }
+
+  .app-slider {
+    width: 100%;
+    min-height: 100%;
+
+
+  }
+
+  .app-item-tablet {
+    display: block;
+  }
+
+  .app-item {
+    vertical-align: middle;
+    background-color: @white;
+    width: 235px;
+    min-height: 100%;
+    line-height: 1em;
+
+    &__header-price {
+      font-size: @font-size-24px;
+      font-weight: 100;
+      margin: 0;
+    }
+
+    &__header {
+      padding: 23px 0 1px 0;
+      min-height: 76px;
+      border-right: 2px solid @grey-toggle;
+      &--tablet{
+        color: @back-light-grey;
+        background-color: @back-light-grey;
+        border-left: 0;
+        border-top: 0;
+      }
+
+    }
+    &__header-title {
+      font-size: @font-size-promo-title;
+      margin: 0;
+      padding-bottom: 17px;
+
+    }
+
+  }
+
+  .app-list {
+    &__item {
+      width: auto;
+      text-transform: none;
+      padding: 17px 0  0 21px;
+      border-top: 2px solid @grey-toggle;
+      border-left: 2px solid @grey-toggle;
+      border-bottom: none;
+      position: relative;
+      color: @font-color-text;
+      font-size: @font-size-promo-title;
+      text-align: left;
+      min-height: 41px;
+
+      &--yes:after{
+        top: 18px;
+        right: 56px;
+      }
+      &--yes:before {
+        top: 24px;
+        right: 78px;
+      }
+      &--not:after {
+        top: 20px;
+        right:60px;
+      }
+      &--not:before {
+        top: 20px;
+        right: 60px;
+      }
+
+    }
+    &__item-text {
+      display: none;
+    }
+
+  }
+
+  .app-controls {
+    display: none;
+  }
+}
