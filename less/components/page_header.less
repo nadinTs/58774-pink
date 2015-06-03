@@ -2,7 +2,7 @@
 
 .index-header {
   background-color: @dark-gray;
-  background: @dark-gray url('@{img-path}/background-mobile@1x.jpg') no-repeat 50% -2px;
+  background: @dark-gray url('@{img-path}/background-mobile@1x.jpg') no-repeat 50% top;
 
   &__slogan {
     width: 100%;
@@ -10,7 +10,7 @@
   }
   &__wrap {
     width: 100%;
-    background: url('@{img-path}/iphone-hand-mobile.png') no-repeat 0 172px;
+    background: url('@{img-path}/iphone-hand-mobile.png') no-repeat 50% top;
 
   }
   &__title {
@@ -204,7 +204,7 @@
 
     &__slogan {
       width: 100%;
-      background: @dark-gray url('@{img-path}/background-tablet@1x.jpg') no-repeat 50% 0px;
+      background: @dark-gray url('@{img-path}/background-tablet@1x.jpg') no-repeat 50% top;
 
     }
     &__title {
@@ -228,7 +228,7 @@
   .index-header {
     min-width: 1200px;
     width: 100%;
-    background: url('@{img-path}/background-fullsize.jpg') no-repeat 100% 100%;
+    background: url('@{img-path}/background-fullsize.jpg') no-repeat 50% top;
     background-size: cover;
 
     &__wrap {
@@ -299,17 +299,18 @@
 
   /*blog*/
   .main-header {
-    max-width: 1199px;
+    max-width: 100%;
     width: 100%;
 
     &__slogan {
       width: 100%;
-      background: @dark-gray url('@{img-path}/background-tablet@1x.jpg') no-repeat 50% 0px;
+      background: url('@{img-path}/background-fullsize.jpg') no-repeat 50% top;
+      background-size: cover;
 
     }
     &__title {
-      width: 580px;
-      padding: 69px 0px 77px 18px;
+      width: 900px;
+      padding: 64px 0px 100px 18px;
       margin: 0 auto;
       font-size: @font-size-50px;
       font-weight: 100;

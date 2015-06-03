@@ -1,6 +1,6 @@
 .submit {
-  margin: 0 auto;
   max-width: 699px;
+  width: 100%;
   &__slogan {
     display: block;
     width: 280px;
@@ -24,38 +24,34 @@
 .form {
   font-size: @font-size-promo-title;
 
-
 }
 
 .full-name {
   padding-bottom: 45px;
-  margin:0 auto;
-  max-width: 699px;
-
 }
 
 .user-name {
-  padding: 0 20px;
-  width: 320px;
-  margin: 0 auto;
+  margin: 0 12%;
+  width: 76%;
   &__label {
-    width: 270px;
     display: block;
     color: @pink-contact;
     text-transform: uppercase;
     font-size: @font-header-description;
-    font-weight: 400;
-    padding: 20px 15px 12px 15px;
+    font-weight: 100;
+    padding: 20px 0 12px 15px;
   }
   &__input {
     display: block;
-    width: 240px;
+    width: 91%;
     height: 60px;
     padding: 0 20px;
     border: 1px solid @back-light-grey;
     border-radius: 2px;
     font-size: @font-size-promo-title;
     color: @tablet-color-text-base;
+    font-weight: 100;
+
   }
   &__input:hover {
     border: 1px solid @header-app;
@@ -68,15 +64,12 @@
 
 .form-app {
   background-color: @back-light-grey;
-  max-width: 699px;
   text-align: center;
   width: 100%;
 
-  &__fieldset{
+  &__fieldset {
     border: none;
-    width: 320px;
-    margin: 0 auto;
-    padding-bottom: 5px;
+    padding: 0 12% 5px 12%;
   }
   &__title {
     text-transform: uppercase;
@@ -84,7 +77,7 @@
     font-weight: normal;
     color: @pink-contact;
     padding: 35px 0 33px 0;
-
+    width: 100%;
 
   }
 }
@@ -101,13 +94,14 @@
   &__label {
     display: block;
     position: relative;
-    width: 210px;
     height: 30px;
     padding-left: 75px;
     padding-top: 10px;
     padding-bottom: 36px;
     text-align: left;
     color: @tablet-color-text-base;
+    width: 200px;
+    margin: 0 auto;
 
   }
   &__label::before {
@@ -145,12 +139,11 @@
 
 .date {
   text-align: center;
-  max-width: 699px;
   padding-bottom: 20px;
   &__fieldset {
     border: none;
-    width: 320px;
-    margin: 0 auto;
+    width: 77%;
+    margin: 0 12%;
 
   }
   &__title {
@@ -159,17 +152,17 @@
     padding: 50px 0 40px 0;
     font-weight: normal;
     font-size: @font-header-description;
+    width: 100%;
   }
 }
 
 .date-item {
-  padding: 0 20px;
   &__input {
     display: block;
-    width: 280px;
+    width: 100%;
     height: 60px;
     text-align: left;
-    padding:0 20px;
+    padding: 0 20px;
     border: 1px solid @grey-toggle;
     font-size: @font-size-promo-title;
     color: @tablet-color-text-base;
@@ -194,25 +187,23 @@
 
 .date-toggle {
   .clearfix;
-  padding: 0 20px;
   position: relative;
-  width: 280px;
+  border-top: 1px solid @grey-toggle;
+  border-bottom: 1px solid @grey-toggle;
 
   &__input,
   &__input:hover,
   &__input:active,
   &__input:focus {
-    width: 160px;
+    width: 51%;
     height: 58px;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: @white;
-    border-top: 1px solid @grey-toggle;
-    border-bottom: 1px solid @grey-toggle;
     font-size: @font-size-promo-title;
     color: @tablet-color-text-base;
-    float: left;
+    float: inherit;
   }
 
   &__minus {
@@ -225,7 +216,7 @@
   &__plus {
     width: 60px;
     height: 60px;
-    background: url("@{img-path}/base-minus.png") no-repeat 0 0;
+    background: url("@{img-path}/base-plus.png") no-repeat 0 0;
     float: right;
   }
   &__plus:hover {
@@ -240,10 +231,12 @@
   &__minus:active {
     background: url("@{img-path}/active-minus.png") no-repeat 0 0;
   }
+}
+
+.date-toggle-wrap {
 
   &__label {
     display: block;
-    width: 300px;
     color: @pink-contact;
     text-transform: uppercase;
     font-size: @font-header-description;
@@ -254,13 +247,10 @@
 
 .companions {
   background-color: @back-light-grey;
-  max-width: 699px;
   text-align: center;
   padding-bottom: 30px;
   &__fieldset {
     border: none;
-    width: 320px;
-    margin: 0 auto;
   }
 
   &__label {
@@ -274,27 +264,39 @@
 }
 
 .toggle-companions {
-  padding-bottom: 50px;
+  position: relative;
+  margin: 0 12% 50px 12%;
+  width: 77%;
   display: inline-block;
   text-align: center;
-  width: 280px;
+  border-top: 1px solid @grey-toggle;
   border-bottom: 1px solid @grey-toggle;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    padding-bottom: 20px;
+    top: 80px;
+    left: 0;
+    border-bottom: 1px solid @grey-toggle;
+
+  }
 
   &__input,
   &__input:hover,
   &__input:active,
   &__input:focus {
-    width: 160px;
+    width: 50%;
     height: 58px;
     margin: 0;
     padding: 0;
     text-align: center;
     background-color: @back-light-grey;
-    border-top: 1px solid @grey-toggle;
-    border-bottom: 1px solid @grey-toggle;
     font-size: @font-size-promo-title;
     color: @tablet-color-text-base;
-    float: left;
+    float: inherit;
   }
 
   &__minus {
@@ -307,7 +309,7 @@
   &__plus {
     width: 60px;
     height: 60px;
-    background: url("@{img-path}/base-minus.png") no-repeat 0 0;
+    background: url("@{img-path}/base-plus.png") no-repeat 0 0;
     float: right;
   }
   &__plus:hover {
@@ -325,12 +327,12 @@
 }
 
 .companions-fullname {
-  width: 280px;
-  padding: 5px 20px 15px 20px;
+  padding: 5px 12% 15px 12%;
+  display: flex;
 
   .companions-left {
-    float: left;
     width: 60px;
+    flex-grow: 0;
     &__sign {
       padding: 25px 0 10px 0;
       color: @pink-contact;
@@ -350,15 +352,14 @@
 }
 
 .companions-right {
-  float: right;
-  width: 220px;
+  flex-grow: 1;
 
   &__input,
   &__input:hover,
   &__input:active,
   &__input:focus {
     height: 60px;
-    width: 180px;
+    width: 91%;
     font-size: @font-size-promo-title;
     font-weight: 100;
     border: 1px solid @grey-toggle;
@@ -375,10 +376,14 @@
     text-align: left;
   }
 }
+.companions-close {
+  display: none;
+  flex-grow: 0;
+
+}
 
 .result-rest {
   padding: 47px 20px 0 20px;
-  max-width: 699px;
 
   &__fieldset {
     border: none;
@@ -489,8 +494,6 @@
   padding-bottom: 40px;
   border-bottom: 1px solid @grey-toggle;
 
-  &__file {
-  }
 }
 
 .gallery-foto {
@@ -583,50 +586,50 @@
   }
 
   .full-name {
-    width: 699px;
-    padding: 0 40px 30px 40px;
+    padding-bottom:20px;
   }
 
   .user-name {
-    width: 100%;
+    width: 88%;
+    margin: 0 6%;
     padding: 0;
+
 
     &__label {
       padding: 20px 15px 12px 23px;
+      width: 97%;
     }
 
     &__input {
-      width: 580px;
-      height: 60px;
+      width: 94%;
     }
 
   }
 
   .form-app {
     background-color: @white;
-    max-width: 1199px;
     text-align: center;
-    width: 100%;
+    width: 88%;
+    margin: 0 6%;
     padding-bottom: 25px;
 
     &__fieldset {
       border: 1px solid @grey-toggle;
       border-radius: 2px;
-      width: 615px;
-      margin: 0 auto;
       padding-bottom: 19px;
     }
     &__title {
-      padding: 30px 20px 40px 32px;
+      padding: 40px  0 40px 0;
+      width: 380px;
 
     }
   }
 
   .form-app-item {
     text-align: left;
-    padding: 0 20px;
-    display: block;
-    padding-bottom: 50px;
+    padding: 0;
+    margin: 0 6%;
+    width: 88%;
     &__input {
       display: none;
 
@@ -644,27 +647,24 @@
 
   .date {
     text-align: center;
-    max-width: 1199px;
 
     &__fieldset {
       position: relative;
       border: 1px solid @grey-toggle;
       border-radius: 2px;
-      width: 615px;
-      height: 350px;
-      margin: 0 auto;
+      margin: 0 6%;
+      width: 88%;
 
     }
     &__title {
-      padding: 32px 20px 35px 20px;
+      padding: 32px 0 35px 0;
+      width: 280px;
     }
   }
 
   .date-item {
     padding: 0 20px;
     &__input {
-      width: 240px;
-      height: 60px;
       padding-left: 10px;
       border: 1px solid @grey-toggle;
 
@@ -683,27 +683,20 @@
 
     &--left-form {
       float: left;
-
-      padding-left: 45px;
+      width: 40%;
+      padding-left: 7%;
     }
 
     &--down-form {
-      position: absolute;
       text-align: left;
       margin: 0;
-      padding: 0;
-      top: 215px;
-      left: 46px;
-
+      padding-left: 7%;
+      width: 40%;
     }
 
   }
 
   .date-toggle {
-    padding: 0 70px 0 0;
-    position: relative;
-    width: 240px;
-    float: right;
 
     &__input,
     &__input:hover,
@@ -715,66 +708,56 @@
       padding: 0;
       text-align: center;
     }
+  }
+  .date-toggle-wrap {
+    padding-right: 7%;
+    position: relative;
+    width: 40%;
+    float: right;
 
-    &__minus {
-
-    }
-    &__plus {
-    }
-
-    &__label {
-      display: block;
-      width: 300px;
-      padding: 15px 0 24px;
-    }
   }
 
   .companions {
     background-color: @white;
-    max-width: 1199px;
-    text-align: center;
     padding-bottom: 40px;
     &__fieldset {
       border: 1px solid @grey-toggle;
       border-radius: 2px;
-      width: 615px;
-      margin: 0 auto;
+      width: 88%;
+      margin: 0 6%;
       text-align: left;
+    }
+    &__label {
+      width: 260px;
     }
 
   }
 
   .toggle-companions {
-    padding: 0 0 40px 65px;
-    display: inline-block;
-    text-align: center;
-    width: 250px;
-    border-bottom: 1px solid @grey-toggle;
+    padding: 0;
+    background-color: @white;
+    width: 40%;
+    margin: 0 0 40px 6%;
+
+    &::after {
+      width: 210%;
+    }
 
     &__input,
     &__input:hover,
     &__input:active,
     &__input:focus {
-      width: 130px;
-      height: 58px;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      background-color: @back-light-grey;
-      border-top: 1px solid @grey-toggle;
-      border-bottom: 1px solid @grey-toggle;
-      font-size: @font-size-promo-title;
-      color: @tablet-color-text-base;
-      float: left;
+      background-color: @white;
     }
   }
 
   .companions-fullname {
-    width: 382px;
-    padding: 10px 20px 25px 62px;
+    padding: 10px 6% 25px 6%;
     .companions-left {
       float: left;
       width: 60px;
+      text-align: center;
+
       &__sign {
         padding: 20px 0 10px 0;
         color: @pink-contact;
@@ -795,14 +778,15 @@
 
   .companions-right {
     float: right;
-    width: 297px;
+    width: 86%;
 
     &__input,
     &__input:hover,
     &__input:active,
     &__input:focus {
       height: 60px;
-      width: 256px;
+      width: 76%;
+      margin: 0 6%;
       font-size: @font-size-promo-title;
       font-weight: 100;
       border: 1px solid @grey-toggle;
@@ -815,23 +799,38 @@
       font-size: @font-header-description;
       font-weight: 100;
       text-transform: uppercase;
-      padding: 20px 0 10px 0;
+      padding: 20px 0 10px 55px;
     }
+  }
+  .companions-close {
+    display: block;
+    width: 20%;
+    font-size: @font-header-description;
+    color: @tablet-color-text-base;
+    text-transform: uppercase;
+    float: right;
+    flex-grow: 0;
+    padding-top: 70px;
   }
 
   .result-rest {
-    padding-top: 50px;
-    max-width: 1199px;
+    padding: 50px 0 0 0;
+
+    &__title {
+      padding: 0 40px 0 40px;
+    }
 
     &__fieldset {
       border: 1px solid @grey-toggle;
       border-radius: 2px;
-      width: 615px;
-      margin: 0 auto;
+      width: 88%;
+      margin: 0 6%;
+      padding-top:  40px;
     }
 
     &__label {
       position: relative;
+      margin: 0 auto;
       display: block;
       width: 260px;
       height: 28px;
@@ -902,9 +901,6 @@
       position: relative;
     }
 
-    //    &__img:nth-child(3n+3) {
-    //      padding-right: 0;
-    //    }
     &__img::before {
       content: '';
       position: absolute;
@@ -923,3 +919,370 @@
     }
   }
 }
+
+/*******************************/
+/******************************/
+@media (min-width: @screen-lg) {
+  .submit {
+    max-width: 100%;
+    &__slogan {
+      width: 64%;
+      padding: 95px 20px 23px 20px;
+      & span {
+        display: inline-block;
+      }
+
+    }
+    &__slogan h4 {
+      font-size: @font-size-promo-title;
+      line-height: 1.7em;
+    }
+  }
+
+  .full-name {
+    padding-bottom:20px;
+    width: 100%;
+    margin: 0 6%;
+    display: inline-block;
+  }
+
+  .user-name {
+    width: 25%;
+    margin: 0 5.5% 0 0;
+    padding: 0;
+    float: left;
+
+    &:last-child {
+      margin: 0;
+    }
+
+
+    &__label {
+      padding: 20px 15px 12px 23px;
+      width: 97%;
+    }
+
+    &__input {
+      width: 94%;
+    }
+
+  }
+
+  .form-app {
+    background-color: @white;
+    text-align: center;
+    width: 88%;
+    margin: 0 6%;
+    padding-bottom: 25px;
+
+    &__fieldset {
+      border: 1px solid @grey-toggle;
+      border-radius: 2px;
+      padding: 0 3% 19px 3%;
+
+    }
+    &__title {
+      padding: 40px  0 40px 0;
+      width: 380px;
+
+    }
+  }
+  .form-app-item {
+    text-align: left;
+    padding: 0;
+    margin: 0 6%;
+    width: 88%;
+
+    &__input {
+      display: none;
+
+    }
+    &__label {
+      padding-left: 127px;
+      float: left;
+
+    }
+    &__label::before {
+      top: 6px;
+      left: 70px;
+    }
+
+  }
+
+  .date {
+    text-align: center;
+
+    &__fieldset {
+      position: relative;
+      border: 1px solid @grey-toggle;
+      border-radius: 2px;
+      margin: 0 6%;
+      width: 88%;
+
+    }
+    &__title {
+      padding: 32px 0 35px 0;
+      width: 280px;
+    }
+  }
+
+  .date-item {
+    padding: 0 20px;
+    &__input {
+      padding-left: 10px;
+      border: 1px solid @grey-toggle;
+
+    }
+    &__input:hover {
+      border: 1px solid @header-app;
+    }
+    &__input:active {
+      border: 1px solid @pink-contact;
+    }
+
+    &__label {
+      padding: 15px 0 30px 20px;
+      text-align: left;
+    }
+
+    &--left-form {
+      float: left;
+      width: 20%;
+      padding:0 6%;
+    }
+
+    &--down-form {
+      text-align: left;
+      margin: 0;
+      padding:0 6%;
+      width: 20%;
+      float: left;
+    }
+
+  }
+
+  .date-toggle {
+
+    &__input,
+    &__input:hover,
+    &__input:active,
+    &__input:focus {
+      width: 90px;
+      height: 58px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
+  .date-toggle-wrap {
+    padding:0 6%;
+    position: relative;
+    width: 24%;
+    float: left;
+
+  }
+  .companions {
+    background-color: @white;
+    padding-bottom: 40px;
+    &__fieldset {
+      border: 1px solid @grey-toggle;
+      border-radius: 2px;
+      width: 88%;
+      margin: 0 6%;
+      text-align: left;
+    }
+    &__label {
+      width: 260px;
+    }
+
+  }
+
+  .toggle-companions {
+    padding: 0;
+    background-color: @white;
+    width: 40%;
+    margin: 0 0 40px 6%;
+
+    &::after {
+      width: 210%;
+    }
+
+    &__input,
+    &__input:hover,
+    &__input:active,
+    &__input:focus {
+      background-color: @white;
+    }
+  }
+
+  .companions-fullname {
+    padding: 10px 6% 25px 6%;
+    .companions-left {
+      float: left;
+      width: 60px;
+      text-align: center;
+      margin-right: 2%;
+
+      &__sign {
+        padding: 20px 0 10px 0;
+        color: @pink-contact;
+        font-size: @font-header-description;
+        font-weight: 100;
+
+      }
+      &__number {
+        border: 1px solid @grey-toggle;
+        width: 60px;
+        height: 40px;
+        padding-top: 20px;
+        color: @tablet-color-text-base;
+
+      }
+    }
+  }
+
+  .companions-right {
+    float: right;
+    width: 86%;
+
+    &__input,
+    &__input:hover,
+    &__input:active,
+    &__input:focus {
+      height: 60px;
+      width: 76%;
+      margin: 0 6%;
+      font-size: @font-size-promo-title;
+      font-weight: 100;
+      border: 1px solid @grey-toggle;
+      color: @tablet-color-text-base;
+      padding: 0 20px;
+
+    }
+    &__label {
+      color: @pink-contact;
+      font-size: @font-header-description;
+      font-weight: 100;
+      text-transform: uppercase;
+      padding: 20px 0 10px 55px;
+    }
+    &__wrap-desktop {
+      float: left;
+      width: 43%;
+    }
+  }
+  .companions-close {
+    display: block;
+    width: 20%;
+    font-size: @font-header-description;
+    color: @tablet-color-text-base;
+    text-transform: uppercase;
+    float: right;
+    flex-grow: 0;
+    padding-top: 70px;
+  }
+
+  .result-rest {
+    padding: 50px 0 0 0;
+
+    &__title {
+      padding: 0 40px 0 40px;
+    }
+
+    &__fieldset {
+      border: 1px solid @grey-toggle;
+      border-radius: 2px;
+      width: 88%;
+      margin: 0 6%;
+      padding-top:  40px;
+    }
+
+    &__label {
+      position: relative;
+      margin: 0;
+      display: block;
+      width: 240px;
+      height: 28px;
+      padding-left: 123px;
+      padding-top: 12px;
+      padding-bottom: 40px;
+      font-size: @font-size-promo-title;
+      float: left;
+
+    }
+    &__label::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 61px;
+      width: 40px;
+      height: 40px;
+      border: 1px solid @back-light-grey;
+      border-radius: 2%;
+    }
+    &__label:hover::before {
+      border-color: @tablet-color-text-base;
+    }
+    &__label:active::before {
+      border-color: @pink-contact;
+    }
+  }
+
+  .gallery {
+    max-width: 100%;
+    background-color: @white;
+    padding-top: 80px;
+    &__fieldset {
+      border: 1px solid @grey-toggle;
+      border-radius: 2px;
+      width: 88%;
+    }
+    
+
+  }
+
+  .gallery-input {
+    margin: 0;
+    width: 280px;
+    height: 40px;
+    padding-bottom: 98px;
+    border-bottom: 1px solid @grey-toggle;
+
+  }
+
+  .gallery-foto {
+    display: inline-block;
+    width: 600px;
+    padding-left: 60px;
+    margin: 0 auto;
+
+    &__img {
+      float: left;
+      padding: 67px 76px 0 0;
+      position: relative;
+    }
+
+    &__img::before {
+      content: '';
+      position: absolute;
+      top: 50px;
+      right: 50px;
+      width: 30px;
+      height: 30px;
+      background: url("@{img-path}/cross.png") no-repeat 50% 50%;
+      border: 1px solid @grey-toggle;
+      border-radius: 50%;
+      z-index: 100;
+    }
+    &__img:nth-child(3n+3)::before {
+      top: 50px;
+      right: -20px;
+    }
+  }
+}
+
+
+
+
+
+

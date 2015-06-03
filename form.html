@@ -52,7 +52,7 @@
 <section class="submit">
 <div class="submit__slogan">
     <h4>Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную
-        карту!<span>Пожалуйста, заполните форму ниже:</span></h4>
+        карту!<span> &nbsp;Пожалуйста, заполните форму ниже:</span></h4>
 </div>
 <form class="form" action="#" method="post">
 <div class="full-name">
@@ -99,12 +99,14 @@
             <input class="date-item__input" type="button" name="date_departure" id="date_departure_field">
             <label class="date-item__label" for="date_departure_field">Дата выезда</label>
         </div>
-        <div class="date-toggle">
-            <button class="date-toggle__minus" type="button"></button>
-            <input class="date-toggle__input" type="text" name="count_days" placeholder="10">
-            <button class="date-toggle__plus" type="button"></button>
+        <div class="date-toggle-wrap">
+            <div class="date-toggle">
+                <button class="date-toggle__minus" type="button"></button>
+                <input class="date-toggle__input" type="text" name="count_days" placeholder="10">
+                <button class="date-toggle__plus" type="button"></button>
+            </div>
 
-            <div class="date-toggle__label">Продолжительность</div>
+            <div class="date-toggle-wrap__label">Продолжительность</div>
         </div>
         <div class="date-item date-item--down-form">
             <input class="date-item__input" type="button" name="date_coming" id="date_coming_field">
@@ -128,19 +130,27 @@
                 <div class="companions-left__number">1</div>
             </div>
             <div class="companions-right">
-                <div class="companions-right__label">
-                    <label for="companion_name_field"> Имя </label>
-                </div>
-                <input class="companions-right__input" type="text" name="companion_name" id="companion_name_field"
-                       placeholder="Введите ваше имя">
+                <div class="companions-right__wrap-desktop">
 
-                <div class="companions-right__label">
-                    <label for="companion_nickname_field">
-                        Прозвище:
-                    </label>
+                    <div class="companions-right__label">
+                        <label for="companion_name_field"> Имя </label>
+                    </div>
+                    <input class="companions-right__input" type="text" name="companion_name" id="companion_name_field"
+                           placeholder="Введите ваше имя">
                 </div>
-                <input class="companions-right__input" type="text" name="companion_nickname"
-                       id="companion_nickname_field" placeholder="Ну как же без этого!">
+                <div class="companions-right__wrap-desktop">
+                    <div class="companions-right__label">
+                        <label for="companion_nickname_field">
+                            Прозвище:
+                        </label>
+
+                    </div>
+                    <input class="companions-right__input" type="text" name="companion_nickname"
+                           id="companion_nickname_field" placeholder="Ну как же без этого!">
+                </div>
+            </div>
+            <div class="companions-close">
+                Удалить
             </div>
 
         </div>
@@ -150,21 +160,28 @@
                 <div class="companions-left__number">1</div>
             </div>
             <div class="companions-right">
-                <div class="companions-right__label">
-                    <label for="companion_name_field2">Имя</label>
+                <div class="companions-right__wrap-desktop">
+                    <div class="companions-right__label">
+                        <label for="companion_name_field2">Имя</label>
+                    </div>
+                    <input class="companions-right__input" type="text" name="companion_name" id="companion_name_field2"
+                           placeholder="Введите ваше имя">
                 </div>
-                <input class="companions-right__input" type="text" name="companion_name" id="companion_name_field2"
-                       placeholder="Введите ваше имя">
 
-                <div class="companions-right__label">
-                    <label for="companion_nickname_field2">
-                        Прозвище:
-                    </label>
+                <div class="companions-right__wrap-desktop">
+
+                    <div class="companions-right__label">
+                        <label for="companion_nickname_field2">
+                            Прозвище:
+                        </label>
+                    </div>
+                    <input class="companions-right__input" type="text" name="companion_nickname"
+                           id="companion_nickname_field2" placeholder="Ну как же без этого!">
                 </div>
-                <input class="companions-right__input" type="text" name="companion_nickname"
-                       id="companion_nickname_field2" placeholder="Ну как же без этого!">
             </div>
-
+            <div class="companions-close">
+                Удалить
+            </div>
         </div>
 
     </fieldset>
@@ -173,65 +190,137 @@
 <article class="result-rest">
     <fieldset class="result-rest__fieldset">
 
-    <legend class="result-rest__title">Ваши безбашенные достижения в путешествии</legend>
+        <legend class="result-rest__title">Ваши безбашенные достижения в путешествии</legend>
 
-    <input class="result-rest__item" type="checkbox" id="shark_field" checked>
-    <input class="result-rest__item" type="checkbox" id="burned_field" checked>
-    <input class="result-rest__item" type="checkbox" id="chack_field">
-    <input class="result-rest__item" type="checkbox" id="souvenir_field">
-    <input class="result-rest__item" type="checkbox" id="tower_field" checked>
-    <input class="result-rest__item" type="checkbox" id="hotel_field">
+        <input class="result-rest__item" type="checkbox" id="shark_field" checked>
+        <input class="result-rest__item" type="checkbox" id="burned_field" checked>
+        <input class="result-rest__item" type="checkbox" id="chack_field">
+        <input class="result-rest__item" type="checkbox" id="souvenir_field">
+        <input class="result-rest__item" type="checkbox" id="tower_field" checked>
+        <input class="result-rest__item" type="checkbox" id="hotel_field">
 
 
-    <div class="rest-controls">
+        <div class="rest-controls">
 
-        <label class="result-rest__label" for="shark_field">Сделал селфи с акулой</label>
-        <label class="result-rest__label" for="burned_field">Обгорел на пляже</label>
-        <label class="result-rest__label" for="chack_field">Видел Чака Норриса</label>
-        <label class="result-rest__label" for="souvenir_field">Накупил сувениров</label>
-        <label class="result-rest__label" for="tower_field">Удержал башню</label>
-        <label class="result-rest__label" for="hotel_field">Разгромил отель</label>
+            <label class="result-rest__label" for="shark_field">Сделал селфи с акулой</label>
+            <label class="result-rest__label" for="burned_field">Обгорел на пляже</label>
+            <label class="result-rest__label" for="chack_field">Видел Чака Норриса</label>
+            <label class="result-rest__label" for="souvenir_field">Накупил сувениров</label>
+            <label class="result-rest__label" for="tower_field">Удержал башню</label>
+            <label class="result-rest__label" for="hotel_field">Разгромил отель</label>
 
-    </div>
-</fieldset>
+        </div>
+    </fieldset>
 </article>
 <article class="gallery">
     <fieldset class="gallery__fieldset">
-    <legend class="gallery__title">Ваши фотографии из поездки*</legend>
+        <legend class="gallery__title">Ваши фотографии из поездки*</legend>
 
-    <div class="input-align">
-        <div class="gallery-input">
-            <input class="gallery-input__file" type="file" name="images" value="Загрузить фото">
+        <div class="input-align">
+            <div class="gallery-input">
+                <input class="gallery-input__file" type="file" name="images" value="Загрузить фото">
+            </div>
         </div>
-    </div>
+            <figure class="gallery-foto">
+                <div class="gallery-foto__img">
+                    <picture>
+                        <source
+                                media="(min-width: 1200px)"
+                                srcset="img/pic-desktop.png">
+                        <source
+                                media="(min-width: 700px)"
+                                srcset="img/pic-tablet.png">
 
-    <figure class="gallery-foto">
-        <div class="gallery-foto__img">
-            <img src="img/_picter.png">
-        </div>
-        <div class="gallery-foto__img">
-            <img src="img/_picter.png">
-        </div>
-        <div class="gallery-foto__img">
-            <img src="img/_picter.png">
-        </div>
-        <div class="gallery-foto__img">
-            <img src="img/_picter.png">
-        </div>
-        <div class="gallery-foto__img">
-            <img src="img/_picter.png">
-        </div>
-        <div class="gallery-foto__img">
-            <img src="img/_picter.png">
-        </div>
-        <div class="gallery-foto__img">
-            <img src="img/_picter.png">
-        </div>
-        <div class="gallery-foto__img">
-            <img src="img/_picter.png">
-        </div>
-    </figure>
-        </fieldset>
+                        <img src="img/_picter.png">
+                    </picture>
+                </div>
+                <div class="gallery-foto__img">
+                    <picture>
+                        <source
+                                media="(min-width: 1200px)"
+                                srcset="img/pic-desktop.png">
+                        <source
+                                media="(min-width: 700px)"
+                                srcset="img/pic-tablet.png">
+
+                        <img src="img/_picter.png">
+                    </picture>
+                </div>
+                <div class="gallery-foto__img">
+                    <picture>
+                        <source
+                                media="(min-width: 1200px)"
+                                srcset="img/pic-desktop.png">
+                        <source
+                                media="(min-width: 700px)"
+                                srcset="img/pic-tablet.png">
+
+                        <img src="img/_picter.png">
+                    </picture>
+                </div>
+                <div class="gallery-foto__img">
+                    <picture>
+                        <source
+                                media="(min-width: 1200px)"
+                                srcset="img/pic-desktop.png">
+                        <source
+                                media="(min-width: 700px)"
+                                srcset="img/pic-tablet.png">
+
+                        <img src="img/_picter.png">
+                    </picture>
+                </div>
+                <div class="gallery-foto__img">
+                    <picture>
+                        <source
+                                media="(min-width: 1200px)"
+                                srcset="img/pic-desktop.png">
+                        <source
+                                media="(min-width: 700px)"
+                                srcset="img/pic-tablet.png">
+
+                        <img src="img/_picter.png">
+                    </picture>
+                </div>
+                <div class="gallery-foto__img">
+                    <picture>
+                        <source
+                                media="(min-width: 1200px)"
+                                srcset="img/pic-desktop.png">
+                        <source
+                                media="(min-width: 700px)"
+                                srcset="img/pic-tablet.png">
+
+                        <img src="img/_picter.png">
+                    </picture>
+                </div>
+                <div class="gallery-foto__img">
+                    <picture>
+                        <source
+                                media="(min-width: 1200px)"
+                                srcset="img/pic-desktop.png">
+                        <source
+                                media="(min-width: 700px)"
+                                srcset="img/pic-tablet.png">
+
+                        <img src="img/_picter.png">
+                    </picture>
+                </div>
+                <div class="gallery-foto__img">
+                    <picture>
+                        <source
+                                media="(min-width: 1200px)"
+                                srcset="img/pic-desktop.png">
+                        <source
+                                media="(min-width: 700px)"
+                                srcset="img/pic-tablet.png">
+
+                        <img src="img/_picter.png">
+                    </picture>
+                </div>
+
+            </figure>
+    </fieldset>
 </article>
 <div class="gallery-button-submit">
     <div class="gallery-submit">
