@@ -1,15 +1,13 @@
 /*index*/
 .footer-index {
-  width: 320px;
-  height: 615px;
+  width: 100%;
   text-align: center;
   padding-top: 40px;
 
   &__align {
     display: block;
     position: absolute;
-    width: auto;
-    height: 412px;
+    width: 100%;
     background: #ffffff;
     background-size: 20px 10px;
     background-repeat: no-repeat;
@@ -17,31 +15,7 @@
 }
 
 .footer-index-content {
-  margin: 0;
-  padding: 0 20px;
-  height: 450px;
-  background-image: linear-gradient(to right bottom,  @white 25%, transparent 25%),
-  linear-gradient(to left bottom,@white  25%, transparent 25%);
-  background-position: 165px 410px,
-  -185px 410px;
-  background-size: 350px 70px;
-  background-repeat: no-repeat;
-
-  &:after {
-
-    content: '';
-    position: absolute;
-    bottom: -135px;
-    left: 145px;
-    width: 15px;
-    height: 15px;
-    background-color: @pink-contact;
-    border: 10px solid @white;
-    border-radius: 50%;
-    z-index: 102;
-
-  }
-
+  width: 100%;
   &__question {
     padding-top: 50px;
     padding-bottom: 30px;
@@ -66,6 +40,24 @@
     }
   }
 
+}
+.mymap {
+  position: relative;
+  width: 100%;
+  height: 200px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background: url("@{img-path}/triangle-white-footer.svg") no-repeat 50% top ;
+    background-size: contain;
+    z-index: 100;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+
+  }
 }
 
 /*blog*/
@@ -106,7 +98,6 @@
 .footer-iconSN {
   padding: 40px 0 40px 3px;
   width: 190px;
-//  margin: 0 auto;
   &__link {
     display: inline-block;
     margin-right: 10px;
@@ -187,12 +178,12 @@
 /*********************************************/
 @media (min-width: @screen-md) and (max-width: (@screen-lg - 1)) {
   .footer-index {
-    width: 700px;
+    width: 100%;
     max-width: 1199px;
-    margin: 0 auto;
+    margin: 0;
     &__align {
 
-      width: auto;
+      width: 100%;
 
     }
   }
@@ -220,7 +211,7 @@
     max-width: 1199px;
     &__align {
       display: inline-block;
-      width: 699px;
+      width: 100%;
 
     }
   }
@@ -248,18 +239,18 @@
 /*********************************************/
 @media (min-width: @screen-lg) {
   .footer-index {
-    width: 1200px;
+    width: 100%;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0;
     &__align {
 
-      width: auto;
+      width:100%;
 
     }
   }
 
   .footer-index-content {
-    width: 1200px;
+    width: 100%;
     max-width: 100%;
 
     &__question {
@@ -280,10 +271,8 @@
   /*blog*/
   .footer {
     text-align: center;
-    max-width: 1199px;
     &__align {
       display: inline-block;
-      width: 699px;
 
     }
   }
