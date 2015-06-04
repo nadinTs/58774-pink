@@ -261,20 +261,26 @@
 
   .logo {
     min-height: 110px;
+    display: block;
 
     &__PINK {
-      background: url('@{img-path}/glasses-header-white.png') no-repeat 40px 27px;
+      float: left;
+      min-height: 100px;
       width: 200px;
-      min-height: 109px;
+      margin-left: 50px;
+      background:none;
+
     }
     &__PINK:hover {
-      background:  url('@{img-path}/glasses-header-pink.png') no-repeat 40px 27px;
+      background: none;
     }
     &__PINK:active {
-      background: url('@{img-path}/glasses-header-active.png') no-repeat 40px 27px;
+      background:none;
     }
 
   }
+
+
 
   .iconsOS {
     margin-left: 120px;
@@ -318,4 +324,6 @@
     }
 
   }
+
+
 }
