@@ -32,6 +32,20 @@
   }
 }
 
+  @media (min-resolution: 1.5dppx) {
+    .index-header {
+      background-image:url('@{img-path}/background-mobile@2x.jpg');
+      background-size: cover;
+
+
+    }
+    .index-header__wrap {
+      background-image: url('@{img-path}/iphone-hand-mobile@2x.png');
+      background-size: cover;
+    }
+
+}
+
 .logo {
   background-color: @dark-gray-opacity;
   min-height: 66px;
@@ -118,6 +132,18 @@
 
 }
 
+@media (min-resolution: 1.5dppx) {
+  .index-header {
+    background: @dark-gray url('@{img-path}/background-tablet@2x.jpg') no-repeat 50% top;
+
+  }
+  .index-header__wrap {
+    background: url('@{img-path}/iphone-hand-tablet@2x.png') no-repeat 50% 40%;
+
+  }
+
+}
+
 /*from*/
 .main-header__title--form{
   padding-bottom: 50px;
@@ -132,31 +158,36 @@
 
   .index-header {
     max-width: 1199px;
+    width: auto;
     background: @dark-gray url('@{img-path}/background-tablet@1x.jpg') no-repeat  100% 100%;
 
     &__wrap {
       background: none;
     }
     &__slogan {
-      width: 100%;
+      width: 90%;
       background: url('@{img-path}/iphone-hand-tablet@1x.png') no-repeat 50% bottom;
+      padding-left: 10%;
+      text-align: left;
 
     }
     &__title {
       .clearfix;
-      width: 100%;
-      padding: 30px 0 32px 0;
-
+      width: 200px;
+      padding: 30px 0 32px 65px;
+      text-align: left;
+      margin: 0;
     }
     & h1 {
       width: 200px;
       float: left;
       padding-top: 63px;
-      margin-left: 90px;
+      margin: 0;
       font-family: @font-base;
       font-size: @font-size-title-header-tablet;
       font-weight: 100;
       line-height: 1.2em;
+      text-align: center;
     }
   }
 
@@ -178,7 +209,7 @@
   }
 
   .iconsOS {
-    margin-left: 20px;
+    margin-left:0;
     background-color: transparent;
 
     &__content {
@@ -235,28 +266,41 @@
       background: none;
     }
     &__slogan {
-      width: 100%;
-      background: url('@{img-path}/iphone-hand-desktop@1x.png') no-repeat 146px 102px;
-
+      width: 85%;
+      background: url('@{img-path}/iphone-hand-desktop@1x.png') no-repeat 50% bottom;
+      padding-left: 15% ;
+      text-align: left;
     }
 
 
     &__title {
       .clearfix;
-      width: 100%;
-      padding: 30px 0 32px 0;
+      width: 250px;
+      padding: 30px 0 32px 45px;
+      text-align: left;
+      margin: 0;
 
     }
     & h1 {
       width: 250px;
       float: left;
       padding-top: 77px;
-      margin-left: 155px;
+      margin: 0;
       font-family: @font-base;
       font-size: @font-size-50px;
       font-weight: 100;
       line-height: 1.2em;
+      text-align: center;
     }
+  }
+
+  @media (min-resolution: 1.5dppx) {
+
+    .index-header__wrap {
+      background: url('@{img-path}/iphone-hand-desktop@2x.png') no-repeat 50% 40%;
+
+    }
+
   }
 
   .logo {
@@ -283,7 +327,7 @@
 
 
   .iconsOS {
-    margin-left: 120px;
+    margin-left: 0;
     background-color: transparent;
 
     &__content {

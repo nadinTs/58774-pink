@@ -103,10 +103,18 @@
 .review-sign {
   display: none;
 }
+.prev {
+  display: none;
+}
+
+.next {
+  display: none;
+}
+
 
 .review-controls {
   position: absolute;
-  width: 100%;
+  width: 95%;
   left: 1px;
   bottom: 130px;
   z-index: 100;
@@ -288,48 +296,14 @@
     color: @tablet-color-text-base;
     text-align: left;
 
-    &--yes:after {
-      content: '';
-      background-color: @green-checkout;
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      top: 30px;
-      right: 20px;
-      transform: rotate(-45deg);
-      z-index: 100;
-    }
-    &--yes:before {
-      content: '';
-      background-color: @green-checkout;
-      position: absolute;
-      width: 15px;
-      height: 3px;
-      top: 34px;
-      right: 42px;
-      transform: rotate(45deg);
+    &--yes {
+      background: url("@{img-path}/yes.svg") no-repeat 90% 50%;
       z-index: 100;
     }
 
-    &--not:after {
-      content: '';
-      background-color: @red-cross;
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      top: 30px;
-      right: 30px;
-      transform: rotate(45deg);
-    }
-    &--not:before {
-      content: '';
-      background-color: @red-cross;
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      top: 30px;
-      right: 30px;
-      transform: rotate(-45deg);
+    &--not {
+      background: url("@{img-path}/no.svg") no-repeat 90% 50%;
+      z-index: 100;
     }
 
   }
@@ -354,10 +328,7 @@
     padding: 47px 0 90px 0;
     width: 600px;
     margin: 0 auto;
-//
-//    & h2:last-child {
-//      width: 580px;
-//    }
+
 
     &__title {
       font-size: @font-size-title-header-tablet;
@@ -368,8 +339,8 @@
   }
 
   .promo-item {
-    width: 320px;
-    padding: 33px 15px 0 348px;
+    padding: 33px 0 0 370px;
+    width: auto ;
 
     text-align: left;
 
@@ -380,6 +351,7 @@
     }
     &__text {
       font-size: @font-header-description;
+      padding-right: 20px;
     }
   }
 
@@ -469,7 +441,7 @@
   }
 
   .review-controls {
-    width: 100%;
+    width: 95%;
     padding-left: 10px;
     bottom: 70px;
   }
@@ -489,7 +461,7 @@
   .app {
     max-width: 1199px;
     min-height: 290px;
-    padding: 34px 0 0 20px;
+    padding: 34px 0 0 0;
     background-image: linear-gradient(to bottom,  @back-light-grey 0,  @back-light-grey 0);
 
     &__wrap {
@@ -501,8 +473,9 @@
 
   .app-inner {
     overflow: hidden;
-    width: 620px;
-    margin: 0 auto;
+    min-width: 620px;
+    width: 80%;
+    margin: 0 10%;
     border-right:2px solid @grey-toggle;
     border-bottom:2px solid @grey-toggle;
   }
@@ -521,7 +494,7 @@
   .app-item {
     vertical-align: middle;
     background-color: @white;
-    width: 155px;
+    width:25%;
     min-height: 100%;
     line-height: 1em;
 
@@ -561,26 +534,18 @@
       border-left: 2px solid @grey-toggle;
       border-bottom: none;
       position: relative;
-      color: @font-color-text;
+      color: @tablet-color-text-base;
+      font-size: @font-size-promo-title;
       text-align: left;
       min-height: 35px;
 
-      &--yes:after{
-        top: 18px;
-        right: 56px;
+      &--yes{
+        background: url("@{img-path}/yes.svg") no-repeat 50% 50%
       }
-      &--yes:before {
-        top: 24px;
-        right: 78px;
+
+      &--not {
+        background: url("@{img-path}/no.svg") no-repeat 50% 50%;
       }
-      &--not:after {
-              top: 20px;
-              right:60px;
-            }
-            &--not:before {
-              top: 20px;
-              right: 60px;
-            }
 
     }
     &__item-text {
@@ -737,7 +702,7 @@
 
     }
     &__text {
-      background: url("@{img-path}/quotes.png") no-repeat 50% 0;
+      background: url("@{img-path}/quotes.svg") no-repeat 50% 0;
       font-size: @font-size-promo-title;
       color: @tablet-color-text-base;
       line-height: 1.74em;
@@ -762,13 +727,30 @@
     }
   }
 
+
+  .prev {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+  }
+
+  .next {
+    display: block;
+    width: 40px;
+    height: 40px;
+
+  }
+
+
+
   .review-controls {
     display: none;
   }
 
+
   .app {
     max-width: 100%;
-//    min-height: 290px;
     padding: 26px 0 0 0;
     background-image: linear-gradient(to bottom,  @back-light-grey 0,  @back-light-grey 0);
 

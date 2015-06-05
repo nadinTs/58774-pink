@@ -130,6 +130,7 @@
   .post-header {
     width: 620px;
     padding: 77px 40px 0 20px;
+    margin: 0  auto;
     &__title {
       font-size: @font-size-50px;
     }
@@ -176,6 +177,88 @@
 
   .paginator {
     max-width: 1199px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 0 auto;
+
+    &__previous {
+      float: left;
+      order: 1;
+    }
+    &__next {
+      float: right;
+      order: 3;
+    }
+    &__back {
+      margin: 0;
+      float: inherit;
+      order: 2;
+    }
+  }
+
+}
+
+/*****************************/
+/*************************/
+@media (min-width:@screen-lg) {
+
+  .post {
+    max-width: 100%;
+  }
+
+  .post-header {
+    width: 900px;
+    padding: 77px 40px 0 20px;
+    margin: 0  auto;
+    &__title {
+      font-size: @font-size-50px;
+    }
+    &__link {
+      border: none;
+      & a{
+        font-size: @font-size-24px;
+      }
+    }
+    &__date {
+      display: none;
+    }
+    &__date-fieldset {
+      padding: 0 20px 0 20px;
+      font-size: @font-header-description;
+      text-transform: uppercase;
+      color: @pink-contact;
+    }
+
+    &-fieldset {
+      display: block;
+      width: 88%;
+      margin: 12px 6% 0 6%;
+      text-align: center;
+      border-top: 1px solid @grey-toggle;
+      border-bottom: none;
+      border-right: none;
+      border-left: none;
+    }
+  }
+  .post-content {
+    width: 88%;
+    margin: 0 6%;
+    padding: 43px 40px 0 37px;
+    &__title {
+      font-size: @font-size-24px;
+    }
+    &__text {
+      font-size: @font-size-promo-title;
+      line-height: 1.7em;
+      padding-top: 20px;
+    }
+  }
+
+  .paginator {
+    max-width: 80%;
     width: 100%;
     display: flex;
     justify-content: center;
