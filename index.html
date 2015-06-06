@@ -32,24 +32,27 @@
                  display: none;
              }
          }
-        @media (min-width: 1200px) {
 
-            .logo__PINK {
-                color: #fff;
-                transition: color .4s ease;
-            }
-            .logo__PINK:hover {
-                color: #d22856;
-            }
-            .logo__PINK:active {
-                color: #283645;
-            }
+         @media (min-width: 1200px) {
 
-            .logo__PINK svg  > .logo__svg{
-                fill: currentColor;
-            }
+             .logo__PINK {
+                 color: #fff;
+                 transition: color .4s ease;
+             }
 
-        }
+             .logo__PINK:hover {
+                 color: #d22856;
+             }
+
+             .logo__PINK:active {
+                 color: #283645;
+             }
+
+             .logo__PINK svg > .logo__svg {
+                 fill: currentColor;
+             }
+
+         }
 
     </style>
 
@@ -166,7 +169,8 @@
                                 <a href="#"><img src="img/android-logo.svg" width="42" height="47" alt="Android"></a>
                             </li>
                             <li class="iconsOS-list__item">
-                                <a href="#"><img src="img/microsoft-logo.svg" width="44" height="42" alt="Windows OS"></a>
+                                <a href="#"><img src="img/microsoft-logo.svg" width="44" height="42"
+                                                 alt="Windows OS"></a>
                             </li>
                         </ul>
                     </div>
@@ -209,7 +213,7 @@
                     новых
                 </div>
             </article>
-         </div>
+        </div>
     </div>
 </section>
 <section class="tablet-effect">
@@ -223,7 +227,7 @@
     </article>
 </section>
 
-<section class="review"  >
+<section class="review">
 
     <!-- переключатель страниц (точки) -->
     <input type="radio" id="btn-1" name="toggle" checked>
@@ -243,10 +247,9 @@
     <div class="review-inner">
 
 
-
         <div class="review-slider">
 
-            <article class="review-item" >
+            <article class="review-item">
                 <h2 class="review-item__title">Николай Петров</h2>
 
                 <div class="review-item__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому
@@ -303,7 +306,6 @@
 
     </div>
     <button class="next"><img src="img/review-arrow-left.svg" width="40px" height="40px"></button>
-
 
 
 </section>
@@ -409,33 +411,36 @@
 
 <footer class="footer-index">
     <div class="footer-index__align">
+
+
+        <h2 class="footer-index__question">
+            Остались вопросы?<br> Свяжитесь с нами
+        </h2>
+
         <div class="footer-index-content">
-
-            <h2 class="footer-index-content__question">
-                Остались вопросы?<br> Свяжитесь с нами
-            </h2>
-
-            <div class="footer-index-content__text">
+            <div class="footer-index-content__text  footer-index-content__text--phone">
                 Звоните:<br>
-                <span><a href="tel: +78125556666" class="footer-index-content__contact">
-                    +7(812)555&ndash;66&ndash;66</a></span>
+                    <span><a href="tel: +78125556666" class="footer-index-content__contact">
+                        +7(812)555&ndash;66&ndash;66</a></span>
             </div>
 
-            <div class="footer-index-content__text">
+            <div class="footer-index-content__text  footer-index-content__text--mail">
                 Пишите:<br>
-            <span><a href="mailto:mail@htmlacademy.ru" class="footer-index-content__contact">
-                mail@htmlacademy.ru
-            </a></span>
+                <span><a href="mailto:mail@htmlacademy.ru" class="footer-index-content__contact">
+                    mail@htmlacademy.ru
+                </a></span>
             </div>
 
-            <div class="footer-index-content__text footer-index-content__text--tablet">
+            <div class="footer-index-content__text footer-index-content__text--address">
                 Приезжайте в гости:<br>
 
-            <span class="footer-index-content__contact">
-                ул. Большая<br> Конюшенная, 19/8
-            </span>
+                <span class="footer-index-content__contact">
+                    ул. Большая<br> Конюшенная, 19/8
+                </span>
+            </div>
         </div>
-            <div class="mymap" id="mymap"></div>
+        <div class="mymap" id="mymap">
+
         </div>
     </div>
 </footer>

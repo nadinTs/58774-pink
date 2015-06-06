@@ -828,22 +828,14 @@
       text-align: left;
       min-height: 41px;
 
-      &--yes:after{
-        top: 18px;
-        right: 56px;
+      &--yes{
+        background: url("@{img-path}/yes.svg") no-repeat 50% 50%
       }
-      &--yes:before {
-        top: 24px;
-        right: 78px;
+
+      &--not {
+        background: url("@{img-path}/no.svg") no-repeat 50% 50%;
       }
-      &--not:after {
-        top: 20px;
-        right:60px;
-      }
-      &--not:before {
-        top: 20px;
-        right: 60px;
-      }
+
 
     }
     &__item-text {
