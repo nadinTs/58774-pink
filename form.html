@@ -193,15 +193,15 @@
     <fieldset class="date__fieldset">
         <legend class="date__title">Когда вы путешествовали?*</legend>
 
-        <div class="date-item date-item--left-form">
+        <div class="date-item date-item--left-form ">
             <input class="date-item__input" type="button" name="date_departure" id="date_departure_field">
             <label class="date-item__label" for="date_departure_field">Дата выезда</label>
         </div>
         <div class="date-toggle-wrap">
-            <div class="date-toggle">
-                <button class="date-toggle__minus" type="button"></button>
-                <input class="date-toggle__input" type="text" name="count_days" placeholder="10">
-                <button class="date-toggle__plus" type="button"></button>
+            <div class="date-toggle input-numeric">
+                <button class="date-toggle__minus  input-numeric__minus" type="button"></button>
+                <input class="date-toggle__input" type="text" name="count_days" value="10">
+                <button class="date-toggle__plus input-numeric__plus" type="button"></button>
             </div>
 
             <div class="date-toggle-wrap__label">Продолжительность</div>
@@ -217,10 +217,10 @@
     <fieldset class="companions__fieldset">
         <legend class="companions__label">Количество попутчиков*</legend>
 
-        <div class="toggle-companions">
-            <button class="toggle-companions__minus" type="button"></button>
-            <input class="toggle-companions__input" type="text" name="count_companions" placeholder="2">
-            <button class="toggle-companions__plus" type="button"></button>
+        <div class="toggle-companions input-numeric">
+            <button class="toggle-companions__minus input-numeric__minus" type="button"></button>
+            <input class="toggle-companions__input" type="text" name="count_companions" value="2">
+            <button class="toggle-companions__plus input-numeric__plus" type="button"></button>
         </div>
         <div class="companions-fullname clearfix">
             <div class="companions-left">
@@ -562,6 +562,7 @@
     </div>
 
 </footer>
+<script src="js/form.js" type="text/javascript"></script>
 
 </body>
 </html>
