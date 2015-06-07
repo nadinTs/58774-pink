@@ -190,71 +190,44 @@
     <fieldset class="companions__fieldset">
         <legend class="companions__label">Количество попутчиков*</legend>
 
-        <div class="toggle-companions input-numeric">
-            <button class="toggle-companions__minus input-numeric__minus" type="button"></button>
-            <input class="toggle-companions__input" type="text" name="count_companions" value="2">
-            <button class="toggle-companions__plus input-numeric__plus" type="button"></button>
+        <div class="toggle-companions input-numeric-companion">
+            <button class="toggle-companions__minus input-numeric-companion__minus" type="button"></button>
+            <input class="toggle-companions__input" id="companion_count" type="text" name="count_companions" value="1">
+            <button class="toggle-companions__plus input-numeric-companion__plus" type="button"></button>
         </div>
-
-        <div class="companions-fullname clearfix">
-            <div class="companions-left">
-                <div class="companions-left__sign">&#8470;</div>
-                <div class="companions-left__number">1</div>
-            </div>
-            <div class="companions-right">
-                <div class="companions-right__wrap-desktop">
-
-                    <div class="companions-right__label">
-                        <label for="companion_name_field"> Имя </label>
-                    </div>
-                    <input class="companions-right__input" type="text" name="companion_name" id="companion_name_field"
-                           placeholder="Введите ваше имя">
+        <ul id="companion_list">
+            <li class="companions-fullname clearfix">
+                <div class="companions-left">
+                    <div class="companions-left__sign">&#8470;</div>
+                    <div class="companions-left__number">1</div>
                 </div>
-                <div class="companions-right__wrap-desktop">
-                    <div class="companions-right__label">
-                        <label for="companion_nickname_field">
-                            Прозвище:
-                        </label>
+                <div class="companions-right">
+                    <div class="companions-right__wrap-desktop">
 
+                        <div class="companions-right__label">
+                            <label for="companion_name_field_1"> Имя </label>
+                        </div>
+                        <input class="companions-right__input" type="text" name="companion_name"
+                               id="companion_name_field_1"
+                               placeholder="Введите ваше имя">
                     </div>
-                    <input class="companions-right__input" type="text" name="companion_nickname"
-                           id="companion_nickname_field" placeholder="Ну как же без этого!">
+                    <div class="companions-right__wrap-desktop">
+                        <div class="companions-right__label">
+                            <label for="companion_nickname_field_1">
+                                Прозвище:
+                            </label>
+
+                        </div>
+                        <input class="companions-right__input" type="text" name="companion_nickname"
+                               id="companion_nickname_field_1" placeholder="Ну как же без этого!">
+                    </div>
                 </div>
-            </div>
-            <div class="companions-close">
-                Удалить
-            </div>
-
-        </div>
-        <div class="companions-fullname clearfix">
-            <div class="companions-left">
-                <div class="companions-left__sign">&#8470;</div>
-                <div class="companions-left__number">1</div>
-            </div>
-            <div class="companions-right">
-                <div class="companions-right__wrap-desktop">
-                    <div class="companions-right__label">
-                        <label for="companion_name_field2">Имя</label>
-                    </div>
-                    <input class="companions-right__input" type="text" name="companion_name" id="companion_name_field2"
-                           placeholder="Введите ваше имя">
+                <div class="companions-close">
+                    Удалить
                 </div>
 
-                <div class="companions-right__wrap-desktop">
-
-                    <div class="companions-right__label">
-                        <label for="companion_nickname_field2">
-                            Прозвище:
-                        </label>
-                    </div>
-                    <input class="companions-right__input" type="text" name="companion_nickname"
-                           id="companion_nickname_field2" placeholder="Ну как же без этого!">
-                </div>
-            </div>
-            <div class="companions-close">
-                Удалить
-            </div>
-        </div>
+            </li>
+        </ul>
 
     </fieldset>
 </article>
@@ -527,7 +500,7 @@
 </g>
 </svg>
             </a>
-            <span>PINK</span></a>
+            <span>PINK</span>
         </div>
         <div class="footer-iconSN">
             <a class="footer-iconSN__link" href="#" title="Twitter"><span>Twitter</span></a>
@@ -540,7 +513,44 @@
     </div>
 
 </footer>
+
+<script id="companion-template" type="text/html">
+    <li class="companions-fullname clearfix">
+        <div class="companions-left">
+            <div class="companions-left__sign">&#8470;</div>
+            <div class="companions-left__number">{{number}}</div>
+        </div>
+        <div class="companions-right">
+            <div class="companions-right__wrap-desktop">
+
+                <div class="companions-right__label">
+                    <label for="companion_name_field_{{number}}"> Имя </label>
+                </div>
+                <input class="companions-right__input" type="text" name="companion_name"
+                       id="companion_name_field_{{number}}"
+                       placeholder="Введите ваше имя">
+            </div>
+            <div class="companions-right__wrap-desktop">
+                <div class="companions-right__label">
+                    <label for="companion_nickname_field_{{number}}">
+                        Прозвище:
+                    </label>
+
+                </div>
+                <input class="companions-right__input" type="text" name="companion_nickname"
+                       id="companion_nickname_field_{{number}}" placeholder="Ну как же без этого!">
+            </div>
+        </div>
+        <div class="companions-close">
+            Удалить
+        </div>
+    </li>
+
+</script>
+<script src="js/vendor/mustache-2.1.0.min.js" type="text/javascript"></script>
 <script src="js/form.js" type="text/javascript"></script>
+
+
 
 </body>
 </html>
