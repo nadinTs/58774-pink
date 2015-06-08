@@ -140,3 +140,85 @@
   }
 
 }
+
+/*****************************/
+/*************************/
+@media (min-width:@screen-lg) {
+
+  .announce {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+  .announce-item {
+    padding: 0 0 50px 0;
+    margin: 0 40px 0 100px;
+
+
+    &__title {
+      position: relative;
+      display: block;
+      &::before {
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: -57px;
+        width: 30px;
+        height: 30px;
+        background: url("@{img-path}/tablet-message.png") no-repeat 0 0;
+        z-index: 100;
+      }
+      & a {
+        font-size: @font-size-tablet-blog-title;
+      }
+    }
+
+    &__date {
+      padding: 14px 0 25px 0;
+      font-size: @font-header-description;
+    }
+    &__text {
+      margin-right: 40px;
+      padding-bottom: 40px;
+      & a {
+        font-size: @font-size-promo-title;
+        line-height: 1.7;
+      }
+    }
+
+  }
+
+  .toggle-number {
+    display: block;
+    position: relative;
+    text-align: left;
+    margin-left: 60px;
+    &::before {
+      position: absolute;
+      content: 'СТР.';
+      color: @header-app;
+      font-size: @font-size-promo-title;
+      font-weight: bold;
+      top: 20px;
+      left: -40px;
+      width: 30px;
+      height: 30px;
+    }
+
+    &__link {
+      display: inline-block;
+      color: @header-app;
+      font-weight: bold;
+      font-size: @font-size-promo-title;
+      padding: 19px 25px;
+      margin: 0 10px 10px 0;
+
+      &:first-child {
+        border-color: @pink-contact;
+      }
+    }
+
+  }
+
+}
+
+
