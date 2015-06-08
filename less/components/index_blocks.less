@@ -311,6 +311,8 @@
 
   }
 }
+
+
 /********************/
 @media (min-width: @screen-md) and (max-width: (@screen-lg - 1)) {
   .promo {
@@ -567,6 +569,7 @@
 
 
 @media (min-width: @screen-lg) {
+
   .promo {
     min-width: 1199px;
     min-height: 730px;
@@ -643,26 +646,28 @@
     min-height: 370px;
     min-width: 1200px;
     max-width: 100%;
+    width: 100%;
     background-color: @back-light-grey;
 
   }
 
   .tablet-effect-clock {
     min-height: 360px;
-
-    background: url('@{img-path}/watch-desktop.png') no-repeat 130px 0;
+    width: 940px;
+    margin: 0 auto;
+    background: url('@{img-path}/watch-desktop.png') no-repeat 0 0;
 
     &__title {
       margin: 0;
       font-size: @font-size-30px;
       color: @black;
-      padding: 90px 100px 23px 496px;
+      padding: 90px 0 23px 360px;
       line-height: 1.2em;
 
     }
     &__text {
       margin: 0;
-      padding: 0 210px 30px 496px;
+      padding: 0 0 30px 360px;
       color: @header-app;
       font-size: @font-size-promo-title;
       line-height: 1.74em;
@@ -670,7 +675,7 @@
     &__link {
       display: block;
       margin: 0;
-      padding: 0 50px 20px 496px;
+      padding: 0 0 20px 360px;
       color: @pink-contact;
       font-size: @font-size-promo-title;
       line-height: 1.5em;
@@ -694,7 +699,6 @@
   }
 
   .review-item {
-    padding: 0;
     width: 740px;
     min-height: 237px;
     transition: transform .8s ease;
