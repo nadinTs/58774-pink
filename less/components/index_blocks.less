@@ -133,6 +133,9 @@
     vertical-align: middle;
 
   }
+  &--mobile {
+    display: none;
+  }
 }
 
 #btn-1:checked ~ .review-controls label[for="btn-1"],
@@ -681,7 +684,7 @@
   }
 
   .review-inner {
-    width: 740px;
+    width: 820px;
     padding-top: 95px;
     padding-bottom: 165px;
   }
@@ -696,6 +699,7 @@
     min-height: 237px;
     transition: transform .8s ease;
     text-align: center;
+    padding: 0 40px;
 
     &__title {
       display: none;
@@ -728,26 +732,87 @@
   }
 
 
-  .prev {
-    display: block;
-    width: 40px;
-    height: 40px;
-
+  #btn-1:checked ~ .review-controls label[for="btn-1"],
+  #btn-2:checked ~ .review-controls label[for="btn-2"],
+  #btn-3:checked ~ .review-controls label[for="btn-3"] {
+    border: none;
+    background:transparent;
   }
 
-  .next {
-    display: block;
-    width: 40px;
-    height: 40px;
-
+  #btn-1:checked ~ .review-inner .review-slider > .review-item {
+    transform: translate(0);
   }
+
+  #btn-2:checked ~ .review-inner .review-slider > .review-item {
+    transform: translate(-820px);
+  }
+
+  #btn-3:checked ~ .review-inner .review-slider > .review-item {
+    transform: translate(-1640px);
+  }
+
 
 
 
   .review-controls {
-    display: none;
-  }
+    position: static;
+    width: 95%;
+    left: inherit;
+    bottom: inherit;
+    z-index: 100;
+    text-align: center;
 
+    & label {
+      position: absolute;
+      display: inline-block;
+      width: 30px;
+      height: 60px;
+      margin: 0 5px;
+      cursor: pointer;
+      background-color:transparent;
+      border:none;
+      transition: background-color .2s;
+      vertical-align: middle;
+
+    }
+    &--mobile {
+      display: block;
+    }
+    &--right{
+      background: url("@{img-path}/review-arrow-right.svg") no-repeat 0 0;
+      background-size: 30px;
+      top: 50%;
+      right: 0;
+
+    }
+
+    &--right-last {
+      background: url("@{img-path}/review-arrow-left.svg") no-repeat 0 0;
+      background-size: 30px;
+      top: 50%;
+      left: 0;
+    }
+
+    &--left{
+      display: block;
+      background: url("@{img-path}/review-arrow-left.svg") no-repeat 0 0;
+      background-size: 30px;
+      top: 50%;
+      left: 0;
+
+    }
+    &--left-first {
+      display: block;
+      background: url("@{img-path}/review-arrow-right.svg") no-repeat 0 0;
+      background-size: 30px;
+      top: 50%;
+      right: 0;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
 
   .app {
     max-width: 100%;
@@ -772,7 +837,6 @@
   .app-slider {
     width: 100%;
     min-height: 100%;
-
 
   }
 

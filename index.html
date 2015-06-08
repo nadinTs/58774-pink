@@ -93,7 +93,7 @@
 </svg>
             </a>
 
-            <div  id="menu-toggle" class="menu">
+            <div id="menu-toggle" class="menu">
                 <div class="button-menu-header">
                     <a class="button-menu-header__open" href="#">
                         <span class="menu-button">Open menu</span>
@@ -202,15 +202,14 @@
     <input type="radio" id="btn-2" name="toggle">
     <input type="radio" id="btn-3" name="toggle">
 
-    <div class="review-controls">
+    <div class="review-controls review-controls--desktop">
 
-        <label for="btn-1"></label>
-        <label for="btn-2"></label>
-        <label for="btn-3"></label>
+        <label class="review-controls--center" for="btn-1"></label>
+        <label class="review-controls--left" for="btn-2"></label>
+        <label class="review-controls--center" for="btn-3"></label>
 
     </div>
 
-    <button class="prev"><img src="img/review-arrow-left.svg" width="40px" height="40px"></button>
 
     <div class="review-inner">
 
@@ -218,6 +217,13 @@
         <div class="review-slider">
 
             <article class="review-item">
+
+                <div class="review-controls review-controls--mobile">
+
+                    <label class="review-controls--left-first" for="btn-2"></label>
+
+                </div>
+
                 <h2 class="review-item__title">Николай Петров</h2>
 
                 <div class="review-item__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому
@@ -236,6 +242,12 @@
             </article>
 
             <article class="review-item">
+                <div class="review-controls review-controls--mobile">
+
+                    <label class="review-controls--left" for="btn-1"></label>
+                    <label class="review-controls--right" for="btn-3"></label>
+
+                </div>
                 <h2 class="review-item__title">Николай Петров2</h2>
 
                 <div class="review-item__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому
@@ -254,6 +266,11 @@
             </article>
 
             <article class="review-item">
+                <div class="review-controls review-controls--mobile">
+
+                    <label class="review-controls--right-last" for="btn-2"></label>
+
+                </div>
                 <h2 class="review-item__title">Николай Петров3</h2>
 
                 <div class="review-item__text">&laquo;Это приложение перевернуло мой мир и позволило по-новому
@@ -273,7 +290,6 @@
         </div>
 
     </div>
-    <button class="next"><img src="img/review-arrow-left.svg" width="40px" height="40px"></button>
 
 
 </section>
