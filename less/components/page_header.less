@@ -50,10 +50,12 @@
 
 }
 
+
 .logo {
   background-color: @dark-gray-opacity;
   min-height: 66px;
   width: 100%;
+  z-index: 100;
 
   &__PINK {
     background: url('@{img-path}/PINK.png') no-repeat 20px 22px;
@@ -63,6 +65,8 @@
     width: 100px;
     top: 0;
     left: 3%;
+    z-index: 100;
+
 
   }
   &__PINK span {
@@ -317,6 +321,7 @@
     min-height: 110px;
     display: block;
 
+
     &__PINK {
       float: left;
       min-height: 100px;
@@ -384,7 +389,7 @@
 }
 
 @media (max-width: 1199px) {
-  .logo__svg {
+  .logo__PINK > svg {
     display: none;
   }
 }

@@ -87,33 +87,34 @@
 
             </a>
 
-            <div class="button-menu-header">
-                <a class="button-menu-header__open" href="#"><span class="menu-button
-                ">Open menu</span></a>
-                <a class="button-menu-header__close" href="#"><span>Close menu</span></a>
+            <div  id="menu-toggle" class="menu">
+                <div class="button-menu-header">
+                    <a class="button-menu-header__open" href="#">
+                        <span class="menu-button">Open menu</span>
+                    </a>
+
+                </div>
+                <nav class="ddmenu">
+                    <ul>
+                        <li class="ddmenu__item">
+                            <a class="ddmenu__item-link" href="#">Информация</a>
+                        </li>
+                        <li class="ddmenu__item">
+                            <a class="ddmenu__item-link" href="#">Возможности</a>
+                        </li>
+                        <li class="ddmenu__item">
+                            <a class="ddmenu__item-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="ddmenu__item">
+                            <a class="ddmenu__item-link" href="#">Стоимость</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <h1 class="main-header__title main-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
 
-        <!-- Выпадающее меню начало  -->
-        <nav class="ddmenu">
-            <ul>
-                <li class="ddmenu-item">
-                    <a class="ddmenu-item__link" href="#">Информация</a>
-                </li>
-                <li class="ddmenu-item">
-                    <a class="ddmenu-item__link" href="#">Возможности</a>
-                </li>
-                <li class="ddmenu-item">
-                    <a class="ddmenu-item__link" href="#">Отзывы</a>
-                </li>
-                <li class="ddmenu-item">
-                    <a class="ddmenu-item__link" href="#">Стоимость</a>
-                </li>
-            </ul>
-        </nav>
 
-        <!-- Выпадающее меню конец -->
     </div>
 </header>
 
@@ -549,7 +550,7 @@
 </script>
 <script src="js/vendor/mustache-2.1.0.min.js" type="text/javascript"></script>
 <script src="js/form.js" type="text/javascript"></script>
-
+<script src="js/menu.js" type="text/javascript"></script>
 
 
 </body>

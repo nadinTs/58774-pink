@@ -53,9 +53,58 @@
     }
   }
 
-  &__close {
+
+}
+.menu.open .button-menu-header a{
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  padding-top: 31px;
+
+
+  & span {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: @white;
+    font-size: @font-size-zero;
+    transform: rotate(45deg);
+
 
   }
+  & span::before,
+  & span::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: @white;
+
+  }
+  & span::before {
+    transform: translate(0) rotate(-90deg);
+
+  }
+  & span::after {
+    display: none;
+  }
+
+  &:hover {
+    & span,
+    & span::before {
+      background-color: @pink-contact;
+    }
+  }
+  &:active {
+    & span,
+    & span::before {
+      background-color: @pink-rgba;
+    }
+  }
+
 }
 
 
@@ -125,7 +174,13 @@
   .download-app {
     padding: 0 0 44px 0;
   }
-
+  .menu.open .button-menu-header a {
+    width: 70px;
+    height: 30px;
+    top: 20px;
+    right: 0;
+    padding-top: 31px;
+  }
 }
 
 
